@@ -1,0 +1,26 @@
+.home-container {
+  position: relative;
+}
+
+.background-overlay {
+  position: absolute;
+  top: 20%; /* 調整覆蓋起始位置 */
+  left: 0;
+  width: 100%; /* 撐滿寬度 */
+  z-index: 1; /* 設定為比 banner 更高的層級 */
+  pointer-events: none; /* 避免背景干擾其他元素點擊 */
+}
+
+.background-overlay img {
+  width: 100%; /* 確保圖片適應寬度 */
+}
+
+.banner {
+  position: relative;
+  z-index: 0; /* 將橫幅層級設置較低 */
+}
+
+.services-section {
+  position: relative;
+  z-index: 2; /* 保證其他區塊在背景上方 */
+}

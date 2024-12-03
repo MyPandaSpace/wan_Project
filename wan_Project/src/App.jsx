@@ -1,35 +1,47 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
+import bg_mountain from "./images/index/bg_mountain.svg";
+import bg_1_Filter from './images/index/bg_1_filter.svg';
+import navbar from './images/index/navbar_wan.svg';
+import footer from './images/index/footer_wan.svg';
+import bg_sea from './images/index/bg_sea.svg';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      {/* 首頁容器 */}
+      <div className="home-container">
+        <header>
+          <img src={navbar} alt="Navbar" />
+        </header>
+
+        {/* 橫幅 */}
+        <main className="banner">
+          <img src={bg_mountain} alt="Banner" />
+          {/* 將背景圖層提升到更靠近頂部 */}
+          <div className="background-overlay">
+            <img src={bg_1_Filter} alt="Background" />
+          </div>
+        </main>
+
+        {/* 區塊 2：服務 */}
+        <section className="services-section">
+          <div className="service1">
+            <img src="../src/images/index/service1.svg" alt="" />
+            <img src="../src/images/index/service1_detail.svg" alt="Service 1" />
+          </div>
+          <div className="service2">
+            <img src="../src/images/index/service2_detail.svg" alt="Service 2" />
+            <img src="../src/images/index/service2.svg" alt="" />
+          </div>
+        </section>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
+      {/* 底部 */}
+      <footer>
+        <img src={footer} alt="Footer" />
+      </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
