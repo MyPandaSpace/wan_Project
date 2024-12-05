@@ -37,7 +37,7 @@ h2 {
 .background-overlay {
   position: absolute;
   /* 調整覆蓋起始位置 */
-  top: 764px;
+  top: 93%;
   left: 0;
   width: 100%;
   /* 撐滿寬度 */
@@ -139,7 +139,6 @@ h2 {
 
 .services-section .service1 img:last-child {
   margin-right: 0;
-  /* 避免第二張圖片有不必要的右邊距 */
 }
 
 .services-section .service2 img {
@@ -149,7 +148,6 @@ h2 {
 
 .services-section .service2 img:last-child {
   margin-right: 0;
-  /* 避免第二張圖片有不必要的右邊距 */
 }
 
 .section-mainEvent {
@@ -250,15 +248,3 @@ h2 {
 a {
   text-decoration: none;
 }
-
-/* <div id="main-Event">
-            <img id="mainEvent-Title" src="../src/images/index/mainEvent-Title.svg" alt="title" />
-            <article id='mainEvent-Content'>
-              <p>2025.01.25 (六)</p>
-              <h2>【過年限定】紙韻心意剪紙活動</h2>
-              <p>以剪紙這項傳統藝術來迎接新年！透過一刀一剪，將你的心意轉化為美麗的圖案，無論是喜慶的紅色剪紙或精緻的對聯裝飾，都充滿溫暖的祝福。
-                <br /><br />
-                這個活動適合所有想要沉澱心情、用心創作的人，一同透過簡單的創作步驟，為新的一年剪出滿滿的美好與希望！</p>
-            </article>
-            <img id="mainEvent_Image" src="../src/images/index/mainEvent_Image.svg" alt="image" />
-          </div> */

@@ -1,4 +1,4 @@
-import './App.css';
+import './css/index.css';
 import bg_mountain from "./images/index/bg_mountain.svg";
 import bg_1_Filter from './images/index/bg_1_filter.svg';
 import footer from './images/index/footer_wan.svg';
