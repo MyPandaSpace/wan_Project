@@ -1,8 +1,12 @@
-body, html {
+body,
+html,
+h1,
+h2 {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden; /* 避免水平滾動條 */
+  overflow-x: hidden;
+  /* 避免水平滾動條 */
 }
 
 #bg_sea {
@@ -32,21 +36,50 @@ body, html {
 
 .background-overlay {
   position: absolute;
-  top: 0; /* 調整覆蓋起始位置 */
+  /* 調整覆蓋起始位置 */
+  top: 764px;
   left: 0;
-  width: 100%; /* 撐滿寬度 */
+  width: 100%;
+  /* 撐滿寬度 */
   height: 100%;
-  z-index: 2;
-  pointer-events: none; /* 避免背景干擾其他元素點擊 */
+  z-index: 1;
+  pointer-events: none;
+  /* 避免背景干擾其他元素點擊 */
+}
+
+.background-overlay2 {
+  position: absolute;
+  top: 0;
+  left: 80px;
+  width: 100%;
+  height: auto;
+  opacity: 0.9;
+}
+
+#title-wan {
+  position: absolute;
+  top: 40px;
+  left: 30%;
+  z-index: 3;
+}
+
+#title-detail{
+  position: absolute;
+  top: 360px;
+  left: 40%;
+  z-index: 3;
 }
 
 .background-overlay img {
-  width: 100%; /* 確保圖片適應寬度 */
+  width: 100%;
+  /* 確保圖片適應寬度 */
 }
 
 .banner {
   position: relative;
-  z-index: 0; /* 將橫幅層級設置較低 */
+  height: auto;
+  z-index: 2;
+  /* 將橫幅層級設置較低 */
 }
 
 .banner #bg_sea {
@@ -55,35 +88,43 @@ body, html {
   left: 0;
   width: 100%;
   height: auto;
-  opacity: 0.5;
+  opacity: 0.9;
 }
 
-.banner #bg_mountain {
+#banner2 #bg_mountain {
+  position: relative;
   width: 100%;
-  bottom: 0;
+  top: 10px;
   left: 0;
-  z-index: 1;
-}
-
-.banner #circle_ip {
-  bottom: 200px;
   z-index: 2;
 }
 
-.banner #heart_ip {
+#banner2 #circle_ip {
+  position: absolute;
+  bottom: 200px;
+  left: 18%;
+  z-index: 2;
+}
+
+#banner2 #heart_ip {
+  position: absolute;
+  bottom: 220px;
+  left: 76%;
   z-index: 2;
 }
 
 .services-section {
+  margin: 80px 0;
   width: 100%;
   position: relative;
-  z-index: 3; /* 保證其他區塊在背景上方 */
+  z-index: 3;
+  /* 保證其他區塊在背景上方 */
 }
 
 .services-section .service1 {
   display: flex;
   justify-content: center;
-  margin: 60px 0;
+  margin-bottom: 60px 0;
 }
 
 .services-section .service2 {
@@ -92,19 +133,23 @@ body, html {
 }
 
 .services-section .service1 img {
-  margin-right: 50px;  /* 設置兩個圖片之間的間距 */
+  margin-right: 50px;
+  /* 設置兩個圖片之間的間距 */
 }
 
 .services-section .service1 img:last-child {
-  margin-right: 0;  /* 避免第二張圖片有不必要的右邊距 */
+  margin-right: 0;
+  /* 避免第二張圖片有不必要的右邊距 */
 }
 
 .services-section .service2 img {
-  margin-right: 50px;  /* 設置兩個圖片之間的間距 */
+  margin-right: 50px;
+  /* 設置兩個圖片之間的間距 */
 }
 
 .services-section .service2 img:last-child {
-  margin-right: 0;  /* 避免第二張圖片有不必要的右邊距 */
+  margin-right: 0;
+  /* 避免第二張圖片有不必要的右邊距 */
 }
 
 .section-mainEvent {
@@ -119,7 +164,57 @@ body, html {
   z-index: 3;
 }
 
+#main-Event {
+  position: relative;
+  top: 70px;
+  right: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
 
+#mainEvent-Title {
+  margin: 30px 0;
+  width: 66%;
+}
+
+#mainEvent-Content {
+  display: flex;
+  flex-direction: column;
+  width: 420px;
+}
+
+#mainEvent_Entry {
+  margin-top: 30px;
+  width: 180px;
+}
+
+
+#mainEvent-Image {
+  position: relative;
+  top: 60px;
+  left: 60px;
+  margin-top: 40px;
+  object-fit: cover;
+  height: 80%;
+}
+
+#btn_ArrowLeft {
+  position: relative;
+  top: 40%;
+  left: 80px;
+  width: 60px;
+  height: auto;
+}
+
+#btn_ArrowRight {
+  position: relative;
+  top: 40%;
+  left: 80px;
+  width: 60px;
+  height: auto;
+}
 
 #footer {
   position: relative;
@@ -127,7 +222,7 @@ body, html {
   height: auto;
 }
 
-#footer img{
+#footer img {
   display: block;
   width: 100%;
   z-index: 999;
@@ -156,3 +251,14 @@ a {
   text-decoration: none;
 }
 
+/* <div id="main-Event">
+            <img id="mainEvent-Title" src="../src/images/index/mainEvent-Title.svg" alt="title" />
+            <article id='mainEvent-Content'>
+              <p>2025.01.25 (六)</p>
+              <h2>【過年限定】紙韻心意剪紙活動</h2>
+              <p>以剪紙這項傳統藝術來迎接新年！透過一刀一剪，將你的心意轉化為美麗的圖案，無論是喜慶的紅色剪紙或精緻的對聯裝飾，都充滿溫暖的祝福。
+                <br /><br />
+                這個活動適合所有想要沉澱心情、用心創作的人，一同透過簡單的創作步驟，為新的一年剪出滿滿的美好與希望！</p>
+            </article>
+            <img id="mainEvent_Image" src="../src/images/index/mainEvent_Image.svg" alt="image" />
+          </div> */
