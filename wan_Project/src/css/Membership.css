@@ -1,0 +1,22 @@
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+#navbar #logo {
+    margin: 10px 40px;
+}
+
+#navbar #icon {
+    display: flex;
+    margin: 20px 40px;
+    gap: 20px;
+}
+
+#membership_Title {
+    width: 100%;
+}

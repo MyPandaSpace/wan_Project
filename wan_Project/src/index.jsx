@@ -1,11 +1,11 @@
 import './css/index.css';
 import bg_mountain from "./images/index/bg_mountain.svg";
-import bg_1_Filter from './images/index/bg_1_filter.svg';
 import footer from './images/index/footer_wan.svg';
-import bg_sea from './images/index/bg_sea.svg';
-import bg_2_Filter from './images/index/bg_2_filter.svg';
+import bg_sea from './images/index/bg_sea.png';
+import bg_2_Filter from './images/index/bg_2_filter.png';
+import { Link } from 'react-router-dom';
 
-function App() {
+function Index() {
   return (
     <>
       {/* 首頁容器 */}
@@ -27,9 +27,6 @@ function App() {
             <img id='heart_ip' src="../src/images/index/heart_ip.svg" alt="heart_ip" />
           </div>
           {/* 將背景圖層提升到更靠近頂部 */}
-          <div className="background-overlay">
-            <img src={bg_1_Filter} alt="Background" />
-          </div>
           <div className='background-overlay2'>
             <img src={bg_2_Filter} alt="Background" />
           </div>
@@ -53,6 +50,7 @@ function App() {
         {/* 區塊 3：主打活動 */}
         <section className="section-mainEvent">
           <div id="main-Event">
+            <img src="" alt="" />
             <img id="mainEvent-Title" src="../src/images/index/mainEvent-Title.svg" alt="title" />
             <article id='mainEvent-Content'>
               <p>2025.01.25 (六)</p>
@@ -63,10 +61,9 @@ function App() {
             </article>
             <img id='mainEvent_Entry' src="../src/images/index/btn_Entry.svg" alt="btn_Entry" />
           </div>
-          <img id="mainEvent-Image" src="../src/images/index/mainEvent_Image.svg" alt="image" />
+          <img id="mainEvent-Image" src="../src/images/index/mainEvent_Image.png" alt="image" />
           <img id="btn_ArrowLeft" src="../src/images/index/btn_ArrowLeft.svg" alt="btn_Left" />
           <img id="btn_ArrowRight" src="../src/images/index/btn_ArrowRight.svg" alt="btn_Right" />
-
         </section>
       </div>
 
@@ -75,11 +72,11 @@ function App() {
         <div>
           <img src={footer} alt="Footer" />
           <div id='footer-a'>
-            <a href="">首頁</a>
+            <a href="/">首頁</a>
             <a href="">探索體驗村</a>
             <a href="">心途之灣</a>
             <a href="">關於我們</a>
-            <a href="">會員中心</a>
+            <Link to="/membership">會員中心</Link>
             <a href="">常見問題</a>
           </div>
           <small id='copyright'>© 2024 灣 Wan. All rights reserved.</small>
@@ -89,4 +86,4 @@ function App() {
   );
 }
 
-export default App;
+export default Index;
