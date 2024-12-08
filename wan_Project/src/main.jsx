@@ -2,7 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Index from './index.jsx'
-import Membership from './membership.jsx'
+import Event from './Event.jsx'
+import Membership from './Membership.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -10,6 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/Membership" element={<Membership />} />
+        <Route path="/Event" element={<Event />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
