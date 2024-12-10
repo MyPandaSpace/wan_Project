@@ -6,17 +6,16 @@ function Event() {
   return (
     <>
       <div className="home-container">
-        {/* 導覽列 */}
-        <header id='navbar'>
-          <img id="logo" src="../src/images/index/logo.svg" alt="logo" />
-          <div id='icon'>
-            <img id="icon-Search_Bar" src="../src/images/index/icon-Search_Bar.svg" alt="Search" />
-            <img id="icon-Member" src="../src/images/index/icon-Member.svg" alt="Member" />
-            <img id="icon-Hamburger" src="../src/images/index/icon-Hamburger.svg" alt="Hamburger" />
-          </div>
-        </header>
         {/* Banner */}
         <main className="main_Event">
+          <header id='navbar'>
+            <img id="logo" src="../src/images/index/logo.svg" alt="logo" />
+            <div id='icon'>
+              <img id="icon-Search_Bar" src="../src/images/index/icon-Search_Bar.svg" alt="Search" />
+              <img id="icon-Member" src="../src/images/index/icon-Member.svg" alt="Member" />
+              <img id="icon-Hamburger" src="../src/images/index/icon-Hamburger.svg" alt="Hamburger" />
+            </div>
+          </header>
           <img src="" alt="" />
         </main>
         {/* 評論卡片 */}
@@ -32,6 +31,11 @@ function Event() {
           <div id='row-Top'>
             <img src="../src/images/Event/circle_Talk.png" alt="" />
             <img src="../src/images/Event/btn_Select.png" alt="" />
+          </div>
+          <div id='event-Type'>
+            <img src="../src/images/Event/event-Type1.png" alt="" />
+            <img src="../src/images/Event/event-Type2.png" alt="" />
+            <img src="../src/images/Event/event-Type3.png" alt="" />
           </div>
           <div id='row-event_Card'>
             <img src="../src/images/Event/event_Card.png" alt="card" />

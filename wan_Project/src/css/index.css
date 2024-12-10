@@ -46,8 +46,9 @@ h2 {
 
 #title-wan {
   position: absolute;
-  top: 40px;
-  left: 30%;
+  width: 40%;
+  top: 10%;
+  left: 36%;
   z-index: 3;
 }
 
@@ -77,21 +78,21 @@ h2 {
 #banner2 #bg_mountain {
   position: relative;
   width: 100%;
-  top: 10px;
+  top: -60px;
   left: 0;
   z-index: 2;
 }
 
 #banner2 #circle_ip {
   position: absolute;
-  bottom: 20%;
+  bottom: 30%;
   left: 18%;
   z-index: 2;
 }
 
 #banner2 #heart_ip {
   position: absolute;
-  bottom: 20%;
+  bottom: 30%;
   left: 76%;
   z-index: 2;
 }

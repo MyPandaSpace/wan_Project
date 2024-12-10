@@ -88,22 +88,32 @@ video {
 }
 
 #navbar {
+	position: relative;
 	display: flex;
 	justify-content: space-between;
-	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 999;
 	width: 100%;
 }
 
+#navbar-Bg{
+	width: 100%;
+	z-index: 998;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
 #navbar #logo {
 	margin: 10px 40px;
+	z-index: 999;
 }
 
 #navbar #icon {
 	display: flex;
 	margin: 20px 40px;
+	z-index: 999;
 	gap: 20px;
 }
 
@@ -127,6 +137,7 @@ video {
 	align-items: center;
 	width: 100%;
 	margin-top: 30px;
+	gap: 20px;
 }
 
 #tabs img {
@@ -180,7 +191,7 @@ video {
 	resize: none;
 }
 
-.info-member{
+.info-member {
 	margin: 60px 0;
 }
 
@@ -218,7 +229,7 @@ video {
 }
 
 /* 第三表格 */
-.info-quest{
+.info-quest {
 	margin: 60px 0;
 }
 

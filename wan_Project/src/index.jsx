@@ -11,21 +11,20 @@ function Index() {
   useEffect(() => {
     window.scrollTo(0, 0); // 當頁面載入或渲染時，滾動到頂部
   }, [location]);
-  
+
   return (
     <>
       {/* 首頁容器 */}
       <div className="home-container">
-        <header id='navbar'>
-          <img id="logo" src="../src/images/index/logo.svg" alt="logo" />
-          <div id='icon'>
-            <img id="icon-Member" src="../src/images/index/icon-Member.svg" alt="Member" />
-            <img id="icon-Hamburger" src="../src/images/index/icon-Hamburger.svg" alt="Hamburger" />
-          </div>
-        </header>
-
         {/* 橫幅 */}
         <main className="banner">
+          <header id='navbar'>
+            <img id="logo" src="../src/images/index/logo.svg" alt="logo" />
+            <div id='icon'>
+              <img id="icon-Member" src="../src/images/index/icon-Member.svg" alt="Member" />
+              <img id="icon-Hamburger" src="../src/images/index/icon-Hamburger.svg" alt="Hamburger" />
+            </div>
+          </header>
           <img id="bg_sea" src={bg_sea} alt="bg_sea" />
           <div id='banner2'>
             <img id="bg_mountain" src={bg_mountain} alt="bg_mountain" />

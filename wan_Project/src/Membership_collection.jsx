@@ -3,18 +3,19 @@ import title from "../src/images/Membership/membership_Title.png";
 import footer from "../src/images/index/footer.png";
 import { Link } from "react-router-dom";
 
-function Membership() {
+function Membership_collection() {
   return (
     <>
+      <header id='navbar'>
+        <img id="logo" src="../src/images/index/logo.svg" alt="logo" />
+        <div id='icon'>
+          <img id="icon-Member" src="../src/images/index/icon-Member.svg" alt="Member" />
+          <img id="icon-Hamburger" src="../src/images/index/icon-Hamburger.svg" alt="Hamburger" />
+        </div>
+      </header>
+      <img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
       <div className="home-container">
         {/* 區塊 1：導覽列 */}
-        <header id='navbar'>
-          <img id="logo" src="../src/images/index/logo.svg" alt="logo" />
-          <div id='icon'>
-            <img id="icon-Member" src="../src/images/index/icon-Member.svg" alt="Member" />
-            <img id="icon-Hamburger" src="../src/images/index/icon-Hamburger.svg" alt="Hamburger" />
-          </div>
-        </header>
         <main className="main">
           <figure id="title">
             <img id="title-img" src={title} alt="title-img" />
@@ -22,7 +23,7 @@ function Membership() {
           <div id="tabs">
             <img src="../src/images/Membership/btn-items.png" alt="" />
             <img src="../src/images/Membership/btn-tabs.png" alt="" />
-            <img src="../src/images/Membership/btn2-tabs.png" alt="" />
+            <img src="../src/images/Membership/btn2-tabs.png" alt=""/>
             <img src="../src/images/Membership/btn3-tabs.png" alt="" />
             <img src="../src/images/Membership/btn-2items.png" alt="" />
           </div>
@@ -124,4 +125,4 @@ function Membership() {
   );
 }
 
-export default Membership;
+export default Membership_collection;
