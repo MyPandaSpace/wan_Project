@@ -1,0 +1,197 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+}
+
+#navbar {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100%;
+}
+
+#navbar-Bg {
+	width: 100%;
+	z-index: 998;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#navbar #logo {
+	margin: 10px 40px;
+	z-index: 999;
+}
+
+#navbar #icon {
+	display: flex;
+	margin: 20px 40px;
+	z-index: 999;
+	gap: 20px;
+}
+
+#title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 120px;
+	height: 100%;
+}
+
+#title-img {
+	margin: 0;
+	width: 30%;
+}
+
+#tabs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	margin-top: 30px;
+	gap: 20px;
+}
+
+#tabs img {
+	width: 100px;
+}
+
+/* 區塊 2：訂單紀錄 */
+#title-Order {
+	color: #1684C8;
+	text-align: center;
+	padding: 20px 0;
+	font-size: 24px;
+}
+
+#uncomplete_Order {
+	padding: 60px 100px;
+	margin:0 10%;
+	width: 1000px;
+	height: auto;
+	border: 2px solid #1684C8;
+	border-radius: 10px;
+}
+
+#column-event_Order {
+	margin: 20px 20px;
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+}
+
+#column-event_Order img {
+	width: 86%;
+}
+
+#column-event_Order img {
+	margin-bottom: 10px;
+}
+
+#column-event_Order small {
+	padding-left: 10px;
+}
+
+#column-event_Order h2 {
+	font-size: 18px;
+	color: #1684C8;
+	margin: 10px 0 10px 10px;
+}
+
+#column-event_Order p1 {
+	color: #666;
+	padding-left: 16px;
+}
+
+#column-event_Order hr {
+	margin: 10px 0;
+	margin-left: 10px;
+}

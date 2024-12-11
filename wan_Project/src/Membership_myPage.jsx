@@ -1,4 +1,4 @@
-import "./css/Membership.css";
+import "./css/Membership_myPage.css";
 import title from "../src/images/Membership/membership_Title.png";
 import footer from "../src/images/index/footer.png";
 import { Link } from "react-router-dom";
@@ -22,9 +22,9 @@ function Membership_myPage() {
           </figure>
           <div id="tabs">
             <img src="../src/images/Membership/btn-items.png" alt="" />
-            <img src="../src/images/Membership/btn-tabs.png" alt="" />
-            <img src="../src/images/Membership/btn2-tabs.png" alt=""/>
-            <img src="../src/images/Membership/btn3-tabs.png" alt="" />
+            <Link to="/Membership_myPage"><img src="../src/images/Membership/btn1-tabs.png" alt="" /></Link>
+            <Link to="/Membership_myCollection"><img src="../src/images/Membership/btn2-tabs.png" alt="" /></Link>
+            <Link to="/Membership_myOrder"><img src="../src/images/Membership/btn3-tabs.png" alt="" /></Link>
             <img src="../src/images/Membership/btn-2items.png" alt="" />
           </div>
         </main>
@@ -43,59 +43,59 @@ function Membership_myPage() {
             </div>
           </section>
           <form className="info-form">
-            <label for="name">暱稱:</label>
+            <label htmlFor="name">暱稱:</label>
             <input type="text" id="name" name="name" placeholder="" value={"灣灣"} required />
 
-            <label for="personality">個性:</label>
+            <label htmlFor="personality">個性:</label>
             <input type="text" id="personality" name="personality" placeholder="" value={"愛冒險、愛體驗"} />
 
-            <label for="quote">名言:</label>
+            <label htmlFor="quote">名言:</label>
             <textarea id="quote" name="quote" rows="4" placeholder="" value={"療癒自己最好的方式是讓心靈安靜，接受一切不完美的美好"} ></textarea>
           </form>
         </div>
-        <hr />
+        <hr style={{ border: 'none', height: '2px', backgroundColor: '#D9D9D9', width: '80%' }} />
 
         <div className="info-member">
           <h2>用戶個人資訊</h2>
           <form id="info-form2">
             <div>
-              <label for="name">學員編號:</label>
+              <label htmlFor="name">學員編號:</label>
               <input type="text" id="name" name="name" placeholder="" value={"wan007007"} required />
             </div>
             <div>
-              <label for="personality">使用者帳號:</label>
+              <label htmlFor="personality">使用者帳號:</label>
               <input type="text" id="personality" name="personality" placeholder="" value={"wan1010"} />
             </div>
             <div>
-              <label for="name">使用者密碼:</label>
+              <label htmlFor="name">使用者密碼:</label>
               <input type="text" id="name" name="name" placeholder="" value={"wan1234567"} required />
             </div>
             <div>
-              <label for="personality">地址:</label>
+              <label htmlFor="personality">地址:</label>
               <input type="text" id="personality" name="personality" placeholder="" value={"100台北市中正區濟南路一段321號 6樓603"} />
             </div>
             <div>
-              <label for="name">信箱:</label>
+              <label htmlFor="name">信箱:</label>
               <input type="text" id="name" name="name" placeholder="" value={"wanwan@google.com"} required />
             </div>
           </form>
         </div>
-        <hr />
+        <hr style={{ border: 'none', height: '2px', backgroundColor: '#D9D9D9', width: '80%' }} />
 
         <div className="info-quest">
           <h2>灣灣留言信箱：悄悄話與你的小心願</h2>
           <p>✨ 我們想聽到你的故事，想了解你的成長與挑戰，我們相信每個人都有著獨一無二的經驗值得分享✨ </p>
           <form id="info-form3">
             <div>
-              <label for="name">姓名:</label>
+              <label htmlFor="name">姓名:</label>
               <input type="text" id="name" name="name" placeholder="" required />
             </div>
             <div>
-              <label for="personality">信箱:</label>
+              <label htmlFor="personality">信箱:</label>
               <input type="text" id="personality" name="personality" placeholder="" required />
             </div>
             <div>
-              <label for="name">留言:</label>
+              <label htmlFor="name">留言:</label>
               <textarea type="text" id="name" name="name" placeholder="在這裡，你的小心願可能變成一次溫暖的課程體驗；你的分享，可能成為他人生活的燈塔" required />
             </div>
           </form>
@@ -115,7 +115,7 @@ function Membership_myPage() {
             <a href="/Event">探索體驗村</a>
             <a href="">心途之灣</a>
             <a href="">關於我們</a>
-            <a href="/Membership">會員中心</a>
+            <a href="/Membership_myPage">會員中心</a>
             <a href="">常見問題</a>
           </div>
           <small id='copyright'>© 2024 灣 Wan. All rights reserved.</small>

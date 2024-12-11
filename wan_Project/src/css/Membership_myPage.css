@@ -97,7 +97,7 @@ video {
 	width: 100%;
 }
 
-#navbar-Bg{
+#navbar-Bg {
 	width: 100%;
 	z-index: 998;
 	position: absolute;
@@ -283,42 +283,4 @@ video {
 	display: flex;
 	justify-content: center;
 	margin: 50px 0;
-}
-
-
-
-/* footer */
-#footer {
-	position: relative;
-	width: 100%;
-	height: auto;
-}
-
-#footer img {
-	display: block;
-	width: 100%;
-	z-index: 999;
-}
-
-#footer-a {
-	display: flex;
-	justify-content: center;
-	gap: 40px;
-	position: absolute;
-	z-index: 2;
-	width: 100%;
-	bottom: 100px;
-}
-
-a {
-	text-decoration: none;
-}
-
-#copyright {
-	display: flex;
-	justify-content: center;
-	position: absolute;
-	z-index: 2;
-	width: 100%;
-	bottom: 50px;
 }

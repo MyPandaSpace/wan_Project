@@ -2,7 +2,7 @@ import './css/Event.css';
 import footer from "../src/images/index/footer.png";
 import { Link } from 'react-router-dom';
 
-function Event() {
+function Event_Type2() {
   return (
     <>
       <div className="home-container">
@@ -33,8 +33,8 @@ function Event() {
             <img src="../src/images/Event/btn_Select.png" alt="" />
           </div>
           <div id='event-Type'>
-            <Link to=""><img src="../src/images/Event/event-Type1_hover.png" alt="" /></Link>
-            <Link to="/Event_Type2"><img src="../src/images/Event/event-Type2.png" alt="" /></Link>
+            <Link to="/Event"><img src="../src/images/Event/event-Type1.png" alt="" /></Link>
+            <Link to=""><img src="../src/images/Event/event-Type2_hover.png" alt="" /></Link>
             <Link to="/Event_Type3"><img src="../src/images/Event/event-Type3.png" alt="" /></Link>
           </div>
           <div id='row-event_Card'>
@@ -198,4 +198,4 @@ function Event() {
   )
 }
 
-export default Event;
+export default Event_Type2;

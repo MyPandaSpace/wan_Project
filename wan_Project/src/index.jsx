@@ -1,5 +1,5 @@
 import './css/index.css';
-import bg_mountain from "./images/index/bg_mountain.svg";
+import bg_mountain from "./images/index/bg_mountain.png";
 import footer from './images/index/footer_wan.png';
 import bg_sea from './images/index/bg_sea.png';
 import bg_2_Filter from './images/index/bg_2_filter.png';
@@ -78,10 +78,10 @@ function Index() {
           <img src={footer} alt="Footer" />
           <div id='footer-a'>
             <a href="/">首頁</a>
-            <Link to="/Event">探索體驗村</Link>
+            <a href="/Event">探索體驗村</a>
             <a href="">心途之灣</a>
             <a href="">關於我們</a>
-            <Link to="/Membership">會員中心</Link>
+            <a href="/Membership_myPage">會員中心</a>
             <a href="">常見問題</a>
           </div>
           <small id='copyright'>© 2024 灣 Wan. All rights reserved.</small>

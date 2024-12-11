@@ -3,16 +3,23 @@ import ReactDOM from 'react-dom/client'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Index from './index.jsx'
 import Event from './Event.jsx'
+import Event_Type2 from './Event_Type2.jsx'
+import Event_Type3 from './Event_Type3.jsx'
 import Membership_myPage from './Membership_myPage.jsx'
-import Membership_collection from './Membership_collection.jsx'
+import Membership_myCollection from './Membership_myCollection.jsx'
+import Membership_myOrder from './Membership_myOrder.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Index />} />
-        <Route path="/Membership" element={<Membership_myPage />} />
         <Route path="/Event" element={<Event />} />
+        <Route path="/Event_Type2" element={<Event_Type2 />} />
+        <Route path="/Event_Type3" element={<Event_Type3 />} />
+        <Route path="/Membership_myPage" element={<Membership_myPage />} />
+        <Route path="/Membership_myCollection" element={<Membership_myCollection />} />
+        <Route path="/Membership_myOrder" element={<Membership_myOrder />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
