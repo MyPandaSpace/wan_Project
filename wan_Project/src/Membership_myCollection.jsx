@@ -7,7 +7,7 @@ export default function Membership_myCollection() {
   return (
     <>
       <header id='navbar'>
-        <img id="logo" src="../src/images/index/logo.svg" alt="logo" />
+      <a href="/"><img id="logo" src="../src/images/index/logo.svg" alt="logo" /></a>
         <div id='icon'>
           <img id="icon-Member" src="../src/images/index/icon-Member.svg" alt="Member" />
           <img id="icon-Hamburger" src="../src/images/index/icon-Hamburger.svg" alt="Hamburger" />
@@ -39,7 +39,7 @@ export default function Membership_myCollection() {
             <img src="../src/images/Event/event_Image.png" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p1>NT$ 500 元/人</p1>
+            <p id="p1">NT$ 500 元/人</p>
             <hr />
             <div id='event-Tags'>
               <p>#台北市</p>
@@ -50,7 +50,7 @@ export default function Membership_myCollection() {
             <img src="../src/images/Event/event_Image.png" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p1>NT$ 500 元/人</p1>
+            <p id='p1'>NT$ 500 元/人</p>
             <hr />
             <div id='event-Tags'>
               <p>#台北市</p>
@@ -61,7 +61,7 @@ export default function Membership_myCollection() {
             <img src="../src/images/Event/event_Image.png" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p1>NT$ 500 元/人</p1>
+            <p id='p1'>NT$ 500 元/人</p>
             <hr />
             <div id='event-Tags'>
               <p>#台北市</p>
@@ -74,7 +74,7 @@ export default function Membership_myCollection() {
             <img src="../src/images/Event/event_Image.png" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p1>NT$ 500 元/人</p1>
+            <p id='p1'>NT$ 500 元/人</p>
             <hr />
             <div id='event-Tags'>
               <p>#台北市</p>
@@ -85,7 +85,7 @@ export default function Membership_myCollection() {
             <img src="../src/images/Event/event_Image.png" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p1>NT$ 500 元/人</p1>
+            <p id='p1'>NT$ 500 元/人</p>
             <hr />
             <div id='event-Tags'>
               <p>#台北市</p>
@@ -96,7 +96,7 @@ export default function Membership_myCollection() {
             <img src="../src/images/Event/event_Image.png" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p1>NT$ 500 元/人</p1>
+            <p id='p1'>NT$ 500 元/人</p>
             <hr />
             <div id='event-Tags'>
               <p>#台北市</p>
@@ -165,7 +165,7 @@ export default function Membership_myCollection() {
             <img src="../src/images/Event/event_Image.png" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p1>NT$ 500 元/人</p1>
+            <p id='p1'>NT$ 500 元/人</p>
             <hr />
             <div id='event-Tags'>
               <p>#台北市</p>
@@ -176,7 +176,7 @@ export default function Membership_myCollection() {
             <img src="../src/images/Event/event_Image.png" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p1>NT$ 500 元/人</p1>
+            <p id='p1'>NT$ 500 元/人</p>
             <hr />
             <div id='event-Tags'>
               <p>#台北市</p>
@@ -187,7 +187,7 @@ export default function Membership_myCollection() {
             <img src="../src/images/Event/event_Image.png" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p1>NT$ 500 元/人</p1>
+            <p id='p1'>NT$ 500 元/人</p>
             <hr />
             <div id='event-Tags'>
               <p>#台北市</p>
@@ -207,7 +207,7 @@ export default function Membership_myCollection() {
             <img src="../src/images/Event/event_Image.png" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p1>NT$ 500 元/人</p1>
+            <p id='p1'>NT$ 500 元/人</p>
             <hr />
             <div id='event-Tags'>
               <p>#台北市</p>
@@ -218,7 +218,7 @@ export default function Membership_myCollection() {
             <img src="../src/images/Event/event_Image.png" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p1>NT$ 500 元/人</p1>
+            <p id='p1'>NT$ 500 元/人</p>
             <hr />
             <div id='event-Tags'>
               <p>#台北市</p>
@@ -229,7 +229,7 @@ export default function Membership_myCollection() {
             <img src="../src/images/Event/event_Image.png" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p1>NT$ 500 元/人</p1>
+            <p id='p1'>NT$ 500 元/人</p>
             <hr />
             <div id='event-Tags'>
               <p>#台北市</p>

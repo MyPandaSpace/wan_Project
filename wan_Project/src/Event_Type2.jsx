@@ -9,7 +9,7 @@ function Event_Type2() {
         {/* Banner */}
         <main className="main_Event">
           <header id='navbar'>
-            <img id="logo" src="../src/images/index/logo.svg" alt="logo" />
+            <a href="/"><img id="logo" src="../src/images/index/logo.svg" alt="logo" /></a>
             <div id='icon'>
               <img id="icon-Search_Bar" src="../src/images/index/icon-Search_Bar.svg" alt="Search" />
               <img id="icon-Member" src="../src/images/index/icon-Member.svg" alt="Member" />

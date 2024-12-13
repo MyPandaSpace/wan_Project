@@ -24,6 +24,10 @@ h2 {
   width: 100%;
 }
 
+#navbar a {
+  height: fit-content;
+}
+
 #navbar #logo {
   margin: 10px 40px;
 }

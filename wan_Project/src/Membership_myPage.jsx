@@ -7,7 +7,7 @@ function Membership_myPage() {
   return (
     <>
       <header id='navbar'>
-        <img id="logo" src="../src/images/index/logo.svg" alt="logo" />
+        <a href="/"><img id="logo" src="../src/images/index/logo.svg" alt="logo" /></a>
         <div id='icon'>
           <img id="icon-Member" src="../src/images/index/icon-Member.svg" alt="Member" />
           <img id="icon-Hamburger" src="../src/images/index/icon-Hamburger.svg" alt="Hamburger" />

@@ -147,9 +147,10 @@ video {
 /* 區塊 2：收藏活動 */
 #title-Collection {
 	color: #1684C8;
+	margin-top: 20px;
 	padding: 20px 0;
-	padding-left: 10%;
-	font-size: 24px;
+	padding-left: 12%;
+	font-size: 28px;
 }
 
 #row-event_Card_Collection {
@@ -185,7 +186,7 @@ video {
 	margin: 10px 0 10px 10px;
 }
 
-#column-event_Card_Collection p1 {
+#column-event_Card_Collection #p1 {
 	color: #666;
 	padding-left: 16px;
 }
@@ -217,7 +218,7 @@ hr {
 	border: none;
 	height: 2px;
 	background-color: #DADADA;
-	width: 80%;
+	width: 78%;
 }
 
 #column-event_Card_Collection hr {
@@ -236,5 +237,5 @@ hr {
 #event_Card_Collection_More {
 	display: flex;
 	justify-content: flex-end;
-	padding-right: 10%;
+	padding-right: 12%;
 }
