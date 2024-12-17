@@ -1,23 +1,34 @@
+import "./css/aos.css";
 import './css/index.css';
 import bg_mountain from "./images/index/bg_mountain.png";
 import footer from './images/index/footer_wan.png';
 import bg_sea from './images/index/bg_sea.png';
 import bg_2_Filter from './images/index/bg_2_filter.png';
-import { Link, useLocation } from 'react-router-dom';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
+import Aos from "aos";
+
 
 function Index() {
-  const location = useLocation();
   useEffect(() => {
-    window.scrollTo(0, 0); // 當頁面載入或渲染時，滾動到頂部
-  }, [location]);
+    Aos.init({
+      delay: 2500,
+      once: true
+    });
+  }, []);
+
+  const [showOverlay, setShowOverlay] = useState(true);
+
+  // 動畫結束時將overlay移除
+  const handleAnimationEnd = () => {
+    setShowOverlay(false);
+  };
 
   return (
     <>
       {/* 首頁容器 */}
       <div className="home-container">
         {/* 橫幅 */}
-        <main className="banner">
+        <main className="banner" >
           <header id='navbar'>
             <a href="/"><img id="logo" src="../src/images/index/logo.svg" alt="logo" /></a>
             <div id='icon'>
@@ -25,6 +36,9 @@ function Index() {
               <img id="icon-Hamburger" src="../src/images/index/icon-Hamburger.svg" alt="Hamburger" />
             </div>
           </header>
+          <div className='title' data-aos="fade-down" data-aos-duration="2000" >
+            <img id="title-wan" src="../src/images/index/Title_wan.svg" alt="title" />
+          </div>
           <img id="bg_sea" src={bg_sea} alt="bg_sea" />
           <div id='banner2'>
             <img id="bg_mountain" src={bg_mountain} alt="bg_mountain" />
@@ -32,17 +46,13 @@ function Index() {
             <img id='heart_ip' src="../src/images/index/heart_ip.svg" alt="heart_ip" />
           </div>
           {/* 將背景圖層提升到更靠近頂部 */}
-          <div className='background-overlay2'>
-            <img src={bg_2_Filter} alt="Background" />
-          </div>
-          <div>
-            <img id="title-wan" src="../src/images/index/Title_wan.svg" alt="title" />
-            <img id="title-detail" src="../src/images/index/title_detail.svg" alt="title-detail" />
+          <div className='background-overlay2' onAnimationEnd={handleAnimationEnd}>
+            <img src={bg_2_Filter} alt="" />
           </div>
         </main>
 
         {/* 區塊 2：服務 */}
-        <section className="services-section">
+        <section className="services-section" >
           <div className="service1">
             <img src="../src/images/index/service1.svg" alt="" />
             <img src="../src/images/index/service1_detail.svg" alt="Service 1" />
@@ -53,7 +63,7 @@ function Index() {
           </div>
         </section>
         {/* 區塊 3：主打活動 */}
-        <section className="section-mainEvent">
+        <section section className="section-mainEvent" >
           <div id="main-Event">
             <img src="" alt="" />
             <img id="mainEvent-Title" src="../src/images/index/mainEvent-Title.svg" alt="title" />
@@ -70,10 +80,10 @@ function Index() {
           <img id="btn_ArrowLeft" src="../src/images/index/btn_ArrowLeft.svg" alt="btn_Left" />
           <img id="btn_ArrowRight" src="../src/images/index/btn_ArrowRight.svg" alt="btn_Right" />
         </section>
-      </div>
+      </div >
 
       {/* 底部 */}
-      <footer id='footer'>
+      <footer id='footer' >
         <div>
           <img src={footer} alt="Footer" />
           <div id='footer-a'>
@@ -86,7 +96,7 @@ function Index() {
           </div>
           <small id='copyright'>© 2024 灣 Wan. All rights reserved.</small>
         </div>
-      </footer >
+      </footer>
     </>
   );
 }
