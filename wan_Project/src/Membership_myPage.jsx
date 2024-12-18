@@ -1,6 +1,4 @@
 import "./css/Membership_myPage.css";
-import title from "../src/images/Membership/membership_Title.png";
-import footer from "../src/images/index/footer.png";
 import { Link } from "react-router-dom";
 
 function Membership_myPage() {
@@ -12,13 +10,14 @@ function Membership_myPage() {
           <img id="icon-Member" src="../src/images/index/icon-Member.svg" alt="Member" />
           <img id="icon-Hamburger" src="../src/images/index/icon-Hamburger.svg" alt="Hamburger" />
         </div>
+        <img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
       </header>
-      <img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
+
       <div className="home-container">
-        {/* 區塊 1：導覽列 */}
+        {/* 區塊 1：分頁 */}
         <main className="main">
           <figure id="title">
-            <img id="title-img" src={title} alt="title-img" />
+            <img id="title-img" src='./src/images/Membership/membership_Title.png' alt="title-img" />
           </figure>
           <div id="tabs">
             <img src="../src/images/Membership/btn-items.png" alt="" />
@@ -109,14 +108,14 @@ function Membership_myPage() {
       {/* 底部 */}
       <footer id='footer'>
         <div>
-          <img src={footer} alt="Footer" />
+          <img src='../src/images/index/footer.png' alt="Footer" />
           <div id='footer-a'>
             <a href="/">首頁</a>
             <a href="/Event">探索體驗村</a>
             <a href="">心途之灣</a>
-            <a href="">關於我們</a>
             <a href="/Membership_myPage">會員中心</a>
-            <a href="">常見問題</a>
+            <a href="">關於我們</a>
+            <a href="/Faq">常見問題</a>
           </div>
           <small id='copyright'>© 2024 灣 Wan. All rights reserved.</small>
         </div>
