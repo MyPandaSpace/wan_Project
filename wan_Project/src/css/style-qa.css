@@ -72,6 +72,8 @@ a {
 
 .h1-title {
   width: 100%;
+  display: flex;
+  justify-content: center;
   margin: 0 20px;
 }
 
@@ -80,8 +82,7 @@ a {
 }
 
 .h1_titleImg{
-  width: 50%;
-
+  width: 22%;
 }
 
 .h1 .h1-flower1 {
@@ -132,6 +133,7 @@ a {
 #faq-event h2,
 #faq-other h2 {
   font-size: 30px;
+  margin-left: 40px;
 }
 
 #faq-member .title,
@@ -164,6 +166,7 @@ a {
 .faq-title img {
   width: 180px;
   height: 50px;
+  margin-left: 40px;
 }
 
 .faq-qalist p {
