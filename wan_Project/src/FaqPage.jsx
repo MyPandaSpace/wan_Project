@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './css/style-qa.css';
+import './css/style-qa.min.css';
 import $ from 'jquery';
 
 function FaqPage() {

@@ -134,6 +134,18 @@ a {
   font-size: 30px;
 }
 
+#faq-member .title,
+#faq-event .title,
+#faq-other .title {
+  font-size: 24px;
+}
+
+#faq-member p,
+#faq-event p,
+#faq-other p {
+  font-size: 20px;
+}
+
 .faq-qa {
   width: 75%;
 }
