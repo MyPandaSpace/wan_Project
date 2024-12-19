@@ -194,7 +194,7 @@ function FaqPage() {
 									<img src="./src/images/others/svg/dec2_arrow_down.svg" alt="Arrow Down" />
 								</div>
 								<div className="faq-a">
-									<p>網站內容主要針對成人設計，但部分活動或資源適合親子參與。請留意活動頁面的適用對象標示。</p>
+									<p>網站內容主要針對成人設計，但部分活動適合親子參與。請留意活動頁面的適用對象標示。</p>
 								</div>
 							</li>
 							<hr color="#dadada" size="1px" />
