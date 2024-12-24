@@ -157,6 +157,7 @@ video {
 	padding: 20px 0;
 	margin-left: 180px;
 	width: 80%;
+	gap: 60px;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
@@ -165,11 +166,11 @@ video {
 #column-event_Card_Collection {
 	display: flex;
 	flex-direction: column;
-	width: 100%;
+	width: 40%;
 }
 
 #column-event_Card_Collection img {
-	width: 86%;
+	width: 82%;
 }
 
 #column-event_Card_Collection img {

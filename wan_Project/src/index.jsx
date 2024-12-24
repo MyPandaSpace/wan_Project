@@ -31,13 +31,13 @@ function Index() {
       <div className="home-container">
         {/* 橫幅 */}
         <main className="banner" >
-          <header id='navbar'>
+          <navbar id='navbar'>
             <a href="/"><img id="logo" src="./src/images/index/logo.svg" alt="logo" /></a>
             <div id='icon'>
-              <img id="icon-Member" src="./src/images/index/icon-Member.svg" alt="Member" />
-              <img id="icon-Hamburger" src="./src/images/index/icon-Hamburger.svg" alt="Hamburger" />
+              <a href=""><img id="icon-Member" src="./src/images/index/icon-Member.svg" alt="Member" /></a>
+              <a href="#"><img id="icon-Hamburger" src="./src/images/index/icon-Hamburger.svg" alt="Hamburger" /></a>
             </div>
-          </header>
+          </navbar>
           <div className='title' data-aos="fade-down" data-aos-duration="2000" >
             <img id="title-wan" src="./src/images/index/Title_wan.svg" alt="title" />
           </div>

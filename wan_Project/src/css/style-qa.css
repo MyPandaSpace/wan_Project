@@ -82,7 +82,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%
 }
 
 * {
@@ -109,11 +108,6 @@ ul {
   list-style: none
 }
 
-img {
-  display: block;
-  width: 100%
-}
-
 a {
   display: block;
   color: #222;
@@ -122,33 +116,10 @@ a {
 
 /* reset end */
 
-@keyframes rotate {
-  0% {
-    rotate: 0deg
-  }
-
-  50% {
-    rotate: 180deg
-  }
-
-  100% {
-    rotate: 360deg
-  }
-}
-
-main {
-  margin: 0 120px
-}
-
 #faq {
   color: #666
 }
 
-header {
-  height: 100%;
-  width: 100%;
-  object-fit: cover
-}
 
 /* h1標題區域 */
 .h1 {
@@ -159,10 +130,13 @@ header {
 }
 
 .h1-title {
-  border: 1px solid red;
-  width: 320px;
-  margin: 0 20px;
-  display: flex
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.h1_titleImg {
+  width: 26%;
 }
 
 .h1 .h1-flower1 {
@@ -213,11 +187,11 @@ header {
   width: 100%;
   justify-content: center;
   border-top: 1px solid #dadada;
+  padding: 0 120px;
 }
 
 #faq-other {
   border-bottom: 1px solid #dadada;
-  ;
 }
 
 #faq-member h2,

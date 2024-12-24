@@ -161,6 +161,7 @@ video {
 .event #column-event_Card {
     display: flex;
     flex-direction: column;
+    width: 24%;
 }
 
 .event #column-event_Card img {

@@ -172,7 +172,7 @@ video {
 
 #uncomplete_Order {
 	padding: 60px 100px;
-	width: 800px;
+	width: 1000px;
 	height: auto;
 	border: 2px solid #1684C8;
 	border-radius: 10px;
@@ -238,9 +238,11 @@ video {
 #content-Order button {
 	border-radius: 99px;
 	width: 80px;
+	height: 30px;
 	/* 按鈕靠右 */
 	margin-left: 60%;
 	margin-top: 20px;
+	font-size: 14px;
 }
 
 #section-policy {

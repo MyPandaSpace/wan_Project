@@ -1,7 +1,7 @@
 body,
 html,
 h1,
-h2 {
+h2{
   margin: 0;
   padding: 0;
   width: 100%;
@@ -34,6 +34,8 @@ h2 {
 
 #navbar #icon {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 20px 40px;
   gap: 20px;
 }
@@ -180,7 +182,8 @@ h2 {
   display: flex;
   justify-content: center;
   margin-top: 30px;
-  gap: 20px;
+  padding-left: 40px;
+  gap: 60px;
 }
 
 .section-mainEvent {
@@ -200,6 +203,16 @@ h2 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+}
+
+#mainEvent-Left p{
+  font-size: 16px;
+}
+
+#mainEvent-Left h2{
+  font-size: 24px;
+  color: #1684C8;
+  margin: 10px 0;
 }
 
 #mainEvent-Right{
@@ -258,6 +271,7 @@ h2 {
 }
 
 #copyright {
+  font-size: 16px;
   display: flex;
   justify-content: center;
   position: absolute;
