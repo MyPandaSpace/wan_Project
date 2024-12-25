@@ -65,6 +65,7 @@ function FaqPage() {
 				</div>
 
 				{/* 會員相關 */}
+				<div id="faq-main">
 				<div id="faq-member">
 					<div className="faq-title">
 						<h2>會員相關</h2>
@@ -205,6 +206,7 @@ function FaqPage() {
 								</div>
 							</li>
 						</ul>
+					</div>
 					</div>
 				</div>
 			</main>
