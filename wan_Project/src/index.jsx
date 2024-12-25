@@ -4,9 +4,9 @@ import bg_mountain from "./images/index/bg_mountain.png";
 import footer from './images/index/footer_wan.png';
 import bg_sea from './images/index/bg_sea.png';
 import bg_2_Filter from './images/index/bg_2_filter.png';
+import Navbar from "./component/Navbar.jsx";
 import { useEffect, useState } from 'react';
 import Aos from "aos";
-
 
 function Index() {
   useEffect(() => {
@@ -31,13 +31,7 @@ function Index() {
       <div className="home-container">
         {/* 橫幅 */}
         <main className="banner" >
-          <navbar id='navbar'>
-            <a href="/"><img id="logo" src="./src/images/index/logo.svg" alt="logo" /></a>
-            <div id='icon'>
-              <a href=""><img id="icon-Member" src="./src/images/index/icon-Member.svg" alt="Member" /></a>
-              <a href="#"><img id="icon-Hamburger" src="./src/images/index/icon-Hamburger.svg" alt="Hamburger" /></a>
-            </div>
-          </navbar>
+          <Navbar />
           <div className='title' data-aos="fade-down" data-aos-duration="2000" >
             <img id="title-wan" src="./src/images/index/Title_wan.svg" alt="title" />
           </div>

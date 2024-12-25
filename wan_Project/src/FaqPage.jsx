@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './css/style-qa.css';
 import $ from 'jquery';
+import Navbar from './component/Navbar';
 
 function FaqPage() {
 	useEffect(() => {
@@ -22,14 +23,8 @@ function FaqPage() {
 
 	return (
 		<div>
-			<header id='navbar'>
-				<a href="/"><img id="logo" src="./src/images/index/logo.svg" alt="logo" /></a>
-				<div id='icon'>
-					<img id="icon-Member" src="./src/images/index/icon-Member.svg" alt="Member" />
-					<img id="icon-Hamburger" src="./src/images/index/icon-Hamburger.svg" alt="Hamburger" />
-				</div>
-				<img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
-			</header>
+			<Navbar />
+			<img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
 			<main id="faq">
 				{/* 主要標題 */}
 				<div className="h1">
@@ -65,6 +60,7 @@ function FaqPage() {
 				</div>
 
 				{/* 會員相關 */}
+				<div id="faq-main">
 				<div id="faq-member">
 					<div className="faq-title">
 						<h2>會員相關</h2>
@@ -205,6 +201,7 @@ function FaqPage() {
 								</div>
 							</li>
 						</ul>
+					</div>
 					</div>
 				</div>
 			</main>

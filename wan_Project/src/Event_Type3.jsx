@@ -1,5 +1,6 @@
 import './css/Event.css';
 import { Link } from 'react-router-dom';
+import Navbar from './component/Navbar';
 
 function Event_Type3() {
   return (
@@ -7,14 +8,7 @@ function Event_Type3() {
       <div className="home-container">
         {/* Banner */}
         <main className="main_Event">
-          <header id='navbar'>
-            <a href="/"><img id="logo" src="./src/images/index/logo.svg" alt="logo" /></a>
-            <div id='icon'>
-              <img id="icon-Search_Bar" src="./src/images/index/icon-Search_Bar.svg" alt="Search" />
-              <img id="icon-Member" src="./src/images/index/icon-Member.svg" alt="Member" />
-              <img id="icon-Hamburger" src="./src/images/index/icon-Hamburger.svg" alt="Hamburger" />
-            </div>
-          </header>
+          <Navbar />
           <img src="" alt="" />
         </main>
         {/* 評論卡片 */}
