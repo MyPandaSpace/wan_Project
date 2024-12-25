@@ -180,6 +180,10 @@ a {
 }
 
 /* 常見問題區域 */
+#faq-main {
+  margin: 120px;
+}
+
 #faq-member,
 #faq-event,
 #faq-other {
@@ -187,7 +191,6 @@ a {
   width: 100%;
   justify-content: center;
   border-top: 1px solid #dadada;
-  padding: 0 120px;
 }
 
 #faq-other {
