@@ -1,0 +1,18 @@
+.eventBanner img{
+    width: 100px;
+    height: 100px;
+}
+
+.eventContents h2 {
+    font-size: 32px;
+    color: #1684C8;
+}
+
+.eventContents p {
+    font-size: 18px;
+    color: #666;
+}
+
+.eventContents {
+    width: 800px;
+}
