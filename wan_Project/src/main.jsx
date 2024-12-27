@@ -10,6 +10,7 @@ import Membership_myCollection from './Membership_myCollection.jsx'
 import Membership_myOrder from './Membership_myOrder.jsx'
 import FaqPage from './FaqPage.jsx'
 import Modal_SignUp from './component/Modal_Signup.jsx'
+import Event_Detail from './Event_Detail.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -24,6 +25,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/Membership_myOrder" element={<Membership_myOrder />} />
         <Route path="/Faq" element={<FaqPage />} />
         <Route path="/Modal_SignUp" element={<Modal_SignUp />} />
+        <Route path="/Event_Detail" element={<Event_Detail />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

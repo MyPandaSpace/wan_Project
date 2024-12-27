@@ -32,15 +32,16 @@ function Event() {
           </div>
           <div id='row-event_Card'>
             <div id='column-event_Card'>
-              <img src="./src/images/Event/event_Image.png" alt="" />
-              <small>2025.01.25（六）14:00～16:00</small>
-              <h2>【過年限定】紙韻心意剪紙活動</h2>
-              <p1>NT$ 500 元/人</p1>
-              <hr />
-              <div id='event-Tags'>
-                <p>#台北市</p>
-                <p>#藝術創作</p>
-              </div>
+              <a href="/Event_Detail"><img src="./src/images/Event/event_Image.png" alt="" />
+                <small>2025.01.25（六）14:00～16:00</small>
+                <h2>【過年限定】紙韻心意剪紙活動</h2>
+                <p1>NT$ 500 元/人</p1>
+                <hr />
+                <div id='event-Tags'>
+                  <p>#台北市</p>
+                  <p>#藝術創作</p>
+                </div>
+              </a>
             </div>
             <div id='column-event_Card'>
               <img src="./src/images/Event/event_Image.png" alt="" />
