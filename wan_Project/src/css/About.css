@@ -1,0 +1,32 @@
+.about-Banner {
+    background-image: url(../images/About/about-Banner.png);
+    background-repeat: no-repeat;
+    position: fixed;
+    /* 固定位置 */
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+}
+
+.about-Content {
+    height: 1000vh;
+    display: flex;
+    position: relative;
+    background-image: url(../images/About/bg-content.png);
+    background-repeat: no-repeat;
+}
+
+#about-Content-Title {
+    position: absolute;
+    top: 2400px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}

@@ -14,36 +14,6 @@ h2 {
   z-index: -1;
 }
 
-#navbar {
-  display: flex;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  width: 100%;
-}
-
-#navbar a {
-  height: fit-content;
-}
-
-#navbar #logo {
-  margin: 10px 40px;
-}
-
-#navbar #icon {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 20px 40px;
-  gap: 20px;
-}
-
-#navbar #navbar-Bg {
-  z-index: -1;
-}
-
 @keyframes fadeOut {
   from {
     opacity: 1;
@@ -245,42 +215,4 @@ h2 {
 #mainEvent-btnArrow {
   width: fit-content;
   height: fit-content;
-}
-
-#footer {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-#footer img {
-  display: block;
-  width: 100%;
-  z-index: 999;
-}
-
-#footer-a {
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  bottom: 100px;
-  text-decoration: none;
-}
-
-#copyright {
-  font-size: 16px;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  bottom: 50px;
-}
-
-a {
-  text-decoration: none;
-  color: #666;
 }

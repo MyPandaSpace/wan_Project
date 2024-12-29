@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Modal_Login from "./Modal_Login";
 import Modal_SignUp from "./Modal_Signup";
+import "../css/Navbar.css";
 
 export default function Navbar() {
 	const [isModalOpen, setIsModalOpen] = useState(false);

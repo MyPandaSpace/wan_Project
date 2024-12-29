@@ -7,6 +7,7 @@ import bg_2_Filter from './images/index/bg_2_filter.png';
 import Navbar from "./component/Navbar.jsx";
 import { useEffect, useState } from 'react';
 import Aos from "aos";
+import Footer from "./component/Footer.jsx";
 
 function Index() {
   useEffect(() => {
@@ -24,6 +25,15 @@ function Index() {
   const handleAnimationEnd = () => {
     setShowOverlay(false);
   };
+
+  useEffect(() => {
+    // 使用 setTimeout 延遲滾動
+    const timer = setTimeout(() => {
+      window.scrollTo(0, 0); 
+    }, 100); // 延遲100ms，確保頁面渲染完成
+
+    return () => clearTimeout(timer); // 清理定時器
+  }, [location]); 
 
   return (
     <>
@@ -87,20 +97,7 @@ function Index() {
       </div >
 
       {/* 底部 */}
-      <footer id='footer' >
-        <div>
-          <img src={footer} alt="Footer" />
-          <div id='footer-a'>
-            <a href="/">首頁</a>
-            <a href="/Event">探索體驗村</a>
-            <a href="">心途之灣</a>
-            <a href="/Membership_myPage">會員中心</a>
-            <a href="">關於我們</a>
-            <a href="/faq">常見問題</a>
-          </div>
-          <small id='copyright'>© 2024 灣 Wan. All rights reserved.</small>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

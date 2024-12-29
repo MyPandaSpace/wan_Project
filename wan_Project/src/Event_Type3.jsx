@@ -1,8 +1,10 @@
 import './css/Event.css';
 import { Link } from 'react-router-dom';
 import Navbar from './component/Navbar';
+import Footer from './component/Footer';
 
 function Event_Type3() {
+
   return (
     <>
       <div className="home-container">
@@ -173,20 +175,7 @@ function Event_Type3() {
         </div>
       </div>
       {/* 底部 */}
-      <footer id='footer'>
-        <div>
-          <img src='./src/images/index/footer.png' alt="Footer" />
-          <div id='footer-a'>
-            <a href="/">首頁</a>
-            <a href="/Event">探索體驗村</a>
-            <a href="">心途之灣</a>
-            <a href="">關於我們</a>
-            <a href="/Membership_myPage">會員中心</a>
-            <a href="/Faq">常見問題</a>
-          </div>
-          <small id='copyright'>© 2024 灣 Wan. All rights reserved.</small>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

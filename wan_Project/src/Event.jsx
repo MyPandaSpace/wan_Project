@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import Navbar from './component/Navbar';
 
 function Event() {
+
+
   return (
     <>
       <div className="home-container">

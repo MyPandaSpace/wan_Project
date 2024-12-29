@@ -1,7 +1,9 @@
+import Footer from "./component/Footer";
 import "./css/Membership_myPage.css";
 import { Link } from "react-router-dom";
 
 function Membership_myPage() {
+
   return (
     <>
       <header id='navbar'>
@@ -106,20 +108,7 @@ function Membership_myPage() {
 
       </div>
       {/* 底部 */}
-      <footer id='footer'>
-        <div>
-          <img src='../src/images/index/footer.png' alt="Footer" />
-          <div id='footer-a'>
-            <a href="/">首頁</a>
-            <a href="/Event">探索體驗村</a>
-            <a href="">心途之灣</a>
-            <a href="/Membership_myPage">會員中心</a>
-            <a href="">關於我們</a>
-            <a href="/Faq">常見問題</a>
-          </div>
-          <small id='copyright'>© 2024 灣 Wan. All rights reserved.</small>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
