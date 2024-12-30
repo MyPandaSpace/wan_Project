@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import './css/style-qa.css';
+import './css/FaqPage.css';
 import $ from 'jquery';
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';

@@ -1,18 +1,223 @@
-.eventBanner img{
-    width: 100px;
-    height: 100px;
+#eventDetail {
+    display: flex;
+    margin-top: 120px;
+}
+
+.left {
+    margin-left: 85px;
+}
+
+.eventBanner {
+    /* width: 100%; */
+    width: 815px;
+    height: 543px;
+    /* 調整高度，讓它占據固定區域 */
+    /* overflow: hidden; */
+    margin-bottom: 70px;
+    /* 圖片和活動簡介之間空間 */
+}
+
+.eventBanner img {
+    width: 100%;
+    /* 讓圖片填滿容器寬度 */
+    height: 100%;
+    /* 讓圖片填滿容器高度 */
+    object-fit: cover;
+    /* 保持圖片比例並填滿容器 */
+    border-radius: 40px;
+}
+
+.detail-carousel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    /* 使輪播區塊占據容器的全部空間 */
+}
+
+.detail-carousel-img {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.detail-carousel-img.active {
+    left: 0;
+    opacity: 1;
+}
+
+.detail-carousel-indicators {
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.detail-indicator {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 99px;
+    background-color: #DADADA;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.detail-indicator.active {
+    width: 16px;
+    height: 16px;
+    background-color: #72B2DA;
 }
 
 .eventContents h2 {
     font-size: 32px;
     color: #1684C8;
+    line-height: 2.5;
 }
 
 .eventContents p {
     font-size: 18px;
     color: #666;
+    line-height: 1.875;
 }
 
 .eventContents {
-    width: 800px;
+    width: 815px;
+    border: #dadada solid 1px;
+    border-radius: 40px;
+    padding: 40px;
+}
+
+.eventDiv {
+    margin: 15px 0;
+}
+
+.eventDiv a {
+    display: inline;
+}
+
+.linkFaq {
+    color: #1684C8;
+}
+
+/* 右側 */
+.right {
+    z-index: 999;
+    margin-right: 85px;
+}
+
+.detailCtaSticky {
+    position: sticky;
+}
+
+.detailCta {
+    width: 418px;
+    position: relative;
+    display: inline-block;
+    /* 確保內容跟隨圖片大小 */
+}
+
+.detailCta img {
+    display: block;
+    width: 100%;
+    /* 確保圖片全寬展示，根據需求調整 */
+}
+
+.detailCtaContent {
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 將內容置中 */
+    padding: 10px;
+}
+
+.detailCta h3 {
+    color: #1684C8;
+    font-size: 30px;
+    /* line-height: 2.5; */
+    margin-bottom: 35px;
+}
+
+.detailCta p {
+    color: #666;
+    font-size: 18px;
+    /* line-height: 1.875; */
+    /* border: red 1px solid; */
+}
+
+.CtaContent {
+    margin: 35px 0;
+}
+
+.CtaContent1 {
+    margin-bottom: 20px;
+}
+
+.ctaHr {
+    color: #dadada;
+    width: 100%;
+    margin-bottom: 35px;
+    /* margin-top: 30px; */
+}
+
+#detailIcon {
+    width: 320px;
+    height: 85px;
+    display: flex;
+}
+
+#detailIcon img {
+    height: 100%;
+}
+
+.detailApply {
+    position: relative;
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.detailApply img {
+    width: 180px;
+}
+
+/* .detailApply a:hover img {
+    content: url(../src/images/btn/new-btn2-hover.png);
+    transition: 1s
+  } */
+
+.detailApply p {
+    position: absolute;
+    top: 50%;
+    /* 垂直居中 */
+    left: 50%;
+    /* 水平居中 */
+    transform: translate(-50%, -50%);
+    /* 確保文字完全居中 */
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 8px;
+    z-index: 10;
+    /* 確保文字在圖片上方 */
+}
+
+.detailCollect img {
+    width: 60px;
+    object-fit: contain;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.detailShare img {
+    width: 60px;
+    object-fit: contain;
+    cursor: pointer;
 }
