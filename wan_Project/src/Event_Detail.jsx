@@ -182,8 +182,79 @@ function Event_Detail() {
 							<hr className="ctaHr" />
 							<div id="detailIcon">
 								<div className="detailApply">
-									<p>立即報名</p>
-									<img src="../src/images/btn/new-btn2-normal.png" alt="" />
+									{/* <p>立即報名</p>
+									<img src="../src/images/btn/new-btn2-normal.png" alt="" /> */}
+									<li
+						onClick={() => {
+							
+						}}
+						style={{
+							position: 'relative',
+							display: 'inline-block',
+							width: '180px',
+						}}
+					>
+						<img
+							src="./src/images/btn/new-btn2-normal.png"
+							alt="Apply now"
+							style={{
+								width: '100%',
+								height: '100%',
+								objectFit: 'contain',
+								transition: '0.3s ease',
+								cursor: 'pointer'
+							}}
+							className="apply-btn-img"
+							onMouseEnter={() => {
+								document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-hover.png';  // 切換圖片
+								document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+							  }}
+							 onMouseLeave={() => {
+								document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 還原
+								document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+							  }}
+							onMouseDown={() => {
+								document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-pressed.png';  // 按下
+								document.querySelector('.apply-btn-text').style.transform = 'top 50%';
+							  }}
+							onMouseUp={() => {
+								document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 放開
+								document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+							}}
+						/>
+						<span
+							style={{
+								position: 'absolute',
+								top: '45%',
+								left: '50%',
+								transform: 'translate(-50%, -50%)',
+								color: 'white',
+								fontSize: '20px',
+								textAlign: 'center',
+								whiteSpace: 'nowrap',
+								cursor: 'pointer'
+							}}
+							className="apply-btn-text"
+							onMouseEnter={() => {
+								document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-hover.png';  // 切換圖片
+								document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+							  }}
+							 onMouseLeave={() => {
+								document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 還原
+								document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+							  }}
+							onMouseDown={() => {
+								document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-pressed.png';  // 按下
+								document.querySelector('.apply-btn-text').style.transform = 'top 50%';
+							  }}
+							onMouseUp={() => {
+								document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 放開
+								document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+							}}
+						>
+							立即報名
+						</span>
+					</li>
 								</div>
 								<div className="detailCollect">
 									<img src="../src/images/btn/collect-normal.png" alt="" />

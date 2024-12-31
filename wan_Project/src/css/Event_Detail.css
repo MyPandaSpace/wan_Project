@@ -1,7 +1,7 @@
 #eventDetail {
     display: flex;
     justify-content: space-between;
-    margin: 120px auto 0; /* 上方間距 120px，水平置中 */
+    margin: 120px auto 100px; /* 上方間距 120px，水平置中 */
     max-width: 1440px; /* 限制內容最大寬度 */
     width: 100%; /* 確保容器寬度可以適應螢幕大小 */
 }
@@ -207,6 +207,7 @@
     width: 320px;
     height: 85px;
     display: flex;
+    justify-content: space-between;
 }
 
 #detailIcon img {
@@ -224,7 +225,7 @@
     width: 180px;
 }
 
-.detailApply img:hover {
+/* .detailApply img:hover {
     content: url(../src/images/btn/new-btn2-hover.png);
     transition: ease-out 1s;
 }
@@ -232,7 +233,7 @@
 .detailApply img:active {
     content: url(../src/images/btn/new-btn2-pressed.png);
     transition: ease-out 1s;
-}
+} */
 
 .detailApply p {
     position: absolute;
