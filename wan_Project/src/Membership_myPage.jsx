@@ -1,4 +1,5 @@
 import Footer from "./component/Footer";
+import Navbar from "./component/Navbar";
 import "./css/Membership_myPage.css";
 import { Link } from "react-router-dom";
 
@@ -6,14 +7,8 @@ function Membership_myPage() {
 
   return (
     <>
-      <header id='navbar'>
-        <a href="/"><img id="logo" src="../src/images/index/logo.svg" alt="logo" /></a>
-        <div id='icon'>
-          <img id="icon-Member" src="../src/images/index/icon-Member.svg" alt="Member" />
-          <img id="icon-Hamburger" src="../src/images/index/icon-Hamburger.svg" alt="Hamburger" />
-        </div>
-        <img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
-      </header>
+      <Navbar />
+      <img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
 
       <div className="home-container">
         {/* 區塊 1：分頁 */}

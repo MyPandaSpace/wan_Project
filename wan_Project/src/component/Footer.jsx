@@ -9,7 +9,7 @@ export default function Footer() {
                     <div id='footer-a'>
                         <a href="/">首頁</a>
                         <a href="/Event">探索體驗村</a>
-                        <a href="">心途之灣</a>
+                        <a href="/Article_Bay">心途之灣</a>
                         <a href="/Membership_myPage">會員中心</a>
                         <a href="/About">關於我們</a>
                         <a href="/faq">常見問題</a>

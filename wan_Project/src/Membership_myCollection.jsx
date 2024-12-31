@@ -1,4 +1,5 @@
 import Footer from "./component/Footer";
+import Navbar from "./component/Navbar";
 import "./css/Membership_myCollection.css";
 import { Link } from "react-router-dom";
 
@@ -6,14 +7,9 @@ export default function Membership_myCollection() {
 
   return (
     <>
-      <header id='navbar'>
-        <a href="/"><img id="logo" src="./src/images/index/logo.svg" alt="logo" /></a>
-        <div id='icon'>
-          <img id="icon-Member" src="./src/images/index/icon-Member.svg" alt="Member" />
-          <img id="icon-Hamburger" src="./src/images/index/icon-Hamburger.svg" alt="Hamburger" />
-        </div>
-      </header>
+      <Navbar />
       <img id="navbar-Bg" src="./src/images/index/navbar_Bg.png" alt="" />
+
       <div className="home-container">
         {/* 區塊 1：導覽列 */}
         <main className="main">
@@ -114,19 +110,19 @@ export default function Membership_myCollection() {
         </div>
         <div id='row-event_Card_Collection'>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Article/article_Image.png" alt="" />
+            <img src="./src/images/Article_Bay/meditation_1.png" alt="" />
             <small>撰文 / 林郁虹醫師</small>
             <h2>實踐正念冥想，改善情緒健康</h2>
             <p className="p-article">透過正念冥想，我們能夠學會觀察當下的經驗，而不是被過去的回憶或未來的焦慮所困擾。這不僅有助於情緒的穩定，還能增進人際關係的理解與同理心。當我們專注於當下，我們的內心變得更加清晰，應對生活挑戰時也能更加冷靜和理智。</p>
           </div>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Article/article_Image.png" alt="" />
+            <img src="./src/images/Article_Bay/meditation_2.png" alt="" />
             <small>撰文 / 林郁虹醫師</small>
             <h2>實踐正念冥想，改善情緒健康</h2>
             <p className="p-article">透過正念冥想，我們能夠學會觀察當下的經驗，而不是被過去的回憶或未來的焦慮所困擾。這不僅有助於情緒的穩定，還能增進人際關係的理解與同理心。當我們專注於當下，我們的內心變得更加清晰，應對生活挑戰時也能更加冷靜和理智。</p>
           </div>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Article/article_Image.png" alt="" />
+            <img src="./src/images/Article_Bay/meditation_3.png" alt="" />
             <small>撰文 / 林郁虹醫師</small>
             <h2>實踐正念冥想，改善情緒健康</h2>
             <p className="p-article">透過正念冥想，我們能夠學會觀察當下的經驗，而不是被過去的回憶或未來的焦慮所困擾。這不僅有助於情緒的穩定，還能增進人際關係的理解與同理心。當我們專注於當下，我們的內心變得更加清晰，應對生活挑戰時也能更加冷靜和理智。</p>
@@ -135,19 +131,19 @@ export default function Membership_myCollection() {
 
         <div id='row-event_Card_Collection'>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Article/article_Image.png" alt="" />
+            <img src="./src/images/Article_Bay/meditation_4.png" alt="" />
             <small>撰文 / 林郁虹醫師</small>
             <h2>實踐正念冥想，改善情緒健康</h2>
             <p className="p-article">透過正念冥想，我們能夠學會觀察當下的經驗，而不是被過去的回憶或未來的焦慮所困擾。這不僅有助於情緒的穩定，還能增進人際關係的理解與同理心。當我們專注於當下，我們的內心變得更加清晰，應對生活挑戰時也能更加冷靜和理智。</p>
           </div>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Article/article_Image.png" alt="" />
+            <img src="./src/images/Article_Bay/selfcare_1.png" alt="" />
             <small>撰文 / 林郁虹醫師</small>
             <h2>實踐正念冥想，改善情緒健康</h2>
             <p className="p-article">透過正念冥想，我們能夠學會觀察當下的經驗，而不是被過去的回憶或未來的焦慮所困擾。這不僅有助於情緒的穩定，還能增進人際關係的理解與同理心。當我們專注於當下，我們的內心變得更加清晰，應對生活挑戰時也能更加冷靜和理智。</p>
           </div>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Article/article_Image.png" alt="" />
+            <img src="./src/images/Article_Bay/selfcare_2.png" alt="" />
             <small>撰文 / 林郁虹醫師</small>
             <h2>實踐正念冥想，改善情緒健康</h2>
             <p className="p-article">透過正念冥想，我們能夠學會觀察當下的經驗，而不是被過去的回憶或未來的焦慮所困擾。這不僅有助於情緒的穩定，還能增進人際關係的理解與同理心。當我們專注於當下，我們的內心變得更加清晰，應對生活挑戰時也能更加冷靜和理智。</p>

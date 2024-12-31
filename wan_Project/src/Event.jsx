@@ -1,6 +1,7 @@
 import './css/Event.css';
 import { Link } from 'react-router-dom';
 import Navbar from './component/Navbar';
+import Footer from './component/Footer';
 
 function Event() {
 
@@ -29,8 +30,8 @@ function Event() {
           </div>
           <div id='event-Type'>
             <Link to=""><img src="./src/images/Event/event-Type1_hover.png" alt="" /></Link>
-            <Link to="/Event_Type2"><img src="./src/images/Event/event-Type2.png" alt="" /></Link>
-            <Link to="/Event_Type3"><img src="./src/images/Event/event-Type3.png" alt="" /></Link>
+            <Link to="/Event_Type2"><img id="event-Type2" src="./src/images/Event/event-Type2.png" alt="" /></Link>
+            <Link to="/Event_Type3"><img id='event-Type3' src="./src/images/Event/event-Type3.png" alt="" /></Link>
           </div>
           <div id='row-event_Card'>
             <div id='column-event_Card'>
@@ -176,20 +177,7 @@ function Event() {
         </div>
       </div>
       {/* 底部 */}
-      <footer id='footer'>
-        <div>
-          <img src='./src/images/index/footer.png' alt="Footer" />
-          <div id='footer-a'>
-            <a href="/">首頁</a>
-            <a href="/Event">探索體驗村</a>
-            <a href="">心途之灣</a>
-            <a href="/Membership_myPage">會員中心</a>
-            <a href="">關於我們</a>
-            <a href="/Faq">常見問題</a>
-          </div>
-          <small id='copyright'>© 2024 灣 Wan. All rights reserved.</small>
-        </div>
-      </footer>
+      <Footer />
     </>
   )
 }

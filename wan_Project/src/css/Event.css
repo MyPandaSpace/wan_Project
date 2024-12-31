@@ -145,6 +145,18 @@ video {
     gap: 30px;
 }
 
+#event-Type1:hover {
+    background-image: url(../images/Event/event-Type1_hover.png);
+}
+
+#event-Type2:hover {
+    background-image: url(../images/Event/event-Type2_hover.png);
+}
+
+#event-Type3:hover {
+    background-image: url(../images/Event/event-Type3_hover.png);
+}
+
 .event #row-event_Card {
     padding: 40px 0;
     width: 100%;
