@@ -154,17 +154,17 @@ a {
   justify-content: center
 }
 
-.faq-category div {
+.faq-category li {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  text-align: center;
+  /* text-align: center; */
   margin: 50px 45px 10px
 }
 
-.faq-category img {
+/* .faq-category img {
   width: 144px
-}
+} */
 
 .faq-category p {
   color: #72b2da;
@@ -173,11 +173,11 @@ a {
   top: -46px
 }
 
-.faq-category a:hover img {
+/* .faq-category a:hover img {
   content: url(../images/btn/btn1-s-hover.svg);
   width: 144px;
   transition: 1s
-}
+} */
 
 /* 常見問題區域 */
 #faq-main {

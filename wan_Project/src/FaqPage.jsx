@@ -39,26 +39,223 @@ function FaqPage() {
 				</div>
 
 				{/* 分類按鈕 */}
-				<div className="faq-category">
-					<div>
-						<a href="#faq-member">
-							<img src="./src/images/btn/btn1-s-normal.svg" alt="Member Related" />
-							<p>會員相關</p>
-						</a>
-					</div>
-					<div>
-						<a href="#faq-event">
-							<img src="./src/images/btn/btn1-s-normal.svg" alt="Event Related" />
-							<p>報名相關</p>
-						</a>
-					</div>
-					<div>
-						<a href="#faq-other">
-							<img src="./src/images/btn/btn1-s-normal.svg" alt="Other" />
-							<p>其他</p>
-						</a>
-					</div>
-				</div>
+				<ul className="faq-category">
+					{/* 會員相關按鈕 */}
+					<li
+						onClick={() => document.getElementById('faq-member').scrollIntoView({ behavior: 'smooth' })}
+						style={{
+							position: 'relative',
+							display: 'inline-block',
+							width: '144px',
+							height: '100px'
+						}}
+					>
+						<img
+							src="./src/images/btn/new-btn1-normal.png"
+							alt="Member Related"
+							style={{
+								width: '100%',
+								height: '100%',
+								objectFit: 'contain',
+								transition: '0.3s ease',
+								cursor: 'pointer'
+							}}
+							className="member-btn-img"
+							onMouseEnter={() => {
+								document.querySelector('.member-btn-img').src = './src/images/btn/new-btn1-hover.png';  // 切換圖片
+								document.querySelector('.member-btn-text').style.transform = 'top 45%'
+							  }}
+							 onMouseLeave={() => {
+								document.querySelector('.member-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 還原
+								document.querySelector('.member-btn-text').style.transform = 'top 45%'
+							  }}
+							onMouseDown={() => {
+								document.querySelector('.member-btn-img').src = './src/images/btn/new-btn1-pressed.png';  // 按下
+								document.querySelector('.member-btn-text').style.transform = 'top 50%';
+							  }}
+							onMouseUp={() => {
+								document.querySelector('.member-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 放開
+								document.querySelector('.member-btn-text').style.transform = 'top 45%'
+							}}
+						/>
+						<span
+							style={{
+								position: 'absolute',
+								top: '45%',
+								left: '50%',
+								transform: 'translate(-50%, -50%)',
+								color: '#72b2da',
+								fontSize: '20px',
+								textAlign: 'center',
+								whiteSpace: 'nowrap',
+								cursor: 'pointer'
+							}}
+							className="member-btn-text"
+							onMouseEnter={() => {
+								document.querySelector('.member-btn-img').src = './src/images/btn/new-btn1-hover.png';  // 切換圖片
+								document.querySelector('.member-btn-text').style.transform = 'top 45%'
+							  }}
+							 onMouseLeave={() => {
+								document.querySelector('.member-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 還原
+								document.querySelector('.member-btn-text').style.transform = 'top 45%'
+							  }}
+							onMouseDown={() => {
+								document.querySelector('.member-btn-img').src = './src/images/btn/new-btn1-pressed.png';  // 按下
+								document.querySelector('.member-btn-text').style.transform = 'top 50%';
+							  }}
+							onMouseUp={() => {
+								document.querySelector('.member-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 放開
+								document.querySelector('.member-btn-text').style.transform = 'top 45%'
+							}}
+						>
+							會員相關
+						</span>
+					</li>
+					{/* 報名相關按鈕 */}
+					<li
+						onClick={() => document.getElementById('faq-event').scrollIntoView({ behavior: 'smooth' })}
+						style={{
+							position: 'relative',
+							display: 'inline-block',
+							width: '144px',
+							height: '100px'
+						}}
+					>
+						<img
+							src="./src/images/btn/new-btn1-normal.png"
+							alt="Event Related"
+							style={{
+								width: '100%',
+								height: '100%',
+								objectFit: 'contain',
+								transition: '0.3s ease',
+								cursor: 'pointer'
+							}}
+							className="event-btn-img"
+							onMouseEnter={() => {
+								document.querySelector('.event-btn-img').src = './src/images/btn/new-btn1-hover.png';  // 切換圖片
+								document.querySelector('.event-btn-text').style.transform = 'top 45%'
+							  }}
+							 onMouseLeave={() => {
+								document.querySelector('.event-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 還原
+								document.querySelector('.event-btn-text').style.transform = 'top 45%'
+							  }}
+							onMouseDown={() => {
+								document.querySelector('.event-btn-img').src = './src/images/btn/new-btn1-pressed.png';  // 按下
+								document.querySelector('.event-btn-text').style.transform = 'top 50%';
+							  }}
+							onMouseUp={() => {
+								document.querySelector('.event-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 放開
+								document.querySelector('.event-btn-text').style.transform = 'top 45%'
+							}}
+						/>
+						<span
+							style={{
+								position: 'absolute',
+								top: '45%',
+								left: '50%',
+								transform: 'translate(-50%, -50%)',
+								color: '#72b2da',
+								fontSize: '20px',
+								textAlign: 'center',
+								whiteSpace: 'nowrap',
+								cursor: 'pointer'
+							}}
+							className="event-btn-text"
+							onMouseEnter={() => {
+								document.querySelector('.event-btn-img').src = './src/images/btn/new-btn1-hover.png';  // 切換圖片
+								document.querySelector('.event-btn-text').style.transform = 'top 45%'
+							  }}
+							 onMouseLeave={() => {
+								document.querySelector('.event-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 還原
+								document.querySelector('.event-btn-text').style.transform = 'top 45%'
+							  }}
+							onMouseDown={() => {
+								document.querySelector('.event-btn-img').src = './src/images/btn/new-btn1-pressed.png';  // 按下
+								document.querySelector('.event-btn-text').style.transform = 'top 50%';
+							  }}
+							onMouseUp={() => {
+								document.querySelector('.event-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 放開
+								document.querySelector('.event-btn-text').style.transform = 'top 45%'
+							}}
+							
+						>
+							報名相關
+						</span>
+					</li>
+					{/* 其他按鈕 */}
+					<li
+						onClick={() => document.getElementById('faq-other').scrollIntoView({ behavior: 'smooth' })}
+						style={{
+							position: 'relative',
+							display: 'inline-block',
+							width: '144px',
+							height: '100px'
+						}}
+					>
+						<img
+							src="./src/images/btn/new-btn1-normal.png"
+							alt="Other"
+							style={{
+								width: '100%',
+								height: '100%',
+								objectFit: 'contain',
+								transition: '0.3s ease',
+								cursor: 'pointer'
+							}}
+							className="other-btn-img"
+							onMouseEnter={() => {
+								document.querySelector('.other-btn-img').src = './src/images/btn/new-btn1-hover.png';  // 切換圖片
+								document.querySelector('.other-btn-text').style.transform = 'top 45%'
+							  }}
+							 onMouseLeave={() => {
+								document.querySelector('.other-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 還原
+								document.querySelector('.other-btn-text').style.transform = 'top 45%'
+							  }}
+							onMouseDown={() => {
+								document.querySelector('.other-btn-img').src = './src/images/btn/new-btn1-pressed.png';  // 按下
+								document.querySelector('.other-btn-text').style.transform = 'top 50%';
+							  }}
+							onMouseUp={() => {
+								document.querySelector('.other-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 放開
+								document.querySelector('.other-btn-text').style.transform = 'top 45%'
+							}}
+						/>
+						<span
+							style={{
+								position: 'absolute',
+								top: '45%',
+								left: '50%',
+								transform: 'translate(-50%, -50%)',
+								color: '#72b2da',
+								fontSize: '20px',
+								textAlign: 'center',
+								whiteSpace: 'nowrap',
+								cursor: 'pointer'
+							}}
+							className='other-btn-text'
+							//寫兩次才達到滑鼠到文字或圖片都有ㄎ
+							onMouseEnter={() => {
+								document.querySelector('.other-btn-img').src = './src/images/btn/new-btn1-hover.png';  // 切換圖片
+								document.querySelector('.other-btn-text').style.transform = 'top 45%'
+							  }}
+							 onMouseLeave={() => {
+								document.querySelector('.other-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 還原
+								document.querySelector('.other-btn-text').style.transform = 'top 45%'
+							  }}
+							onMouseDown={() => {
+								document.querySelector('.other-btn-img').src = './src/images/btn/new-btn1-pressed.png';  // 按下
+								document.querySelector('.other-btn-text').style.transform = 'top 50%';
+							  }}
+							onMouseUp={() => {
+								document.querySelector('.other-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 放開
+								document.querySelector('.other-btn-text').style.transform = 'top 45%'
+							}}
+						>
+							其他
+						</span>
+					</li>
+				</ul>
 
 				{/* 會員相關 */}
 				<div id="faq-main">
