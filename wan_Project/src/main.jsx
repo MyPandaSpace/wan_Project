@@ -13,7 +13,7 @@ import Modal_SignUp from './component/Modal_Signup.jsx'
 import Event_Detail from './Event_Detail.jsx'
 import About from './About.jsx'
 import Article_Bay from './Article_Bay.jsx'
-import Modal_Login from './component/Modal_Login.jsx'
+import Apply_Page1 from './Apply_Page1.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -31,6 +31,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/Event_Detail" element={<Event_Detail />} />
         <Route path="/About" element={<About />} />
         <Route path="/Article_Bay" element={<Article_Bay />} />
+        <Route path="/Apply_Page1" element={<Apply_Page1 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

@@ -1,10 +1,66 @@
 #eventDetail {
     display: flex;
     justify-content: space-between;
-    margin: 120px auto 100px; /* 上方間距 120px，水平置中 */
-    max-width: 1440px; /* 限制內容最大寬度 */
-    width: 100%; /* 確保容器寬度可以適應螢幕大小 */
+    margin: 120px auto 100px;
+    /* 上方間距 120px，水平置中 */
+    max-width: 1440px;
+    /* 限制內容最大寬度 */
+    width: 100%;
+    /* 確保容器寬度可以適應螢幕大小 */
 }
+
+.left .decoration-left {
+    position: absolute;
+    left: 325px;
+    /* left: 7%; */
+    top: 280px;
+    /* top: 36%; */
+    transform: translateY(-50%);
+    width: 90px;
+    height: auto;
+    z-index: 1;
+}
+
+@media (max-width: 1920px) {
+    .left .decoration-left {
+        left: 325px;
+        top: 280px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .left .decoration-left {
+        left: 100px;
+        top: 290px;
+    }
+} 
+
+.left .decoration-right {
+    position: absolute;
+    right: 775px;
+    /* right: 38%; */
+    bottom: -120px;
+    /* bottom: 0; */
+    transform: translateY(-50%) scaleX(-1) scaleY(-1);
+    /* 翻轉圖片 */
+    width: 90px;
+    height: auto;
+    z-index: 1;
+}
+
+@media (max-width: 1920px) {
+    .left .decoration-right {
+        right: 775px;
+        bottom: -120px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .left .decoration-right {
+        right: 555px;
+        bottom: 1px;
+    }
+} 
 
 .left {
     margin-left: 85px;
