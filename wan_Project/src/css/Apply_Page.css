@@ -233,6 +233,10 @@
     /* border: 1px solid blue; */
 }
 
+.form-group input::placeholder {
+    color: #dadada;
+}
+
 .form-check {
     display: flex;
     align-items: flex-start;
