@@ -13,6 +13,7 @@ import Modal_SignUp from './component/Modal_Signup.jsx'
 import Event_Detail from './Event_Detail.jsx'
 import About from './About.jsx'
 import Article_Bay from './Article_Bay.jsx'
+import Modal_Login from './component/Modal_Login.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>

@@ -14,7 +14,9 @@
 }
 
 #navbar #logo {
-    margin: 10px 40px;
+    margin: 0px 40px;
+    padding-top: 20px;
+    width: 200px;
 }
 
 #navbar #icon {

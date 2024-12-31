@@ -120,8 +120,9 @@ h2 {
 }
 
 .services-section .service1 img {
-  margin-right: 50px;
-  /* 設置兩個圖片之間的間距 */
+  margin-right: 100px;
+  margin-bottom: 30px;
+  width: 24%;
 }
 
 .services-section .service1 img:last-child {
@@ -129,8 +130,8 @@ h2 {
 }
 
 .services-section .service2 img {
-  margin-right: 50px;
-  /* 設置兩個圖片之間的間距 */
+  margin-right: 100px;
+  width: 28%;
 }
 
 .services-section .service2 img:last-child {

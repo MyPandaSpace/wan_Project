@@ -6,8 +6,8 @@ export default function About() {
 
   return (
     <>
+      <Navbar />
       <div className="about-Banner">
-        <Navbar />
         <img src="./src/images/About/about_Title.png" alt="" />
       </div>
       <div className="about-Content">
@@ -28,9 +28,8 @@ export default function About() {
           <img src="./src/images/About/Bay_1.png" alt="" />
         </div>
         <div id="about-Bay1-Text">
-          <p>灣是一片寧靜的海域，也是無數個小故事的交匯地。
-            每一次的學習、創作或探索，都是一段通往心靈深處的旅程。
-            透過我們探索體驗村的活動及心途之灣的文章，您將能發現更多生命中的小確幸，並將這份療癒傳遞出去。</p>
+          <p>灣是一片寧靜的海域，也是無數個小故事的交匯地。<br />
+            每一次的學習、創作或探索，都是一段通往心靈深處的旅程。<br />透過我們探索體驗村的活動及心途之灣的文章，您將能發現更多生命中的小確幸，<br/>並將這份療癒傳遞出去~</p>
         </div>
         <div id="about-Bay2-Img">
           <img src="./src/images/About/Bay_2.png" alt="" />

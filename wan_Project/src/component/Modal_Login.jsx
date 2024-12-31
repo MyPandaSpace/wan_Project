@@ -1,13 +1,15 @@
 import React from "react";
 import "../css/Modal_Login.css"; // 將您的 CSS 匯入
 import { useNavigate } from "react-router-dom";
+import { auth, provide } from "../config/firebase";
+import { signInWithPopup } from "firebase/auth";
 
 const Modal_Login = ({ show, onClose, onSwitchToSignUp }) => {
   if (!show) return null; // 如果彈窗不顯示，返回 null
 
   const navigate = useNavigate()
   const login = async () => {
-    const result = await signInWithPopUp(auth, provider);
+    const result = await signInWithPopup(auth, provide)
     console.log(result)
     navigate("/Membership_myPage")
   }
@@ -36,8 +38,8 @@ const Modal_Login = ({ show, onClose, onSwitchToSignUp }) => {
         <div id="modal-Footer">
           <p>還沒有加入我們嗎？</p><button onClick={onSwitchToSignUp} style={{ background: "none", border: "none", color: "#1684C8", cursor: "pointer" }}>點我註冊</button>
         </div>
-        <div>
-          <button onClick={login} style={{ background: "none", border: "none", cursor: "pointer"}}><img src="./src/images/modal_Login/Google_Icon.png" alt="" /></button>
+        <div style={{ display: "flex", justifyContent: "center", marginTop: "10px" }}>
+          <button onClick={login} style={{ background: "none", border: "none", cursor: "pointer" }}><img style={{ width: "80px"}} src="./src/images/modal_Login/Google_Icon.png" alt="" /></button>
         </div>
       </div>
     </div>

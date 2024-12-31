@@ -11,13 +11,13 @@
     width: 100%;
     height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
     gap: 100px;
 }
 
 .about-Content {
-    height: 760vh;
+    height: 700vh;
     display: flex;
     position: relative;
     background-image: url(../images/About/bg-content.png);
@@ -60,14 +60,15 @@
 #about-Bay1-Img {
     position: absolute;
     top: 3000px;
+    width: 100%;
     height: 100px;
 }
 
 #about-Bay1-Text {
     position: absolute;
     top: 3200px;
-    transform: translateX(50%);
-    width: 50%;
+    transform: translateX(54%);
+    width: 40%;
     height: 100px;
     font-size: 20px;
     color: #666;
@@ -78,7 +79,7 @@
 #about-Bay2-Img {
     position: absolute;
     top: 3800px;
-    transform: translateX(20%);
+    transform: translateX(40%);
     height: 100px;
     width: 100%;
 }
@@ -86,13 +87,13 @@
 #about-Bay2-Text {
     position: absolute;
     top: 3800px;
-    transform: translateX(40%);
+    left: 30%;
     height: 100px;
 }
 
 #about-circle_ip-Img {
     position: absolute;
-    transform: translateX(5%);
+    transform: translateX(26%);
     top: 4000px;
     width: 100%;
     height: 100px;
@@ -101,10 +102,9 @@
 
 #about-heart_ip-Img {
     position: absolute;
-    transform: translateX(46%);
+    transform: translateX(62%);
     top: 4000px;
     width: 100%;
     height: 100px;
     rotate: 10deg;
 }
-
