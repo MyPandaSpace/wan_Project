@@ -1,6 +1,9 @@
 #eventDetail {
     display: flex;
-    margin-top: 120px;
+    justify-content: space-between;
+    margin: 120px auto 0; /* 上方間距 120px，水平置中 */
+    max-width: 1440px; /* 限制內容最大寬度 */
+    width: 100%; /* 確保容器寬度可以適應螢幕大小 */
 }
 
 .left {
@@ -74,6 +77,42 @@
     background-color: #72B2DA;
 }
 
+.detailTags {
+    position: sticky;
+    /* Sticky 固定效果 */
+    top: 0;
+    /* 距離父容器頂部 0 */
+    z-index: 10;
+    /* 確保在內容之上 */
+    background-color: white;
+    /* 背景色，避免透明 */
+    display: flex;
+    justify-content: space-between;
+    /* 等間距 */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.detailTags li {
+    font-size: 20px;
+    color: #666;
+    cursor: pointer;
+    /* 鼠標變成手指 */
+    padding: 4px 8px;
+    /* 增加內部間距 */
+    border-radius: 20px;
+    /* 圓角 */
+    text-align: center;
+    /* 文本置中 */
+    transition: background-color 0.3s;
+}
+
+.detailTags li:hover {
+    background-color: #ddd;
+    /* 滑鼠懸停效果 */
+}
+
 .eventContents h2 {
     font-size: 32px;
     color: #1684C8;
@@ -107,17 +146,14 @@
 
 /* 右側 */
 .right {
+    position: relative;
     z-index: 999;
     margin-right: 85px;
 }
 
-.detailCtaSticky {
-    position: sticky;
-}
-
 .detailCta {
     width: 418px;
-    position: relative;
+    position: sticky;
     display: inline-block;
     /* 確保內容跟隨圖片大小 */
 }
@@ -188,10 +224,15 @@
     width: 180px;
 }
 
-/* .detailApply a:hover img {
+.detailApply img:hover {
     content: url(../src/images/btn/new-btn2-hover.png);
-    transition: 1s
-  } */
+    transition: ease-out 1s;
+}
+
+.detailApply img:active {
+    content: url(../src/images/btn/new-btn2-pressed.png);
+    transition: ease-out 1s;
+}
 
 .detailApply p {
     position: absolute;
