@@ -28,10 +28,13 @@ function Event_Detail() {
 		<div>
 			<Navbar />
 			<img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
+
 			<main id="eventDetail">
 				{/* 左側 */}
 				<div className="left">
 					<div className="eventBanner">
+						<img className="decoration-left" src="./src/images/Event_Detail/dec1.png" alt="" />
+						<img className="decoration-right" src="./src/images/Event_Detail/dec1.png" alt="" />
 						{/* 輪播圖片 */}
 						<div className="detail-carousel">
 							{images.map((src, index) => (
@@ -56,6 +59,8 @@ function Event_Detail() {
 							</div>
 						</div>
 					</div>
+
+					{/* 活動說明區塊 */}
 					<div className="eventContents">
 						<ul className="detailTags">
 							{/* <li><a href="#eventIntro">活動簡介</a></li> */}
@@ -181,80 +186,83 @@ function Event_Detail() {
 							</div>
 							<hr className="ctaHr" />
 							<div id="detailIcon">
+								{/* 立即報名按鈕 */}
 								<div className="detailApply">
-									{/* <p>立即報名</p>
+									<Link to={'/Apply_Page1'}>
+										{/* <p>立即報名</p>
 									<img src="../src/images/btn/new-btn2-normal.png" alt="" /> */}
-									<li
-						onClick={() => {
-							
-						}}
-						style={{
-							position: 'relative',
-							display: 'inline-block',
-							width: '180px',
-						}}
-					>
-						<img
-							src="./src/images/btn/new-btn2-normal.png"
-							alt="Apply now"
-							style={{
-								width: '100%',
-								height: '100%',
-								objectFit: 'contain',
-								transition: '0.3s ease',
-								cursor: 'pointer'
-							}}
-							className="apply-btn-img"
-							onMouseEnter={() => {
-								document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-hover.png';  // 切換圖片
-								document.querySelector('.apply-btn-text').style.transform = 'top 45%'
-							  }}
-							 onMouseLeave={() => {
-								document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 還原
-								document.querySelector('.apply-btn-text').style.transform = 'top 45%'
-							  }}
-							onMouseDown={() => {
-								document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-pressed.png';  // 按下
-								document.querySelector('.apply-btn-text').style.transform = 'top 50%';
-							  }}
-							onMouseUp={() => {
-								document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 放開
-								document.querySelector('.apply-btn-text').style.transform = 'top 45%'
-							}}
-						/>
-						<span
-							style={{
-								position: 'absolute',
-								top: '45%',
-								left: '50%',
-								transform: 'translate(-50%, -50%)',
-								color: 'white',
-								fontSize: '20px',
-								textAlign: 'center',
-								whiteSpace: 'nowrap',
-								cursor: 'pointer'
-							}}
-							className="apply-btn-text"
-							onMouseEnter={() => {
-								document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-hover.png';  // 切換圖片
-								document.querySelector('.apply-btn-text').style.transform = 'top 45%'
-							  }}
-							 onMouseLeave={() => {
-								document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 還原
-								document.querySelector('.apply-btn-text').style.transform = 'top 45%'
-							  }}
-							onMouseDown={() => {
-								document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-pressed.png';  // 按下
-								document.querySelector('.apply-btn-text').style.transform = 'top 50%';
-							  }}
-							onMouseUp={() => {
-								document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 放開
-								document.querySelector('.apply-btn-text').style.transform = 'top 45%'
-							}}
-						>
-							立即報名
-						</span>
-					</li>
+										<li
+											onClick={() => {
+
+											}}
+											style={{
+												position: 'relative',
+												display: 'inline-block',
+												width: '180px',
+											}}
+										>
+											<img
+												src="./src/images/btn/new-btn2-normal.png"
+												alt="Apply now"
+												style={{
+													width: '100%',
+													height: '100%',
+													objectFit: 'contain',
+													transition: '0.3s ease',
+													cursor: 'pointer'
+												}}
+												className="apply-btn-img"
+												onMouseEnter={() => {
+													document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-hover.png';  // 切換圖片
+													document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+												}}
+												onMouseLeave={() => {
+													document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 還原
+													document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+												}}
+												onMouseDown={() => {
+													document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-pressed.png';  // 按下
+													document.querySelector('.apply-btn-text').style.transform = 'top 50%';
+												}}
+												onMouseUp={() => {
+													document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 放開
+													document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+												}}
+											/>
+											<span
+												style={{
+													position: 'absolute',
+													top: '45%',
+													left: '50%',
+													transform: 'translate(-50%, -50%)',
+													color: 'white',
+													fontSize: '20px',
+													textAlign: 'center',
+													whiteSpace: 'nowrap',
+													cursor: 'pointer'
+												}}
+												className="apply-btn-text"
+												onMouseEnter={() => {
+													document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-hover.png';  // 切換圖片
+													document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+												}}
+												onMouseLeave={() => {
+													document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 還原
+													document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+												}}
+												onMouseDown={() => {
+													document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-pressed.png';  // 按下
+													document.querySelector('.apply-btn-text').style.transform = 'top 50%';
+												}}
+												onMouseUp={() => {
+													document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 放開
+													document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+												}}
+											>
+												立即報名
+											</span>
+										</li>
+									</Link>
 								</div>
 								<div className="detailCollect">
 									<img src="../src/images/btn/collect-normal.png" alt="" />
