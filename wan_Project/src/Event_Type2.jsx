@@ -30,7 +30,7 @@ function Event_Type2() {
           </div>
           <div id='event-Type'>
             <Link to="/Event"><img id="event-Type1" src="./src/images/Event/event-Type1.png" alt="" /></Link>
-            <Link to=""><img src="./src/images/Event/event-Type2_hover.png" alt="" /></Link>
+            <Link to="/Event_Type2"><img src="./src/images/Event/event-Type2_hover.png" alt="" /></Link>
             <Link to="/Event_Type3"><img id='event-Type3' src="./src/images/Event/event-Type3.png" alt="" /></Link>
           </div>
           <div id='row-event_Card'>

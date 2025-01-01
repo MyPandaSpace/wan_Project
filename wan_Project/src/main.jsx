@@ -14,6 +14,7 @@ import Event_Detail from './Event_Detail.jsx'
 import About from './About.jsx'
 import Article_Bay from './Article_Bay.jsx'
 import Apply_Page1 from './Apply_Page1.jsx'
+import Article from './Article.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -32,6 +33,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/About" element={<About />} />
         <Route path="/Article_Bay" element={<Article_Bay />} />
         <Route path="/Apply_Page1" element={<Apply_Page1 />} />
+        <Route path="/Article" element={<Article />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
