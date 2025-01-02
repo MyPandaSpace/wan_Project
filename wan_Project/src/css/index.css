@@ -72,7 +72,7 @@ h2 {
   opacity: 0.9;
 }
 
-#banner2 #bg_mountain {
+#bg_mountain {
   position: relative;
   width: 100%;
   top: -80px;
@@ -80,20 +80,39 @@ h2 {
   z-index: 2;
 }
 
-#banner2 #circle_ip {
+#circle_ip {
   position: absolute;
   width: 20%;
   bottom: 30%;
   left: 18%;
   z-index: 100;
+
 }
 
-#banner2 #heart_ip {
+#heart_ip {
   position: absolute;
   width: 20%;
   bottom: 34%;
   left: 78%;
   z-index: 100;
+}
+
+/* 預設不顯示 hover 時的圖片 */
+.ip_hover-image {
+  display: none;
+  position: absolute;
+  top: -120%;
+  left: 0;
+  z-index: 10;
+}
+
+/* 當懸停時顯示圖片 */
+#circle_ip:hover .ip_hover-image {
+  display: block;
+}
+
+#heart_ip:hover .ip_hover-image {
+  display: block;
 }
 
 .services-section {

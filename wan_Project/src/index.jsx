@@ -64,10 +64,16 @@ function Index() {
           <div id='banner2'>
             <img id="bg_mountain" src={bg_mountain} alt="bg_mountain" />
             <div id="circle_ip" data-aos="fade-right" data-aos-duration="3000">
-              <img src="./src/images/index/circle_ip.svg" alt="circle_ip" />
+              <a href="/Event"><img src="./src/images/index/circle_ip.svg" alt="circle_ip" /></a>
+              <div class="ip_hover-image" id="circle-hover-image">
+                <img src="./src/images/index/Go_Event.png" alt="Go_Event" />
+              </div>
             </div>
             <div id='heart_ip' data-aos="fade-left" data-aos-duration="3000">
-              <img src="./src/images/index/heart_ip.svg" alt="heart_ip" />
+              <a href="/Article_Bay"><img src="./src/images/index/heart_ip.svg" alt="heart_ip" /></a>
+              <div class="ip_hover-image" id="heart-hover-image">
+                <img src="./src/images/index/Go_ArticleBay.png" alt="Go_ArticleBay" />
+              </div>
             </div>
           </div>
           {/* 將背景圖層提升到更靠近頂部 */}
