@@ -12,7 +12,7 @@ export default function Footer() {
                         <a href="/Article_Bay">心途之灣</a>
                         <a href="/Membership_myPage">會員中心</a>
                         <a href="/About">關於我們</a>
-                        <a href="/faq">常見問題</a>
+                        <a href="/FaqPage">常見問題</a>
                     </div>
                     <small id='copyright'>© 2024 灣 Wan. All rights reserved.</small>
                 </div>

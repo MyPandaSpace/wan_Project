@@ -1,3 +1,4 @@
+import Btn_goTop from "./component/Btn_goTop";
 import Footer from "./component/Footer";
 import Navbar from "./component/Navbar";
 import "./css/Membership_myOrder.css";
@@ -9,6 +10,7 @@ export default function Membership_myOrder() {
   return (
     <>
       <Navbar />
+      <Btn_goTop />
       <img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
       
       <div className="home-container">

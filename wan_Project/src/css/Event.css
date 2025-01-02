@@ -108,31 +108,50 @@ video {
 
 .main_Event {
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     background-repeat: no-repeat;
     background-image: url(../src/images/Event/Banner_EventBg.png);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     position: relative;
 }
 
+.eventBanner-Img {
+    display: flex;
+}
+
 .season-event-carousel img {
-    width: 500px;
-    height: 500px;
-    border-radius: 200px;
+    position: absolute;
+    top: 30%;
+    left: 46%;
+    width: 26%;
+    height: 50%;
+    border-radius: 300px;
+}
+
+.detail-carousel-indicators {
+    position: absolute;
+    bottom: -200px;
+    display: flex;
+    gap: 10px;
 }
 
 #season_Event {
     position: absolute;
-    top: 400px;
-    left: 200px;
+    top: 40%;
+    left: 10%;
     scale: 1.1;
 }
 
-#event_bubble-border{
+.season-event-carousel-indicators {
+    display: flex;
+    gap: 20px;
     position: absolute;
-    top: 20px;
-    left: 660px;
-    scale: 1.1;
+    top: 90%;
+    left: 60%;
 }
 
 .comment-Card-row1 {

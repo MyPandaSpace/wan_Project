@@ -32,7 +32,7 @@
         left: 100px;
         top: 290px;
     }
-} 
+}
 
 #decoration-right {
     position: absolute;
@@ -56,7 +56,7 @@
         right: 555px;
         bottom: 1px;
     }
-} 
+}
 
 .left {
     margin-left: 85px;
@@ -87,29 +87,27 @@
 .detail-carousel {
     width: 100%;
     height: 100%;
-    /* 使輪播區塊占據容器的全部空間 */
+    position: relative;
 }
 
 .detail-carousel-img {
     position: absolute;
     top: 0;
-    left: 100%;
+    left: 0;
     width: 100%;
     height: 100%;
     opacity: 0;
-    transition: all 1s ease-in-out;
+    transition: opacity 1s ease-in-out; /* 只控制透明度 */
 }
 
 .detail-carousel-img.active {
-    left: 0;
     opacity: 1;
 }
 
 .detail-carousel-indicators {
     position: absolute;
     bottom: -30px;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 46%;
     display: flex;
     gap: 10px;
 }

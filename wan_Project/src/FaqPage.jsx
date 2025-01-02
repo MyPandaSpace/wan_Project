@@ -3,6 +3,7 @@ import './css/FaqPage.css';
 import $ from 'jquery';
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';
+import Btn_goTop from './component/Btn_goTop';
 
 function FaqPage() {
 	useEffect(() => {
@@ -25,6 +26,7 @@ function FaqPage() {
 	return (
 		<div>
 			<Navbar />
+			<Btn_goTop />
 			<img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
 			<main id="faq">
 				{/* 主要標題 */}

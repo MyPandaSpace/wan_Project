@@ -28,7 +28,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/Membership_myPage" element={<Membership_myPage />} />
         <Route path="/Membership_myCollection" element={<Membership_myCollection />} />
         <Route path="/Membership_myOrder" element={<Membership_myOrder />} />
-        <Route path="/Faq" element={<FaqPage />} />
+        <Route path="/FaqPage" element={<FaqPage />} />
         <Route path="/Modal_SignUp" element={<Modal_SignUp />} />
         <Route path="/Event_Detail" element={<Event_Detail />} />
         <Route path="/About" element={<About />} />

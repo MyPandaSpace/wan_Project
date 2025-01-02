@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/Modal_Login.css"; // 將您的 CSS 匯入
+import "./css/Modal_Login.css"; // 將您的 CSS 匯入
 
 const Modal_SignUp = ({ show, onClose, onSwitchToLogin }) => {
   if (!show) return null; // 如果彈窗不顯示，返回 null

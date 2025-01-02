@@ -12,16 +12,39 @@ function Event_Detail() {
 		"./src/images/Event/events/newyear_3.jpg",
 	];
 
+	const [timer, setTimer] = useState(null); // 用來保存定時器的 ID
+
 	// 自動切換輪播
 	useEffect(() => {
-		const interval = setInterval(() => {
-			setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
-		}, 3000); // 每3秒自動切換
+		// 定義一個函數來啟動計時器
+		const startTimer = () => {
+			return setInterval(() => {
+				setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
+			}, 3000); // 每3秒自動切換
+		};
+
+		// 啟動計時器
+		const interval = startTimer();
+		setTimer(interval); // 保存定時器 ID 以便後續清除
+
+		// 清除計時器
 		return () => clearInterval(interval);
 	}, [images.length]);
 
+	// 點擊指示器後重設計時器
 	const handleIndicatorClick = (index) => {
 		setCurrentSlide(index); // 點擊指示器切換到對應圖片
+
+		// 每次點擊指示器時重設計時器
+		if (timer) {
+			clearInterval(timer); // 清除當前的計時器
+		}
+
+		const newTimer = setInterval(() => {
+			setCurrentSlide((prevSlide) => (prevSlide + 1) % images.length);
+		}, 4000); // 重新啟動計時器
+
+		setTimer(newTimer); // 更新定時器
 	};
 
 	return (

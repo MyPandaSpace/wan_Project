@@ -1,3 +1,4 @@
+import Btn_goTop from "./component/Btn_goTop";
 import Footer from "./component/Footer";
 import Navbar from "./component/Navbar";
 import './css/About.css';
@@ -7,6 +8,7 @@ export default function About() {
   return (
     <>
       <Navbar />
+      <Btn_goTop />
       <div className="about-Banner">
         <img src="./src/images/About/about_Title.png" alt="" />
       </div>
@@ -29,7 +31,7 @@ export default function About() {
         </div>
         <div id="about-Bay1-Text">
           <p>灣是一片寧靜的海域，也是無數個小故事的交匯地。<br />
-            每一次的學習、創作或探索，都是一段通往心靈深處的旅程。<br />透過我們探索體驗村的活動及心途之灣的文章，您將能發現更多生命中的小確幸，<br/>並將這份療癒傳遞出去~</p>
+            每一次的學習、創作或探索，都是一段通往心靈深處的旅程。<br />透過我們探索體驗村的活動及心途之灣的文章，您將能發現更多生命中的小確幸，<br />並將這份療癒傳遞出去~</p>
         </div>
         <div id="about-Bay2-Img">
           <img src="./src/images/About/Bay_2.png" alt="" />
@@ -42,6 +44,10 @@ export default function About() {
         </div>
         <div id="about-heart_ip-Img">
           <img src="./src/images/About/heart_ip.png" alt="" />
+        </div>
+        <div id="about-Content-2">
+          <img src="./src/images/About/about-Content-Title_2.png" alt="" />
+          <img src="./src/images/About/about-Content_2.png" alt="" />
         </div>
         <Footer />
       </div>

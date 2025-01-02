@@ -1,3 +1,4 @@
+import Btn_goTop from "./component/Btn_goTop";
 import Footer from "./component/Footer";
 import Navbar from "./component/Navbar";
 import './css/Article_Bay.css';
@@ -7,6 +8,7 @@ export default function Article_Bay() {
   return (
     <>
       <Navbar />
+      <Btn_goTop />
       <img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
       <div className="title-Row">
         <div className="title_Article_Bay">
@@ -15,7 +17,6 @@ export default function Article_Bay() {
           </div>
           {/* 分類按鈕 */}
           <ul className="btn_Article-Type">
-            {/* 會員相關按鈕 */}
             <li
               onClick={() => document.getElementById('article_Type1_Img').scrollIntoView({ behavior: 'smooth' })}
               style={{
@@ -86,7 +87,6 @@ export default function Article_Bay() {
                 正念冥想
               </span>
             </li>
-            {/* 報名相關按鈕 */}
             <li
               onClick={() => document.getElementById('article_Type2_Img').scrollIntoView({ behavior: 'smooth' })}
               style={{
@@ -158,7 +158,6 @@ export default function Article_Bay() {
                 身心健康
               </span>
             </li>
-            {/* 其他按鈕 */}
             <li
               onClick={() => document.getElementById('article_Type3_Img').scrollIntoView({ behavior: 'smooth' })}
               style={{

@@ -165,79 +165,77 @@ function Apply_Page2() {
 							</div>
 							{/* 確認送出按鈕 */}
 							<div className="confirm-btn">
-								<Link to={'/Apply_Page2'} className="confirm-btn">
-									<li
-										onClick={() => {
+								<a href="/"><li
+									onClick={() => {
 
-										}}
+									}}
+									style={{
+										position: 'relative',
+										display: 'inline-block',
+										width: '180px',
+									}}
+								>
+									<img
+										src="./src/images/btn/new-btn2-normal.png"
+										alt="Pay now"
 										style={{
-											position: 'relative',
-											display: 'inline-block',
-											width: '180px',
+											width: '100%',
+											height: '100%',
+											objectFit: 'contain',
+											transition: '0.3s ease',
+											cursor: 'pointer'
+										}}
+										className="confirm-btn-img"
+										onMouseEnter={() => {
+											document.querySelector('.confirm-btn-img').src = './src/images/btn/new-btn2-hover.png';  // 切換圖片
+											document.querySelector('.confirm-btn-text').style.transform = 'top 45%'
+										}}
+										onMouseLeave={() => {
+											document.querySelector('.confirm-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 還原
+											document.querySelector('.confirm-btn-text').style.transform = 'top 45%'
+										}}
+										onMouseDown={() => {
+											document.querySelector('.confirm-btn-img').src = './src/images/btn/new-btn2-pressed.png';  // 按下
+											document.querySelector('.confirm-btn-text').style.transform = 'top 50%';
+										}}
+										onMouseUp={() => {
+											document.querySelector('.confirm-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 放開
+											document.querySelector('.confirm-btn-text').style.transform = 'top 45%'
+										}}
+									/>
+									<span
+										style={{
+											position: 'absolute',
+											top: '45%',
+											left: '50%',
+											transform: 'translate(-50%, -50%)',
+											color: 'white',
+											fontSize: '24px',
+											textAlign: 'center',
+											whiteSpace: 'nowrap',
+											cursor: 'pointer'
+										}}
+										className="confirm-btn-text"
+										onMouseEnter={() => {
+											document.querySelector('.confirm-btn-img').src = './src/images/btn/new-btn2-hover.png';  // 切換圖片
+											document.querySelector('.confirm-btn-text').style.transform = 'top 45%'
+										}}
+										onMouseLeave={() => {
+											document.querySelector('.confirm-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 還原
+											document.querySelector('.confirm-btn-text').style.transform = 'top 45%'
+										}}
+										onMouseDown={() => {
+											document.querySelector('.confirm-btn-img').src = './src/images/btn/new-btn2-pressed.png';  // 按下
+											document.querySelector('.confirm-btn-text').style.transform = 'top 50%';
+										}}
+										onMouseUp={() => {
+											document.querySelector('.confirm-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 放開
+											document.querySelector('.confirm-btn-text').style.transform = 'top 45%'
 										}}
 									>
-										<img
-											src="./src/images/btn/new-btn2-normal.png"
-											alt="Pay now"
-											style={{
-												width: '100%',
-												height: '100%',
-												objectFit: 'contain',
-												transition: '0.3s ease',
-												cursor: 'pointer'
-											}}
-											className="confirm-btn-img"
-											onMouseEnter={() => {
-												document.querySelector('.confirm-btn-img').src = './src/images/btn/new-btn2-hover.png';  // 切換圖片
-												document.querySelector('.confirm-btn-text').style.transform = 'top 45%'
-											}}
-											onMouseLeave={() => {
-												document.querySelector('.confirm-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 還原
-												document.querySelector('.confirm-btn-text').style.transform = 'top 45%'
-											}}
-											onMouseDown={() => {
-												document.querySelector('.confirm-btn-img').src = './src/images/btn/new-btn2-pressed.png';  // 按下
-												document.querySelector('.confirm-btn-text').style.transform = 'top 50%';
-											}}
-											onMouseUp={() => {
-												document.querySelector('.confirm-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 放開
-												document.querySelector('.confirm-btn-text').style.transform = 'top 45%'
-											}}
-										/>
-										<span
-											style={{
-												position: 'absolute',
-												top: '45%',
-												left: '50%',
-												transform: 'translate(-50%, -50%)',
-												color: 'white',
-												fontSize: '24px',
-												textAlign: 'center',
-												whiteSpace: 'nowrap',
-												cursor: 'pointer'
-											}}
-											className="confirm-btn-text"
-											onMouseEnter={() => {
-												document.querySelector('.confirm-btn-img').src = './src/images/btn/new-btn2-hover.png';  // 切換圖片
-												document.querySelector('.confirm-btn-text').style.transform = 'top 45%'
-											}}
-											onMouseLeave={() => {
-												document.querySelector('.confirm-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 還原
-												document.querySelector('.confirm-btn-text').style.transform = 'top 45%'
-											}}
-											onMouseDown={() => {
-												document.querySelector('.confirm-btn-img').src = './src/images/btn/new-btn2-pressed.png';  // 按下
-												document.querySelector('.confirm-btn-text').style.transform = 'top 50%';
-											}}
-											onMouseUp={() => {
-												document.querySelector('.confirm-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 放開
-												document.querySelector('.confirm-btn-text').style.transform = 'top 45%'
-											}}
-										>
-											確認送出
-										</span>
-									</li>
-								</Link>
+										確認送出
+									</span>
+								</li></a>
 							</div>
 						</div>
 					</div>
