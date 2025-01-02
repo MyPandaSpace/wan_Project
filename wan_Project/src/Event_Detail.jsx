@@ -236,7 +236,7 @@ function Event_Detail() {
 													left: '50%',
 													transform: 'translate(-50%, -50%)',
 													color: 'white',
-													fontSize: '20px',
+													fontSize: '24px',
 													textAlign: 'center',
 													whiteSpace: 'nowrap',
 													cursor: 'pointer'

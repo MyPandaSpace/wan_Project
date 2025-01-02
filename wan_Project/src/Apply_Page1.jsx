@@ -99,29 +99,117 @@ function Apply_Page1() {
 
 					{/* 右側 */}
 					<div className="apply_right">
-						<div className="order-summary">
-							<h2>訂單明細</h2>
-							<div className="coupon-section">
-								<span>折價券：</span>
-								<div className="coupon-input">
-									<input type="text" placeholder="請輸入折價券代碼" />
-									<button>套用</button>
+						<div className="applyCta">
+							<img src="../src/images/others/svg/image-border.svg" alt="訂單明細" />
+							<div className="order-summary">
+								<h2>訂單明細</h2>
+								<div className="coupon-section">
+									<span>折價券：</span>
+									<small>選擇或輸入折扣碼</small>
+									<div className="coupon-input">
+										<input type="text" placeholder="請輸入折扣碼" />
+										<button>確認</button>
+									</div>
+									<label className="coupon-option">
+										<input
+											type="radio"
+											name="coupon"
+											value="firstevent492083713"
+											className="coupon-radio"
+										/>
+										firstevent492083713
+									</label>
+								</div>
+								<div className="price-summary">
+									<div className="price-item">
+										<span>活動小計</span>
+										<span>NT$ 600</span>
+									</div>
+									<div className="price-item discount">
+										<span>折價券折抵</span>
+										<span>-NT$ 50</span>
+									</div>
+									<div className="total-price">
+										<span>NT$ 550</span>
+									</div>
+								</div>
+								{/* 前往付款按鈕 */}
+								<div className="pay-btn">
+									<Link to={'/Apply_Page2'} className="pay-btn">
+										<li
+											onClick={() => {
+
+											}}
+											style={{
+												position: 'relative',
+												display: 'inline-block',
+												width: '180px',
+											}}
+										>
+											<img
+												src="./src/images/btn/new-btn2-normal.png"
+												alt="Pay now"
+												style={{
+													width: '100%',
+													height: '100%',
+													objectFit: 'contain',
+													transition: '0.3s ease',
+													cursor: 'pointer'
+												}}
+												className="pay-btn-img"
+												onMouseEnter={() => {
+													document.querySelector('.pay-btn-img').src = './src/images/btn/new-btn2-hover.png';  // 切換圖片
+													document.querySelector('.pay-btn-text').style.transform = 'top 45%'
+												}}
+												onMouseLeave={() => {
+													document.querySelector('.pay-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 還原
+													document.querySelector('.pay-btn-text').style.transform = 'top 45%'
+												}}
+												onMouseDown={() => {
+													document.querySelector('.pay-btn-img').src = './src/images/btn/new-btn2-pressed.png';  // 按下
+													document.querySelector('.pay-btn-text').style.transform = 'top 50%';
+												}}
+												onMouseUp={() => {
+													document.querySelector('.pay-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 放開
+													document.querySelector('.pay-btn-text').style.transform = 'top 45%'
+												}}
+											/>
+											<span
+												style={{
+													position: 'absolute',
+													top: '45%',
+													left: '50%',
+													transform: 'translate(-50%, -50%)',
+													color: 'white',
+													fontSize: '24px',
+													textAlign: 'center',
+													whiteSpace: 'nowrap',
+													cursor: 'pointer'
+												}}
+												className="pay-btn-text"
+												onMouseEnter={() => {
+													document.querySelector('.pay-btn-img').src = './src/images/btn/new-btn2-hover.png';  // 切換圖片
+													document.querySelector('.pay-btn-text').style.transform = 'top 45%'
+												}}
+												onMouseLeave={() => {
+													document.querySelector('.pay-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 還原
+													document.querySelector('.pay-btn-text').style.transform = 'top 45%'
+												}}
+												onMouseDown={() => {
+													document.querySelector('.pay-btn-img').src = './src/images/btn/new-btn2-pressed.png';  // 按下
+													document.querySelector('.pay-btn-text').style.transform = 'top 50%';
+												}}
+												onMouseUp={() => {
+													document.querySelector('.pay-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 放開
+													document.querySelector('.pay-btn-text').style.transform = 'top 45%'
+												}}
+											>
+												前往付款
+											</span>
+										</li>
+									</Link>
 								</div>
 							</div>
-							<div className="price-summary">
-								<div className="price-item">
-									<span>活動小計</span>
-									<span>NT$ 600</span>
-								</div>
-								<div className="price-item discount">
-									<span>折價券折抵</span>
-									<span>-NT$ 50</span>
-								</div>
-								<div className="total-price">
-									<span>NT$ 550</span>
-								</div>
-							</div>
-							<button className="checkout-btn">前往付款</button>
 						</div>
 					</div>
 				</div>

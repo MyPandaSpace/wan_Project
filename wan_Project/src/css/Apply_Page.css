@@ -1,17 +1,15 @@
 .step-list-container {
-    border: red solid 1px;
-    margin-top: 120px;
-    /* position: relative; */
     position: sticky;
-    width: 100%;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+    margin-top: 120px;
     height: 100px;
-    overflow: hidden;
-    display: flex;
+    width: 100%;
     align-items: center;
 }
 
 .step-list {
-    border: red solid 1px;
     /* position: relative; */
     max-width: 800px;
     margin: 0 auto;
@@ -191,7 +189,7 @@
     border: 1px solid #dadada;
     border-radius: 40px;
     margin: 2em 0;
-    padding: 40px;
+    padding: 40px 0;
     position: relative;
     background: white;
     margin-bottom: 60px;
@@ -210,14 +208,19 @@
 }
 
 .form-group {
-    margin-bottom: 20px;
+    padding: 0 40px 0;
+    margin-bottom: 5px;
+}
+
+.form-group-s {
+    padding: 0 68px 0;
 }
 
 .form-group label {
     display: block;
     color: #666;
     font-size: 20px;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
 }
 
 .form-group input {
@@ -241,6 +244,7 @@
     display: flex;
     align-items: flex-start;
     gap: 10px;
+    padding: 18px 40px 0;
 }
 
 .form-check input[type="checkbox"] {
@@ -250,6 +254,7 @@
     border-radius: 50px;
     cursor: pointer;
 }
+
 /* 沒用？？？？ */
 
 .form-check label {
@@ -263,7 +268,7 @@
     border: 1px solid #dadada;
     border-radius: 40px;
     margin: 2em 0;
-    padding: 50px 40px;
+    padding: 40px;
     position: relative;
     background: white;
     margin-bottom: 60px;
@@ -289,17 +294,40 @@
 /* 右側 */
 .apply_right {
     flex: 1;
+    position: relative;
+}
+
+.applyCta {
+    margin-top: 25px;
+    width: 418px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    /* 垂直排列 */
+    align-items: center;
+    /* 水平居中 */
+}
+
+.applyCta img {
+    display: block;
+    width: 100%;
+    /* 確保圖片全寬展示，根據需求調整 */
 }
 
 .order-summary {
-    background: white;
-    padding: 24px;
-    border-radius: 8px;
+    width: 320px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* 將內容置中 */
+    padding: 20px 0 10px;
 }
 
-.order-summary h2 {
-    color: #333;
-    font-size: 20px;
+.order-summary h2,
+.order-summary-2 h2 {
+    color: #666;
+    font-size: 24px;
     margin-bottom: 20px;
 }
 
@@ -308,9 +336,17 @@
 }
 
 .coupon-section span {
+    font-size: 20px;
     display: block;
     color: #666;
+    border-top: 1px solid #dadada;
+    padding-top: 20px;
     margin-bottom: 8px;
+}
+
+.coupon-section small {
+    color: #666;
+    font-size: 16px;
 }
 
 .coupon-input {
@@ -334,6 +370,40 @@
     cursor: pointer;
 }
 
+.coupon-option {
+    color: #dadada;
+}
+
+.coupon-radio {
+    /* visibility: hidden; */
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius: 99;
+    /* display: inline-block; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* top: 0; */
+}
+
+.coupon-radio::after {
+    /* 中間點點 */
+    content: "";
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+input[type="radio"] {
+    color: #1684C8;
+}
+
 .price-summary {
     border-top: 1px solid #dadada;
     padding-top: 20px;
@@ -341,27 +411,227 @@
 }
 
 .price-item {
+    font-size: 20px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
     color: #666;
 }
 
 .total-price {
     text-align: right;
-    font-size: 24px;
-    color: #333;
+    font-size: 36px;
+    color: #2C2C2C;
     margin-top: 20px;
 }
 
-/* .checkout-btn {
+.pay-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    padding: 12px;
-    background: #1684C8;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    font-size: 18px;
-    cursor: pointer;
-} */
+    /* margin-top: 20px; */
+}
 
+/* Apply_page2 */
+.payment-method-card,
+.invoice-card {
+    width: 815px;
+    border: 1px solid #dadada;
+    border-radius: 40px;
+    margin: 2em 0;
+    padding: 50px 0;
+    position: relative;
+    background: white;
+    margin-bottom: 60px;
+}
+
+.payment-method-card::before {
+    background-color: #fff;
+    color: #666;
+    font-size: 36px;
+    content: "付款方式";
+    left: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
+.invoice-card::before {
+    background-color: #fff;
+    color: #666;
+    font-size: 36px;
+    content: "發票/統一編號";
+    left: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
+.payment-options,
+.invoice-options {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.payment-box,
+.invoice-box {
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-option,
+.invoice-option {
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.payment-option input[type="radio"],
+.invoice-option input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #1684C8;
+}
+
+.invoice-option input[type="text"] {
+    accent-color: #1684C8;
+}
+
+.payment-option label,
+.invoice-option label {
+    font-size: 20px;
+    color: #666;
+}
+
+.card-logos {
+    display: flex;
+    gap: 10px;
+    margin-left: auto;
+}
+
+.card-logos img {
+    height: 24px;
+    width: auto;
+}
+
+.form-group-row {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+    flex: 1;
+    min-width: 0;
+}
+
+/* 注意事項 */
+.pay-notice-content {
+    width: 815px;
+    border: 1px solid #dadada;
+    border-radius: 40px;
+    margin: 2em 0;
+    padding: 50px 40px;
+    position: relative;
+    background: white;
+    margin-bottom: 60px;
+}
+
+.pay-notice-content::before {
+    background-color: #fff;
+    color: #666;
+    font-size: 36px;
+    content: "注意事項";
+    /* 標題 */
+    left: 1em;
+    padding: 0 .5em;
+    position: absolute;
+    top: -1em;
+}
+
+.pay-notice-content li {
+    font-size: 18px;
+    color: #666;
+}
+
+.invoice-fields {
+    /* margin-top: 20px; */
+    display: flex;
+    flex-direction: column;
+    /* gap: 15px; */
+}
+
+.invoice-fields .form-group {
+    margin-bottom: 0;
+}
+
+.notice-content ol {
+    padding-left: 20px;
+    color: #666;
+}
+
+.notice-content li {
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.order-notes {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #dadada;
+}
+
+.order-notes label {
+    color: #666;
+    font-size: 18px;
+}
+
+.order-note {
+    margin-bottom: 10px;
+}
+
+.order-note-check {
+    margin-right: 10px;
+}
+
+.order-note-check[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    accent-color: #72B2DA;
+    align-items: center;
+}
+
+
+.applyCta-2 {
+    margin-top: 25px;
+    width: 418px;
+    position: sticky;
+    display: flex;
+    flex-direction: column;
+    /* 垂直排列 */
+    align-items: center;
+    /* 水平居中 */
+}
+
+.applyCta-2 img {
+    display: block;
+    width: 100%;
+    /* 確保圖片全寬展示，根據需求調整 */
+}
+
+.order-summary-2 {
+    width: 320px;
+    position: absolute;
+    top: 0px;
+    left: 12%;
+    /* 將內容置中 */
+    padding: 20px 0 10px;
+}
+
+/* 修正 sticky 定位 */
+.step-list-container {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: white;
+}
