@@ -1,6 +1,7 @@
 .breadcrumb {
     display: flex;
     margin-left: 40px;
+    margin-top: 40px;
 }
 
 .breadcrumb li {
@@ -15,7 +16,7 @@
 
 .article-Content-Container {
     margin-top: 100px;
-    padding: 0 300px;
+    padding: 0 400px;
 }
 
 .article-Header {
