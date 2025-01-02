@@ -33,8 +33,8 @@ function Event_Detail() {
 				{/* 左側 */}
 				<div className="left">
 					<div className="eventBanner">
-						<img className="decoration-left" src="./src/images/Event_Detail/dec1.png" alt="" />
-						<img className="decoration-right" src="./src/images/Event_Detail/dec1.png" alt="" />
+						<img id="decoration-left" src="./src/images/Event_Detail/dec1.png" alt="" />
+						<img id="decoration-right" src="./src/images/Event_Detail/dec1-up.png" alt="" />
 						{/* 輪播圖片 */}
 						<div className="detail-carousel">
 							{images.map((src, index) => (

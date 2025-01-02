@@ -112,13 +112,97 @@ video {
     background-repeat: no-repeat;
     background-image: url(../src/images/Event/Banner_EventBg.png);
     background-size: cover;
+    position: relative;
+}
+
+.season-event-carousel img {
+    width: 500px;
+    height: 500px;
+    border-radius: 200px;
+}
+
+#season_Event {
+    position: absolute;
+    top: 400px;
+    left: 200px;
+    scale: 1.1;
+}
+
+#event_bubble-border{
+    position: absolute;
+    top: 20px;
+    left: 660px;
+    scale: 1.1;
+}
+
+.comment-Card-row1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    padding-right: 60px;
+    gap: 50px;
+}
+
+.comment-Card-row2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 40px 0;
+    padding-left: 60px;
+    gap: 50px;
+}
+
+#comment-Card1 {
+    background-image: url(../src/images/Event/comment_Card1.png);
+}
+
+#comment-Card2 {
+    background-image: url(../src/images/Event/comment_Card2.png);
+}
+
+#comment-Card3 {
+    background-image: url(../src/images/Event/comment_Card3.png);
 }
 
 .comment-Card {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 60px 40px;
+    width: 240px;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.user-medal {
+    position: absolute;
+    top: -32%;
+    left: 48%;
+    scale: 0.5;
+}
+
+.comment-Card img {
+    width: 100%;
+    margin-top: 5px;
+    padding: 0 40px;
+}
+
+.comment-title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+    color: #666;
+}
+
+.comment-content {
+    padding: 0 20px;
+    color: #666;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .event {
@@ -126,23 +210,12 @@ video {
     flex-direction: column;
 }
 
-.event #row-Top {
-    padding-top: 60px;
-    padding-left: 60px;
-    width: 90%;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    gap: 10px;
-}
-
 .event #event-Type {
     width: 100%;
-    margin: 30px 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 30px;
+    align-items: end;
+    gap: 40px;
 }
 
 #event-Type1:hover {
@@ -192,7 +265,7 @@ video {
     margin-bottom: 10px;
 }
 
-.event #column-event_Card p1 {
+.event #column-event_Card p {
     color: #666;
     padding-left: 16px;
 }
