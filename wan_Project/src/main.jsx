@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, HashRouter } from 'react-router-dom'
 import Index from './index.jsx'
 import Event from './Event.jsx'
 import Event_Type2 from './Event_Type2.jsx'
@@ -19,7 +19,7 @@ import Apply_Page2 from './Apply_Page2.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Index />} />
         <Route path="/Event" element={<Event />} />
@@ -37,6 +37,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/Article" element={<Article />} />
         <Route path="/Apply_Page2" element={<Apply_Page2 />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 )
