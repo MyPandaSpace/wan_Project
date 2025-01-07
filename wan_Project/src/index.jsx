@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import Aos from "aos";
 import Footer from "./component/Footer.jsx";
 import Btn_goTop from "./component/Btn_goTop.jsx";
+import { Link } from "react-router-dom";
 
 function Index() {
   useEffect(() => {
@@ -64,13 +65,13 @@ function Index() {
           <div id='banner2'>
             <img id="bg_mountain" src={bg_mountain} alt="bg_mountain" />
             <div id="circle_ip" data-aos="fade-right" data-aos-duration="3000">
-              <a href="/Event"><img src="./src/images/index/circle_ip.svg" alt="circle_ip" /></a>
+              <Link to="/Event"><img src="./src/images/index/circle_ip.svg" alt="circle_ip" /></Link>
               <div className="ip_hover-image" id="circle-hover-image">
                 <img src="./src/images/index/Go_Event.png" alt="Go_Event" />
               </div>
             </div>
             <div id='heart_ip' data-aos="fade-left" data-aos-duration="3000">
-              <a href="/Article_Bay"><img src="./src/images/index/heart_ip.svg" alt="heart_ip" /></a>
+              <Link to="/Article_Bay"><img src="./src/images/index/heart_ip.svg" alt="heart_ip" /></Link>
               <div className="ip_hover-image" id="heart-hover-image">
                 <img src="./src/images/index/Go_ArticleBay.png" alt="Go_ArticleBay" />
               </div>
@@ -103,12 +104,12 @@ function Index() {
               <img id="mainEvent-Title" src="./src/images/index/mainEvent-Title.svg" alt="title" />
               <article id='mainEvent-Content'>
                 <p>2025.01.25 (六)</p>
-                <h2>【過年限定】紙韻心意剪紙活動</h2>
-                <p>以剪紙這項傳統藝術來迎接新年！透過一刀一剪，將你的心意轉化為美麗的圖案，無論是喜慶的紅色剪紙或精緻的對聯裝飾，都充滿溫暖的祝福。
+                <h2>【過年限定】彩繪心意燈籠活動</h2>
+                <p>點亮新年的幸福之光！用自己的雙手為燈籠添上專屬色彩，創造獨一無二的年節裝飾。在溫馨的氛圍中，透過手作彩繪燈籠，不僅展現你的創意，還能為家中增添喜氣與祝福！
                   <br /><br />
-                  這個活動適合所有想要沉澱心情、用心創作的人，一同透過簡單的創作步驟，為新的一年剪出滿滿的美好與希望！</p>
+                  這個活動適合所有想要沉澱心情、用心創作的人，一同透過簡單的創作步驟，為新的一年畫上滿滿的美好與希望！</p>
               </article>
-              <a href="/Event"><li
+              <Link to="/Event_Detail"><li
                 onClick={() => document.getElementById('article_Type1_Img').scrollIntoView({ behavior: 'smooth' })}
                 style={{
                   position: 'relative',
@@ -177,16 +178,16 @@ function Index() {
                 >
                   了解更多
                 </span>
-              </li></a>
+              </li></Link>
             </div>
             <div id="mainEvent-Right">
               <img id="mainEvent-Image" src={images[currentSlide]} alt="image" /> {/* 顯示當前圖片 */}
               <div id="mainEvent-btnArrow">
                 <div id="mainEvent-arrow_Left" onClick={goToPreviousSlide}>
-                  <img src="./src/images/index/btn_ArrowLeft.svg" alt="btn_Left" />
+                  <img src="./src/images/index/btn_ArrowLeft.png" alt="btn_Left" />
                 </div>
                 <div id="mainEvent-arrow_Right" onClick={goToNextSlide}>
-                  <img src="./src/images/index/btn_ArrowRight.svg" alt="btn_Right" />
+                  <img src="./src/images/index/btn_ArrowRight.png" alt="btn_Right" />
                 </div>
               </div>
             </div>

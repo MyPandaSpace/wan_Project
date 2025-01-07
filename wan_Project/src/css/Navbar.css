@@ -30,3 +30,48 @@
 #navbar #navbar-Bg {
     z-index: -1;
 }
+
+@media screen and (max-width: 375px) {
+
+  #navbar #logo {
+    margin: 0;
+    padding-top: 10px;
+    width: 100px;
+  }
+
+}
+
+/* 選定 img 標籤的 hover 狀態 */
+#icon-Member {
+    width: 60px;
+    height: 60px;
+  }
+  
+  #icon-Member:hover {
+    content: url('../images/index/member-hover.png'); /* 使用 url() 變更圖片 */
+  }
+  
+  #icon-Member:active {
+    content: url('../images/index/member-pressed.png'); /* 使用按壓圖片 */
+  }
+  
+  #icon-Hamburger {
+    width: 60px;
+    height: 60px;
+  }
+  
+  #icon-Hamburger:hover {
+    content: url('../images/index/ham-hover.png');
+  }
+  
+  #icon-Hamburger:active {
+    content: url('../images/index/ham-pressed.png');
+  }
+  
+  @media screen and (max-width: 375px) {
+    #icon-Member,
+    #icon-Hamburger {
+      width: 36px;
+      height: 36px;
+    }
+  }

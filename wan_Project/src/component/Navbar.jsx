@@ -3,6 +3,7 @@ import Modal_Login from "./Modal_Login";
 import Modal_SignUp from "./Modal_Signup";
 import "../css/Navbar.css";
 import HamburgerMenu from './HamburgerMenu';
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
 	const [isModalOpen, setIsModalOpen] = useState(false);
@@ -28,10 +29,10 @@ export default function Navbar() {
 	return (
 		<>
 			<header id='navbar'>
-				<a href="/"><img id="logo" src="./src/images/index/logo.svg" alt="logo" /></a>
+				<Link to="/"><img id="logo" src="./src/images/index/logo.svg" alt="logo" /></Link>
 				<div id='icon'>
-					<div onClick={handleOpenModal} style={{ cursor: "pointer" }}><img id="icon-Member" src="./src/images/index/icon-Member.svg" alt="Member" /></div>
-					<div onClick={toggleMenu} style={{ cursor: "pointer" }}><img id="icon-Hamburger" src="./src/images/index/icon-Hamburger.svg" alt="Hamburger" /></div>
+					<div onClick={handleOpenModal} style={{ cursor: "pointer" }}><img id="icon-Member" src="./src/images/index/member-normal.png" alt="Member" /></div>
+					<div onClick={toggleMenu} style={{ cursor: "pointer" }}><img id="icon-Hamburger" src="./src/images/index/ham-normal.png" alt="Hamburger" /></div>
 				</div>
 
 				{/* 根據 isLoginMode 顯示不同的彈窗 */}

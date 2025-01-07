@@ -148,6 +148,36 @@ a {
   width: 60px
 }
 
+@media screen and (max-width: 768px) {
+
+  .h1 {
+    margin: 0 auto;
+  }
+
+  /* 標題區域調整 */
+  .h1_titleImg {
+    width: 40%;
+  }
+
+  .h1 .h1-flower1,
+  .h1 .h1-flower2 {
+    width: 45px;
+  }
+
+}
+
+@media screen and (max-width: 375px) {
+
+  .h1_titleImg {
+    width: 40%;
+  }
+
+  .h1 .h1-flower1,
+  .h1 .h1-flower2 {
+    width: 8%;
+  }
+}
+
 /* 按鈕區域 */
 .faq-category {
   display: flex;
@@ -167,11 +197,34 @@ a {
   width: 144px
 } */
 
-.faq-category p {
-  color: #72b2da;
+.faq-category span {
   font-size: 20px;
-  position: relative;
-  top: -46px
+}
+
+@media screen and (max-width: 768px) {
+
+  .faq-category {
+    align-items: center;
+  }
+
+  .faq-category li {
+    margin: 10px 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .faq-category {
+    align-items: center;
+    position: absolute;
+    top: 20;
+    left: 50px;
+    width: 70%;
+  }
+
+  .faq-category span {
+    font-size: 14px;
+  }
 }
 
 /* .faq-category a:hover img {
@@ -214,6 +267,64 @@ a {
 #faq-event p,
 #faq-other p {
   font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* 主要內容區域調整 */
+  #faq-main {
+    margin: 10px 70px;
+  }
+
+  /* 文字大小調整 */
+  #faq-member h2,
+  #faq-event h2,
+  #faq-other h2 {
+    font-size: 20px;
+  }
+
+  #faq-member .title,
+  #faq-event .title,
+  #faq-other .title {
+    font-size: 18px;
+  }
+
+  #faq-member p,
+  #faq-event p,
+  #faq-other p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  #faq-main {
+    margin: 100px 30px;
+  }
+
+  #faq-member h2,
+  #faq-event h2,
+  #faq-other h2 {
+    font-size: 18px;
+  }
+
+  #faq-member .title,
+  #faq-event .title,
+  #faq-other .title {
+    font-size: 16px;
+  }
+
+  #faq-member p,
+  #faq-event p,
+  #faq-other p {
+    font-size: 14px;
+  }
+
+  #faq-member .faq-title img,
+  #faq-event .faq-title img,
+  #faq-other .faq-title img {
+    width: 80px;
+  }
 }
 
 .faq-qa {
@@ -293,6 +404,36 @@ a {
 .faq-q.noton img {
   rotate: 360deg;
   transition: 400ms;
+}
+
+@media screen and (max-width: 768px) {
+
+  /* FAQ區塊內距 */
+  .faq-qalist .faq-q {
+    padding: 20px 15px;
+  }
+
+  .faq-qa img {
+    width: 25px;
+    margin-right: 15px;
+  }
+
+  .faq-qalist .faq-a {
+    padding: 15px;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 375px) {
+
+  .faq-qa img {
+    width: 15px;
+    margin-right: 5px;
+  }
+
+  .faq-qalist .faq-a {
+    padding: 15px 10px;
+  }
 }
 
 footer {

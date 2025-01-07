@@ -243,10 +243,17 @@ h2 {
 }
 
 #mainEvent-arrow_Left :hover {
-  content: url(./src/images/index/arrow-left_hover.png);
+  content: url(./src/images/index/arrow-left-hover.png);
+}
 
+#mainEvent-arrow_Left :active {
+  content: url(./src/images/index/arrow-left-pressed.png);
 }
 
 #mainEvent-arrow_Right :hover {
-  content: url(./src/images/index/arrow-right_hover.png);
+  content: url(./src/images/index/arrow-right-hover.png);
+}
+
+#mainEvent-arrow_Right :active {
+  content: url(./src/images/index/arrow-right-pressed.png);
 }

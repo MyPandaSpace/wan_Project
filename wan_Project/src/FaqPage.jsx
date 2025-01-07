@@ -87,7 +87,6 @@ function FaqPage() {
 								left: '50%',
 								transform: 'translate(-50%, -50%)',
 								color: '#72b2da',
-								fontSize: '20px',
 								textAlign: 'center',
 								whiteSpace: 'nowrap',
 								cursor: 'pointer'
@@ -158,7 +157,6 @@ function FaqPage() {
 								left: '50%',
 								transform: 'translate(-50%, -50%)',
 								color: '#72b2da',
-								fontSize: '20px',
 								textAlign: 'center',
 								whiteSpace: 'nowrap',
 								cursor: 'pointer'
@@ -230,7 +228,6 @@ function FaqPage() {
 								left: '50%',
 								transform: 'translate(-50%, -50%)',
 								color: '#72b2da',
-								fontSize: '20px',
 								textAlign: 'center',
 								whiteSpace: 'nowrap',
 								cursor: 'pointer'

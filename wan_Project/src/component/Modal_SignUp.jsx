@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/Modal_Login.css"; // 將您的 CSS 匯入
+import { Link } from "react-router-dom";
 
 const Modal_SignUp = ({ show, onClose, onSwitchToLogin }) => {
+  const [closeButtonImage, setCloseButtonImage] = useState("./src/images/modal_Login/close.png");
   if (!show) return null; // 如果彈窗不顯示，返回 null
 
   return (
@@ -9,8 +11,15 @@ const Modal_SignUp = ({ show, onClose, onSwitchToLogin }) => {
       <div className="modal-window" onClick={(e) => e.stopPropagation()}>
         <div className="modal-header">
           <h2>歡迎加入！</h2>
-          <button className="modal-close" onClick={onClose}>
-            <img src="./src/images/modal_Login/close.png" alt="" />
+          <button
+            className="modal-close"
+            onClick={onClose}
+            onMouseEnter={() => setCloseButtonImage("./src/images/modal_Login/close_Hover.png")}
+            onMouseLeave={() => setCloseButtonImage("./src/images/modal_Login/close.png")}
+            onMouseDown={() => setCloseButtonImage("./src/images/modal_Login/close_Pressed.png")}
+            onMouseUp={() => setCloseButtonImage("./src/images/modal_Login/close_Hover.png")}
+          >
+            <img src={closeButtonImage} alt="Close" />
           </button>
         </div>
         <div className="modal-content">
@@ -23,7 +32,80 @@ const Modal_SignUp = ({ show, onClose, onSwitchToLogin }) => {
             <input type="text" id="name" name="name" placeholder="請輸入名稱" required />
             <input type="text" id="name" name="name" placeholder="請輸入密碼" required />
             <input type="text" id="name" name="name" placeholder="再次輸入密碼" required />
-            <a href="/Membership_myPage"><img src="./src/images/modal_Login/btn_SignUp.png" alt="login" /></a>
+
+            <Link to={'/Membership_myPage'} className="pay-btn">
+              <li
+                onClick={() => {
+
+                }}
+                style={{
+                  position: 'relative',
+                  display: 'inline-block',
+                  width: '180px',
+                }}
+              >
+                <img
+                  src="./src/images/btn/new-btn2-normal.png"
+                  alt="Pay now"
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'contain',
+                    transition: '0.3s ease',
+                    cursor: 'pointer'
+                  }}
+                  className="pay-btn-img"
+                  onMouseEnter={() => {
+                    document.querySelector('.pay-btn-img').src = './src/images/btn/new-btn2-hover.png';  // 切換圖片
+                    document.querySelector('.pay-btn-text').style.transform = 'top 45%'
+                  }}
+                  onMouseLeave={() => {
+                    document.querySelector('.pay-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 還原
+                    document.querySelector('.pay-btn-text').style.transform = 'top 45%'
+                  }}
+                  onMouseDown={() => {
+                    document.querySelector('.pay-btn-img').src = './src/images/btn/new-btn2-pressed.png';  // 按下
+                    document.querySelector('.pay-btn-text').style.transform = 'top 50%';
+                  }}
+                  onMouseUp={() => {
+                    document.querySelector('.pay-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 放開
+                    document.querySelector('.pay-btn-text').style.transform = 'top 45%'
+                  }}
+                />
+                <span
+                  style={{
+                    position: 'absolute',
+                    top: '45%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    color: 'white',
+                    fontSize: '18px',
+                    textAlign: 'center',
+                    whiteSpace: 'nowrap',
+                    cursor: 'pointer'
+                  }}
+                  className="pay-btn-text"
+                  onMouseEnter={() => {
+                    document.querySelector('.pay-btn-img').src = './src/images/btn/new-btn2-hover.png';  // 切換圖片
+                    document.querySelector('.pay-btn-text').style.transform = 'top 45%'
+                  }}
+                  onMouseLeave={() => {
+                    document.querySelector('.pay-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 還原
+                    document.querySelector('.pay-btn-text').style.transform = 'top 45%'
+                  }}
+                  onMouseDown={() => {
+                    document.querySelector('.pay-btn-img').src = './src/images/btn/new-btn2-pressed.png';  // 按下
+                    document.querySelector('.pay-btn-text').style.transform = 'top 50%';
+                  }}
+                  onMouseUp={() => {
+                    document.querySelector('.pay-btn-img').src = './src/images/btn/new-btn2-normal.png';  // 放開
+                    document.querySelector('.pay-btn-text').style.transform = 'top 45%'
+                  }}
+                >
+                  註冊
+                </span>
+              </li>
+            </Link>
           </form>
         </div>
         <div id="modal-Footer">

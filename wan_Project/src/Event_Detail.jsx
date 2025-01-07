@@ -86,7 +86,7 @@ function Event_Detail() {
 					{/* 活動說明區塊 */}
 					<div className="eventContents">
 						<ul className="detailTags">
-							{/* <li><a href="#eventIntro">活動簡介</a></li> */}
+							{/* <li><Link to="#eventIntro">活動簡介</a></li> */}
 							<li onClick={() => document.getElementById('eventIntro').scrollIntoView({ behavior: 'smooth' })}>活動簡介</li>
 							<li onClick={() => document.getElementById('eventMaterial').scrollIntoView({ behavior: 'smooth' })}>活動材料</li>
 							<li onClick={() => document.getElementById('eventContent').scrollIntoView({ behavior: 'smooth' })}>活動內容</li>
@@ -178,7 +178,7 @@ function Event_Detail() {
 									<br />
 									<br />
 									※若有其他問題可先至
-									<a href="/Faq" className="linkFaq">常見問題</a>
+									<Link to="/Faqpage" className="linkFaq">常見問題</Link>
 									找找，若沒有解決您的疑惑歡迎來信至 email@gmail.com！
 									<br />
 									<br />

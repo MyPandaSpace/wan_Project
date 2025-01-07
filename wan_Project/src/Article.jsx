@@ -2,6 +2,7 @@ import Btn_goTop from './component/Btn_goTop';
 import Footer from './component/Footer';
 import Navbar from './component/Navbar';
 import './css/Article.css';
+import { Link } from "react-router-dom";
 
 export default function Article() {
 
@@ -12,7 +13,7 @@ export default function Article() {
 			<main id="main-article-container">
 				<nav>
 					<ul className="breadcrumb">
-						<li><a href="/Article_Bay" style={{ color: '#666' }}>心途之灣 </a></li>
+						<li><Link to="/Article_Bay" style={{ color: '#666' }}>心途之灣 </Link></li>
 						<li> / </li>
 						<li style={{ color: '#1684C8' }}> 正念冥想：活在當下，找到內心的平靜</li>
 					</ul>

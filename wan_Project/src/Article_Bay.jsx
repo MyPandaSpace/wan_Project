@@ -2,6 +2,8 @@ import Btn_goTop from "./component/Btn_goTop";
 import Footer from "./component/Footer";
 import Navbar from "./component/Navbar";
 import './css/Article_Bay.css';
+import { Link } from "react-router-dom";
+
 
 export default function Article_Bay() {
 
@@ -241,9 +243,9 @@ export default function Article_Bay() {
           <div className="article-Card-Column">
             <div className="article-Row">
               <div className='article-Card'>
-                <a href="/Article">
+                <Link to="/Article">
                   <img src="./src/images/Article_Bay/meditation_1.png" alt="" />
-                </a>
+                </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 林郁虹醫師</small>
                   <h2>實踐正念冥想，改善情緒健康</h2>
@@ -251,9 +253,9 @@ export default function Article_Bay() {
                 </div>
               </div>
               <div className='article-Card'>
-                <a href="/Article">
+                <Link to="/Article">
                   <img src="./src/images/Article_Bay/meditation_2.png" alt="" />
-                </a>
+                </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 劉婉玲作家</small>
                   <h2>五分鐘正念冥想，改變你的每一天</h2>
@@ -263,9 +265,9 @@ export default function Article_Bay() {
             </div>
             <div className="article-Row">
               <div className='article-Card'>
-                <a href="/Article">
+                <Link to="/Article">
                   <img src="./src/images/Article_Bay/meditation_3.png" alt="" />
-                </a>
+                </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 王芷若作家</small>
                   <h2>香氣與指尖交織—平衡身心的冥想時光</h2>
@@ -273,9 +275,9 @@ export default function Article_Bay() {
                 </div>
               </div>
               <div className='article-Card'>
-                <a href="/Article">
+                <Link to="/Article">
                   <img src="./src/images/Article_Bay/meditation_4.png" alt="" />
-                </a>
+                </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 陳安琪教授</small>
                   <h2>透過「呼吸」找回內心的寧靜</h2>
@@ -292,9 +294,9 @@ export default function Article_Bay() {
           <div className="article-Card-Column">
             <div className="article-Row">
               <div className='article-Card'>
-                <a href="/Article">
+                <Link to="/Article">
                   <img src="./src/images/Article_Bay/health_1.png" alt="" />
-                </a>
+                </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 陳彥宇醫師</small>
                   <h2>身心健康；從聆聽自己的需要開始</h2>
@@ -302,9 +304,9 @@ export default function Article_Bay() {
                 </div>
               </div>
               <div className='article-Card'>
-                <a href="/Article">
+                <Link to="/Article">
                   <img src="./src/images/Article_Bay/health_2.png" alt="" />
-                </a>
+                </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 許哲豪醫師</small>
                   <h2>穴道按摩＋生活調理：打造全面健康</h2>
@@ -314,9 +316,9 @@ export default function Article_Bay() {
             </div>
             <div className="article-Row">
               <div className='article-Card'>
-                <a href="/Article">
+                <Link to="/Article">
                   <img src="./src/images/Article_Bay/health_3.png" alt="" />
-                </a>
+                </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 林郁虹醫師</small>
                   <h2>用簡單的運動來管理壓力，找到喘息的空間</h2>
@@ -324,9 +326,9 @@ export default function Article_Bay() {
                 </div>
               </div>
               <div className='article-Card'>
-                <a href="/Article">
+                <Link to="/Article">
                   <img src="./src/images/Article_Bay/health_4.png" alt="" />
-                </a>
+                </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 李宛萱醫師</small>
                   <h2>健康飲食，讓身心感受真正的活力</h2>
@@ -343,9 +345,9 @@ export default function Article_Bay() {
           <div className="article-Card-Column">
             <div className="article-Row">
               <div className='article-Card'>
-                <a href="/Article">
+                <Link to="/Article">
                   <img src="./src/images/Article_Bay/selfcare_1.png" alt="" />
-                </a>
+                </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 林書涵醫師</small>
                   <h2>擁抱不完美的自己：幸福的第一步</h2>
@@ -353,9 +355,9 @@ export default function Article_Bay() {
                 </div>
               </div>
               <div className='article-Card'>
-                <a href="/Article">
+                <Link to="/Article">
                   <img src="./src/images/Article_Bay/selfcare_2.png" alt="" />
-                </a>
+                </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 王芷若作家</small>
                   <h2>別再比較了！每個人都有專屬的價值</h2>
@@ -365,9 +367,9 @@ export default function Article_Bay() {
             </div>
             <div className="article-Row">
               <div className='article-Card'>
-                <a href="/Article">
+                <Link to="/Article">
                   <img src="./src/images/Article_Bay/selfcare_3.png" alt="" />
-                </a>
+                </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 陳安琪教授</small>
                   <h2>愛自己，從欣賞每天的小成就開始</h2>
@@ -375,9 +377,9 @@ export default function Article_Bay() {
                 </div>
               </div>
               <div className='article-Card'>
-                <a href="/Article">
+                <Link to="/Article">
                   <img src="./src/images/Article_Bay/selfcare_4.png" alt="" />
-                </a>
+                </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 林郁虹醫師</small>
                   <h2>接納情緒，與自己的內心和平共處</h2>
@@ -387,9 +389,9 @@ export default function Article_Bay() {
             </div>
             <div className="article-Row">
               <div className='article-Card'>
-                <a href="/Article">
+                <Link to="/Article">
                   <img src="./src/images/Article_Bay/selfcare_5.png" alt="" />
-                </a>
+                </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 林郁虹醫師</small>
                   <h2>學會原諒自己，是成長的關鍵</h2>
@@ -397,9 +399,9 @@ export default function Article_Bay() {
                 </div>
               </div>
               <div className='article-Card'>
-                <a href="/Article">
+                <Link to="/Article">
                   <img src="./src/images/Article_Bay/selfcare_6.png" alt="" />
-                </a>
+                </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 趙鈺婷醫師</small>
                   <h2>真實的美來自於接納自己一切的不完美</h2>

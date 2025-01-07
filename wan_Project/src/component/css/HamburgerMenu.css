@@ -19,11 +19,21 @@
     justify-content: flex-end;
     align-items: center;
     margin: 20px 20px;
-    padding-right: 80px;
+    padding-right: 60px; /* 讓漢堡跟叉叉對齊 */
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    border: none; /* 移除邊框 */
+    background: none; /* 移除背景色 */
+    box-shadow: none; /* 移除任何陰影 */
+    outline: none; /* 移除點擊時的輪廓 */
+}
+
+.HamburgerMenu-header img {
+    display: block; /* 防止圖片出現外邊距 */
+    width: 60px; /* 設定適當大小 */
+    height: 60px;
 }
 
 .HamburgerMenu-content ul{
