@@ -233,9 +233,14 @@ video {
 .event #event-Type {
     width: 100%;
     display: flex;
-    justify-content: center;
     align-items: end;
     gap: 40px;
+    background: none;
+}
+
+#event-Type .filter-Button {
+    background: none;
+    border: none;
 }
 
 #event-Type1:hover {
@@ -268,11 +273,15 @@ video {
     flex-direction: column;
     width: 100%;
     padding: 20px;
+    position: relative;
+    overflow: hidden; /* 確保超出範圍的內容不會顯示 */
 }
 
 .event #column-event_Card img {
     width: 100%;
     margin-bottom: 10px;
+    display: block;
+    position: relative;
 }
 
 .event #column-event_Card small {
@@ -289,6 +298,63 @@ video {
     color: #666;
     padding-left: 13px;
 }
+
+.img-container {
+    position: relative;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.img-container::before {
+    border-radius: 30px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* 初始為透明 */
+    transition: background-color 0.1s ease-in-out;
+}
+
+.img-container:hover::before {
+    z-index: 88;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.25); 
+}
+
+.img-container:active::before {
+    z-index: 88;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.img-container::after {
+    content: '';
+    position: absolute;
+    bottom: 10px; 
+    right: 10px;  
+    width: 150px;  
+    height: 30px; 
+    background-image: url('./src/images/Event/more.svg'); 
+    background-size: contain; /* 保持圖片比例 */
+    background-repeat: no-repeat;
+    opacity: 0; /* 初始狀態不可見 */
+    transition: opacity 0.1s ease-in-out;
+    z-index: 99;
+}
+
+.img-container:hover::after {
+    opacity: 1; /* hover 時顯示圖片 */
+}
+
 
 .event #event-Tags {
     display: flex;

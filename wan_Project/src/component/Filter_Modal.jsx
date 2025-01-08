@@ -1,119 +1,128 @@
-import React, { useState } from 'react';
-import { X } from 'lucide-react';
+import React from 'react';
+import './css/Filter_Modal.css';
+
+// FilterModal.jsx
+// FilterModal.jsx
+import { useState } from 'react';
 
 const Filter_Modal = ({ isOpen, onClose }) => {
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedDate, setSelectedDate] = useState('');
   const [selectedLocations, setSelectedLocations] = useState([]);
-
-  const categories = [
-    { id: 'art', label: '藝術創作' },
-    { id: 'nature', label: '自然農趣' },
-    { id: 'spiritual', label: '心靈之旅' }
-  ];
-
-  const dates = [
-    { id: 'weekday', label: '平日' },
-    { id: 'weekend', label: '假日' }
-  ];
-
-  const locations = [
-    '台北', '新北', '桃園', '新竹', '台中',
-    '台南', '高雄'
-  ];
-
-  const handleLocationToggle = (location) => {
-    setSelectedLocations(prev => 
-      prev.includes(location)
-        ? prev.filter(loc => loc !== location)
-        : [...prev, location]
-    );
-  };
+  const [closeButtonImage, setCloseButtonImage] = useState("./src/images/modal_Login/close.png");
 
   if (!isOpen) return null;
 
+  // 處理活動分類和日期選擇（單選）
+  const handleSingleSelect = (value, setter) => {
+    setter(current => current === value ? '' : value);
+  };
+
+  // 處理地區選擇（多選）
+  const handleLocationSelect = (location) => {
+    setSelectedLocations(current => {
+      if (current.includes(location)) {
+        return current.filter(item => item !== location);
+      } else {
+        return [...current, location];
+      }
+    });
+  };
+
+  // 清除所有選擇
+  const handleClear = () => {
+    setSelectedCategory('');
+    setSelectedDate('');
+    setSelectedLocations([]);
+  };
+
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center p-4">
-      <div className="bg-white rounded-lg w-full max-w-md p-6">
-        <div className="flex justify-between items-center mb-6">
-          <h2 className="text-xl font-semibold">篩選</h2>
-          <button onClick={onClose} className="p-2">
-            <X className="h-6 w-6" />
-          </button>
-        </div>
-
-        <div className="space-y-6">
-          {/* 活動分類 */}
-          <div>
-            <h3 className="text-lg mb-3">活動分類</h3>
-            <div className="flex flex-wrap gap-2">
-              {categories.map(category => (
-                <button
-                  key={category.id}
-                  onClick={() => setSelectedCategory(category.id)}
-                  className={`px-4 py-2 rounded-full border ${
-                    selectedCategory === category.id
-                      ? 'bg-blue-500 text-white'
-                      : 'border-gray-300'
-                  }`}
-                >
-                  {category.label}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* 日期 */}
-          <div>
-            <h3 className="text-lg mb-3">日期</h3>
-            <div className="flex gap-2">
-              {dates.map(date => (
-                <button
-                  key={date.id}
-                  onClick={() => setSelectedDate(date.id)}
-                  className={`px-4 py-2 rounded-full border ${
-                    selectedDate === date.id
-                      ? 'bg-blue-500 text-white'
-                      : 'border-gray-300'
-                  }`}
-                >
-                  {date.label}
-                </button>
-              ))}
-            </div>
-          </div>
-
-          {/* 地區 */}
-          <div>
-            <h3 className="text-lg mb-3">地區</h3>
-            <div className="flex flex-wrap gap-2">
-              {locations.map(location => (
-                <button
-                  key={location}
-                  onClick={() => handleLocationToggle(location)}
-                  className={`px-4 py-2 rounded-full border ${
-                    selectedLocations.includes(location)
-                      ? 'bg-blue-500 text-white'
-                      : 'border-gray-300'
-                  }`}
-                >
-                  {location}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
-
-        <div className="mt-8 flex gap-4">
-          <button
+    <div className="filter-modal-overlay">
+      <div className="filter-modal">
+        <div className="filter-modal-header">
+          <h2>篩選</h2>
+ <button
+            className="filter-modal-close"
             onClick={onClose}
-            className="flex-1 px-4 py-2 border border-gray-300 rounded-full"
+            onMouseEnter={() => setCloseButtonImage("./src/images/modal_Login/close_Hover.png")}
+            onMouseLeave={() => setCloseButtonImage("./src/images/modal_Login/close.png")}
+            onMouseDown={() => setCloseButtonImage("./src/images/modal_Login/close_Pressed.png")}
+            onMouseUp={() => setCloseButtonImage("./src/images/modal_Login/close_Hover.png")}
           >
-            清除
+            <img src={closeButtonImage} alt="Close" />
           </button>
-          <button
-            onClick={onClose}
-            className="flex-1 px-4 py-2 bg-blue-500 text-white rounded-full"
+        </div>
+       
+        <div className="filter-section">
+          <h3>活動分類</h3>
+          <div className="filter-buttons">
+            <button 
+              className={`filter-btn ${selectedCategory === 'art' ? 'active' : ''}`}
+              onClick={() => handleSingleSelect('art', setSelectedCategory)}
+            >
+              藝術創作
+            </button>
+            <button 
+              className={`filter-btn ${selectedCategory === 'nature' ? 'active' : ''}`}
+              onClick={() => handleSingleSelect('nature', setSelectedCategory)}
+            >
+              自然療癒
+            </button>
+            <button 
+              className={`filter-btn ${selectedCategory === 'spiritual' ? 'active' : ''}`}
+              onClick={() => handleSingleSelect('spiritual', setSelectedCategory)}
+            >
+              心靈之旅
+            </button>
+          </div>
+        </div>
+
+        <div className="filter-section">
+          <h3>日期</h3>
+          <div className="filter-buttons">
+            <button 
+              className={`filter-btn ${selectedDate === 'weekday' ? 'active' : ''}`}
+              onClick={() => handleSingleSelect('weekday', setSelectedDate)}
+            >
+              平日
+            </button>
+            <button 
+              className={`filter-btn ${selectedDate === 'weekend' ? 'active' : ''}`}
+              onClick={() => handleSingleSelect('weekend', setSelectedDate)}
+            >
+              假日
+            </button>
+          </div>
+        </div>
+
+        <div className="filter-section">
+          <h3>地區</h3>
+          <div className="filter-buttons">
+            {['台北', '新北', '桃園', '新竹', '台中', '台南', '高雄'].map(location => (
+              <button 
+                key={location}
+                className={`filter-btn ${selectedLocations.includes(location) ? 'active' : ''}`}
+                onClick={() => handleLocationSelect(location)}
+              >
+                {location}
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="filter-actions">
+          <button onClick={handleClear} className="filter-action-btn clear">清除</button>
+          <button 
+            onClick={() => {
+              // 這裡可以處理篩選結果
+              console.log({
+                category: selectedCategory,
+                date: selectedDate,
+                locations: selectedLocations
+              });
+              onClose();
+            }} 
+            className="filter-action-btn submit"
           >
             篩選結果
           </button>

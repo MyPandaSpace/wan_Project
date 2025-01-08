@@ -244,7 +244,9 @@ export default function Article_Bay() {
             <div className="article-Row">
               <div className='article-Card'>
                 <Link to="/Article">
-                  <img src="./src/images/Article_Bay/meditation_1.png" alt="" />
+                  <div className="img-container">
+                    <img src="./src/images/Article_Bay/meditation_1.png" alt="" />
+                  </div>
                 </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 林郁虹醫師</small>
@@ -254,7 +256,8 @@ export default function Article_Bay() {
               </div>
               <div className='article-Card'>
                 <Link to="/Article">
-                  <img src="./src/images/Article_Bay/meditation_2.png" alt="" />
+                <div className="img-container">
+                  <img src="./src/images/Article_Bay/meditation_2.png" alt="" /></div>
                 </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 劉婉玲作家</small>
@@ -266,7 +269,8 @@ export default function Article_Bay() {
             <div className="article-Row">
               <div className='article-Card'>
                 <Link to="/Article">
-                  <img src="./src/images/Article_Bay/meditation_3.png" alt="" />
+                <div className="img-container">
+                  <img src="./src/images/Article_Bay/meditation_3.png" alt="" /></div>
                 </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 王芷若作家</small>
@@ -276,7 +280,8 @@ export default function Article_Bay() {
               </div>
               <div className='article-Card'>
                 <Link to="/Article">
-                  <img src="./src/images/Article_Bay/meditation_4.png" alt="" />
+                <div className="img-container">
+                  <img src="./src/images/Article_Bay/meditation_4.png" alt="" /></div>
                 </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 陳安琪教授</small>
@@ -295,7 +300,8 @@ export default function Article_Bay() {
             <div className="article-Row">
               <div className='article-Card'>
                 <Link to="/Article">
-                  <img src="./src/images/Article_Bay/health_1.png" alt="" />
+                <div className="img-container">
+                  <img src="./src/images/Article_Bay/health_1.png" alt="" /></div>
                 </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 陳彥宇醫師</small>
@@ -305,7 +311,8 @@ export default function Article_Bay() {
               </div>
               <div className='article-Card'>
                 <Link to="/Article">
-                  <img src="./src/images/Article_Bay/health_2.png" alt="" />
+                <div className="img-container">
+                  <img src="./src/images/Article_Bay/health_2.png" alt="" /></div>
                 </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 許哲豪醫師</small>
@@ -317,7 +324,8 @@ export default function Article_Bay() {
             <div className="article-Row">
               <div className='article-Card'>
                 <Link to="/Article">
-                  <img src="./src/images/Article_Bay/health_3.png" alt="" />
+                <div className="img-container">
+                  <img src="./src/images/Article_Bay/health_3.png" alt="" /></div>
                 </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 林郁虹醫師</small>
@@ -327,7 +335,8 @@ export default function Article_Bay() {
               </div>
               <div className='article-Card'>
                 <Link to="/Article">
-                  <img src="./src/images/Article_Bay/health_4.png" alt="" />
+                <div className="img-container">
+                  <img src="./src/images/Article_Bay/health_4.png" alt="" /></div>
                 </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 李宛萱醫師</small>
@@ -346,7 +355,8 @@ export default function Article_Bay() {
             <div className="article-Row">
               <div className='article-Card'>
                 <Link to="/Article">
-                  <img src="./src/images/Article_Bay/selfcare_1.png" alt="" />
+                <div className="img-container">
+                  <img src="./src/images/Article_Bay/selfcare_1.png" alt="" /></div>
                 </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 林書涵醫師</small>
@@ -356,7 +366,8 @@ export default function Article_Bay() {
               </div>
               <div className='article-Card'>
                 <Link to="/Article">
-                  <img src="./src/images/Article_Bay/selfcare_2.png" alt="" />
+                <div className="img-container">
+                  <img src="./src/images/Article_Bay/selfcare_2.png" alt="" /></div>
                 </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 王芷若作家</small>
@@ -368,7 +379,8 @@ export default function Article_Bay() {
             <div className="article-Row">
               <div className='article-Card'>
                 <Link to="/Article">
-                  <img src="./src/images/Article_Bay/selfcare_3.png" alt="" />
+                <div className="img-container">
+                  <img src="./src/images/Article_Bay/selfcare_3.png" alt="" /></div>
                 </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 陳安琪教授</small>
@@ -378,7 +390,8 @@ export default function Article_Bay() {
               </div>
               <div className='article-Card'>
                 <Link to="/Article">
-                  <img src="./src/images/Article_Bay/selfcare_4.png" alt="" />
+                <div className="img-container">
+                  <img src="./src/images/Article_Bay/selfcare_4.png" alt="" /></div>
                 </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 林郁虹醫師</small>
@@ -390,7 +403,8 @@ export default function Article_Bay() {
             <div className="article-Row">
               <div className='article-Card'>
                 <Link to="/Article">
-                  <img src="./src/images/Article_Bay/selfcare_5.png" alt="" />
+                <div className="img-container">
+                  <img src="./src/images/Article_Bay/selfcare_5.png" alt="" /></div>
                 </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 林郁虹醫師</small>
@@ -400,7 +414,8 @@ export default function Article_Bay() {
               </div>
               <div className='article-Card'>
                 <Link to="/Article">
-                  <img src="./src/images/Article_Bay/selfcare_6.png" alt="" />
+                <div className="img-container">
+                  <img src="./src/images/Article_Bay/selfcare_6.png" alt="" /></div>
                 </Link>
                 <div className="article-Card-Content">
                   <small>撰文 / 趙鈺婷醫師</small>

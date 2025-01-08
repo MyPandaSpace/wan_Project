@@ -16,6 +16,7 @@ import Article_Bay from './Article_Bay.jsx'
 import Apply_Page1 from './Apply_Page1.jsx'
 import Article from './Article.jsx'
 import Apply_Page2 from './Apply_Page2.jsx'
+import Filter_Modal from './component/Filter_Modal.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -36,6 +37,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/Apply_Page1" element={<Apply_Page1 />} />
         <Route path="/Article" element={<Article />} />
         <Route path="/Apply_Page2" element={<Apply_Page2 />} />
+        <Route path="/Filter_Modal" element={<Filter_Modal />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

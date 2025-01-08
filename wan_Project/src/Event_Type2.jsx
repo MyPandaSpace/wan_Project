@@ -102,7 +102,7 @@ function Event_Type2() {
           </div>
           <div id='row-event_Card'>
             <div id='column-event_Card'>
-              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image.png" alt="" />
+              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image15.png" alt="" />
                 <small>2025.01.25（六）14:00～16:00</small>
                 <h2>【過年限定】紙韻心意剪紙活動</h2>
                 <p>NT$ 500 元/人</p>
@@ -114,7 +114,7 @@ function Event_Type2() {
               </Link>
             </div>
             <div id='column-event_Card'>
-              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image.png" alt="" />
+              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image15.png" alt="" />
                 <small>2025.01.25（六）14:00～16:00</small>
                 <h2>【過年限定】紙韻心意剪紙活動</h2>
                 <p>NT$ 500 元/人</p>
@@ -126,45 +126,8 @@ function Event_Type2() {
               </Link>
             </div>
             <div id='column-event_Card'>
-              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image.png" alt="" />
-                <small>2025.01.25（六）14:00～16:00</small>
-                <h2>【過年限定】紙韻心意剪紙活動</h2>
-                <p>NT$ 500 元/人</p>
-                <hr />
-                <ul id='event-Tags'>
-                  <li>#台北市</li>
-                  <li>#藝術創作</li>
-                </ul>
-              </Link>
-            </div>
-          </div>
-          <div id='row-event_Card'>
-            <div id='column-event_Card'>
-              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image.png" alt="" />
-                <small>2025.01.25（六）14:00～16:00</small>
-                <h2>【過年限定】紙韻心意剪紙活動</h2>
-                <p>NT$ 500 元/人</p>
-                <hr />
-                <ul id='event-Tags'>
-                  <li>#台北市</li>
-                  <li>#藝術創作</li>
-                </ul>
-              </Link>
-            </div>
-            <div id='column-event_Card'>
-              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image.png" alt="" />
-                <small>2025.01.25（六）14:00～16:00</small>
-                <h2>【過年限定】紙韻心意剪紙活動</h2>
-                <p>NT$ 500 元/人</p>
-                <hr />
-                <ul id='event-Tags'>
-                  <li>#台北市</li>
-                  <li>#藝術創作</li>
-                </ul>
-              </Link>
-            </div>
-            <div id='column-event_Card'>
-              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image.png" alt="" />
+              <Link to="/Event_Detail">
+              <img src="./src/images/Event/event_Image15.png" alt="" />
                 <small>2025.01.25（六）14:00～16:00</small>
                 <h2>【過年限定】紙韻心意剪紙活動</h2>
                 <p>NT$ 500 元/人</p>
@@ -178,7 +141,7 @@ function Event_Type2() {
           </div>
           <div id='row-event_Card'>
             <div id='column-event_Card'>
-              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image.png" alt="" />
+              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image15.png" alt="" />
                 <small>2025.01.25（六）14:00～16:00</small>
                 <h2>【過年限定】紙韻心意剪紙活動</h2>
                 <p>NT$ 500 元/人</p>
@@ -190,7 +153,7 @@ function Event_Type2() {
               </Link>
             </div>
             <div id='column-event_Card'>
-              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image.png" alt="" />
+              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image15.png" alt="" />
                 <small>2025.01.25（六）14:00～16:00</small>
                 <h2>【過年限定】紙韻心意剪紙活動</h2>
                 <p>NT$ 500 元/人</p>
@@ -202,7 +165,7 @@ function Event_Type2() {
               </Link>
             </div>
             <div id='column-event_Card'>
-              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image.png" alt="" />
+              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image15.png" alt="" />
                 <small>2025.01.25（六）14:00～16:00</small>
                 <h2>【過年限定】紙韻心意剪紙活動</h2>
                 <p>NT$ 500 元/人</p>
@@ -216,7 +179,7 @@ function Event_Type2() {
           </div>
           <div id='row-event_Card'>
             <div id='column-event_Card'>
-              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image.png" alt="" />
+              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image15.png" alt="" />
                 <small>2025.01.25（六）14:00～16:00</small>
                 <h2>【過年限定】紙韻心意剪紙活動</h2>
                 <p>NT$ 500 元/人</p>
@@ -228,7 +191,7 @@ function Event_Type2() {
               </Link>
             </div>
             <div id='column-event_Card'>
-              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image.png" alt="" />
+              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image15.png" alt="" />
                 <small>2025.01.25（六）14:00～16:00</small>
                 <h2>【過年限定】紙韻心意剪紙活動</h2>
                 <p>NT$ 500 元/人</p>
@@ -240,7 +203,45 @@ function Event_Type2() {
               </Link>
             </div>
             <div id='column-event_Card'>
-              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image.png" alt="" />
+              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image15.png" alt="" />
+                <small>2025.01.25（六）14:00～16:00</small>
+                <h2>【過年限定】紙韻心意剪紙活動</h2>
+                <p>NT$ 500 元/人</p>
+                <hr />
+                <ul id='event-Tags'>
+                  <li>#台北市</li>
+                  <li>#藝術創作</li>
+                </ul>
+              </Link>
+            </div>
+          </div>
+          <div id='row-event_Card'>
+            <div id='column-event_Card'>
+              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image15.png" alt="" />
+                <small>2025.01.25（六）14:00～16:00</small>
+                <h2>【過年限定】紙韻心意剪紙活動</h2>
+                <p>NT$ 500 元/人</p>
+                <hr />
+                <ul id='event-Tags'>
+                  <li>#台北市</li>
+                  <li>#藝術創作</li>
+                </ul>
+              </Link>
+            </div>
+            <div id='column-event_Card'>
+              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image15.png" alt="" />
+                <small>2025.01.25（六）14:00～16:00</small>
+                <h2>【過年限定】紙韻心意剪紙活動</h2>
+                <p>NT$ 500 元/人</p>
+                <hr />
+                <ul id='event-Tags'>
+                  <li>#台北市</li>
+                  <li>#藝術創作</li>
+                </ul>
+              </Link>
+            </div>
+            <div id='column-event_Card'>
+              <Link to="/Event_Detail"><img src="./src/images/Event/event_Image15.png" alt="" />
                 <small>2025.01.25（六）14:00～16:00</small>
                 <h2>【過年限定】紙韻心意剪紙活動</h2>
                 <p>NT$ 500 元/人</p>
