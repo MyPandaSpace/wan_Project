@@ -109,7 +109,7 @@ function Index() {
                   <br /><br />
                   這個活動適合所有想要沉澱心情、用心創作的人，一同透過簡單的創作步驟，為新的一年畫上滿滿的美好與希望！</p>
               </article>
-              <Link to="/Event_Detail"><li
+              <Link to="/Event_Detail" onClick={() => window.scrollTo(0, 0)}><li
                 onClick={() => document.getElementById('article_Type1_Img').scrollIntoView({ behavior: 'smooth' })}
                 style={{
                   position: 'relative',
