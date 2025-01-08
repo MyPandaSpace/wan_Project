@@ -4,6 +4,11 @@ import { Link } from "react-router-dom";
 
 const HamburgerMenu = ({ show, onClose }) => {
 	const [closeButtonImage, setCloseButtonImage] = useState("./src/images/modal_Login/close.png");
+	const [aboutImage, setAboutImage] = useState("./src/component/images/HamburgerMenu/About.png");
+	const [eventImage, setEventImage] = useState("./src/component/images/HamburgerMenu/Event.png");
+	const [articleImage, setArticleImage] = useState("./src/component/images/HamburgerMenu/Article_Bay.png");
+	const [faqImage, setFaqImage] = useState("./src/component/images/HamburgerMenu/FaqPage.png");
+
 	if (!show) return null; // 如果不顯示，返回 null
 
 	return (
@@ -23,10 +28,54 @@ const HamburgerMenu = ({ show, onClose }) => {
 
 				<div className="HamburgerMenu-content">
 					<ul>
-						<li><Link to="/About"><img src="./src/component/images/HamburgerMenu/About.png" alt="" /></Link></li>
-						<li><Link to="/Event"><img src="./src/component/images/HamburgerMenu/Event.png" alt="" /></Link></li>
-						<li><Link to="/Article_Bay"><img src="./src/component/images/HamburgerMenu/Article_Bay.png" alt="" /></Link></li>
-						<li><Link to="/FaqPage"><img src="./src/component/images/HamburgerMenu/FaqPage.png" alt="" /></Link></li>
+					<li>
+              <Link to="/About">
+                <img
+                  src={aboutImage}
+                  alt="About"
+                  onMouseEnter={() => setAboutImage("./src/component/images/HamburgerMenu/About_Hover.png")}
+                  onMouseLeave={() => setAboutImage("./src/component/images/HamburgerMenu/About.png")}
+                  onMouseDown={() => setAboutImage("./src/component/images/HamburgerMenu/About.png")}
+                  onMouseUp={() => setAboutImage("./src/component/images/HamburgerMenu/About_Hover.png")}
+                />
+              </Link>
+            </li>
+            <li>
+              <Link to="/Event">
+                <img
+                  src={eventImage}
+                  alt="Event"
+                  onMouseEnter={() => setEventImage("./src/component/images/HamburgerMenu/Event_Hover.png")}
+                  onMouseLeave={() => setEventImage("./src/component/images/HamburgerMenu/Event.png")}
+                  onMouseDown={() => setEventImage("./src/component/images/HamburgerMenu/Event.png")}
+                  onMouseUp={() => setEventImage("./src/component/images/HamburgerMenu/Event_Hover.png")}
+                />
+              </Link>
+            </li>
+            <li>
+              <Link to="/Article_Bay">
+                <img
+                  src={articleImage}
+                  alt="Article Bay"
+                  onMouseEnter={() => setArticleImage("./src/component/images/HamburgerMenu/Article_Bay_Hover.png")}
+                  onMouseLeave={() => setArticleImage("./src/component/images/HamburgerMenu/Article_Bay.png")}
+                  onMouseDown={() => setArticleImage("./src/component/images/HamburgerMenu/Article_Bay.png")}
+                  onMouseUp={() => setArticleImage("./src/component/images/HamburgerMenu/Article_Bay_Hover.png")}
+                />
+              </Link>
+            </li>
+            <li>
+              <Link to="/FaqPage">
+                <img
+                  src={faqImage}
+                  alt="FAQ Page"
+                  onMouseEnter={() => setFaqImage("./src/component/images/HamburgerMenu/FaqPage_Hover.png")}
+                  onMouseLeave={() => setFaqImage("./src/component/images/HamburgerMenu/FaqPage.png")}
+                  onMouseDown={() => setFaqImage("./src/component/images/HamburgerMenu/FaqPage.png")}
+                  onMouseUp={() => setFaqImage("./src/component/images/HamburgerMenu/FaqPage_Hover.png")}
+                />
+              </Link>
+            </li>
 					</ul>
 				</div>
 			</div>

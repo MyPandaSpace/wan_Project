@@ -227,6 +227,7 @@ video {
 .event {
     display: flex;
     flex-direction: column;
+    margin: 120px;
 }
 
 .event #event-Type {
@@ -266,7 +267,7 @@ video {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 60px;
+    padding: 20px;
 }
 
 .event #column-event_Card img {
@@ -275,7 +276,7 @@ video {
 }
 
 .event #column-event_Card small {
-    padding-left: 10px;
+    padding-left: 13px;
 }
 
 .event #column-event_Card h2 {
@@ -286,7 +287,7 @@ video {
 
 .event #column-event_Card p {
     color: #666;
-    padding-left: 16px;
+    padding-left: 13px;
 }
 
 .event #event-Tags {
@@ -294,4 +295,17 @@ video {
     gap: 10px;
     padding-left: 10px;
     color: #72B6E0;
+}
+
+#event-Tags .art_creation{
+    color: #72B6E0;
+}
+
+#event-Tags .spiritual_journey {
+    color: #EFC5C5;
+}
+
+#event-Tags .natural_healing {
+    color: #ECA163;
+
 }

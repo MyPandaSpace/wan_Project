@@ -132,7 +132,7 @@ function Apply_Page2() {
 					</div>
 
 					{/* 右側 */}
-					<div className="apply_right">
+					<div className="apply_right2">
 						<img src="../src/images/others/svg/image-border.svg" alt="訂單明細" />
 						<div className="order-summary-2">
 							<h2>訂單明細</h2>
