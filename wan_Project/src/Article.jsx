@@ -13,7 +13,7 @@ export default function Article() {
 			<main id="main-article-container">
 				<nav>
 					<ul className="breadcrumb">
-						<li><Link to="/Article_Bay" style={{ color: '#666' }}>心途之灣 </Link></li>
+						<li><Link to="/Article_Bay" style={{ color: '#666' }} onClick={() => window.scrollTo(0, 0)}>心途之灣 </Link></li>
 						<li> / </li>
 						<li style={{ color: '#1684C8' }}> 正念冥想：活在當下，找到內心的平靜</li>
 					</ul>

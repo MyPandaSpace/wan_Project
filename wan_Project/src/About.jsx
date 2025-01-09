@@ -1,5 +1,5 @@
 import Btn_goTop from "./component/Btn_goTop";
-import Footer from "./component/Footer";
+import Footer_white from "./component/Footer_white";
 import Navbar from "./component/Navbar";
 import './css/About.css';
 
@@ -49,7 +49,7 @@ export default function About() {
           <img src="./src/images/About/about-Content-Title_2.png" alt="" />
           <img src="./src/images/About/about-Content_2.png" alt="" />
         </div>
-        <Footer />
+        <Footer_white />
       </div>
     </>
   )

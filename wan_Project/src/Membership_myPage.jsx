@@ -13,7 +13,7 @@ function Membership_myPage() {
       <img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
 
       <div className="home-container">
-        {/* 區塊 1：分頁 */}
+        {/* 區塊 1分頁 */}
         <main className="main">
           <figure id="title">
             <img id="title-img" src='./src/images/Membership/membership_Title.png' alt="title-img" />
@@ -27,7 +27,7 @@ function Membership_myPage() {
           </div>
         </main>
 
-        {/* 區塊 2：會員資訊 */}
+        {/* 區塊 2會員資訊 */}
         <div className="center-container">
           <section className="info-section">
             <div id="info">
@@ -41,13 +41,13 @@ function Membership_myPage() {
             </div>
           </section>
           <form className="info-form">
-            <label htmlFor="name">暱稱:</label>
+            <label htmlFor="name">暱稱</label>
             <input type="text" id="name" name="name" placeholder="" value={"灣灣"} required />
 
-            <label htmlFor="personality">個性:</label>
+            <label htmlFor="personality">個性</label>
             <input type="text" id="personality" name="personality" placeholder="" value={"愛冒險、愛體驗"} />
 
-            <label htmlFor="quote">名言:</label>
+            <label htmlFor="quote">名言</label>
             <textarea id="quote" name="quote" rows="4" placeholder="" value={"療癒自己最好的方式是讓心靈安靜，接受一切不完美的美好"} ></textarea>
           </form>
         </div>
@@ -57,23 +57,23 @@ function Membership_myPage() {
           <h2>用戶個人資訊</h2>
           <form id="info-form2">
             <div>
-              <label htmlFor="name">學員編號:</label>
+              <label htmlFor="name">學員編號</label>
               <input type="text" id="name" name="name" placeholder="" value={"wan007007"} required />
             </div>
             <div>
-              <label htmlFor="personality">使用者帳號:</label>
+              <label htmlFor="personality">使用者帳號</label>
               <input type="text" id="personality" name="personality" placeholder="" value={"wan1010"} />
             </div>
             <div>
-              <label htmlFor="name">使用者密碼:</label>
+              <label htmlFor="name">使用者密碼</label>
               <input type="text" id="name" name="name" placeholder="" value={"wan1234567"} required />
             </div>
             <div>
-              <label htmlFor="personality">地址:</label>
-              <input type="text" id="personality" name="personality" placeholder="" value={"100台北市中正區濟南路一段321號 6樓603"} />
+              <label htmlFor="personality">地址</label>
+              <input type="text" id="personality" name="personality" placeholder="" value={"100 台北市中正區家家路一段321號6樓54-2"} />
             </div>
             <div>
-              <label htmlFor="name">信箱:</label>
+              <label htmlFor="name">信箱</label>
               <input type="text" id="name" name="name" placeholder="" value={"wanwan@google.com"} required />
             </div>
           </form>
@@ -81,19 +81,19 @@ function Membership_myPage() {
         <hr style={{ border: 'none', height: '2px', backgroundColor: '#D9D9D9', width: '80%' }} />
 
         <div className="info-quest">
-          <h2>灣灣留言信箱：悄悄話與你的小心願</h2>
+          <h2>灣灣留言信箱悄悄話與你的小心願</h2>
           <p>✨ 我們想聽到你的故事，想了解你的成長與挑戰，我們相信每個人都有著獨一無二的經驗值得分享✨ </p>
           <form id="info-form3">
             <div>
-              <label htmlFor="name">姓名:</label>
+              <label htmlFor="name">姓名</label>
               <input type="text" id="name" name="name" placeholder="" required />
             </div>
             <div>
-              <label htmlFor="personality">信箱:</label>
+              <label htmlFor="personality">信箱</label>
               <input type="text" id="personality" name="personality" placeholder="" required />
             </div>
             <div>
-              <label htmlFor="name">留言:</label>
+              <label htmlFor="name">留言</label>
               <textarea type="text" id="name" name="name" placeholder="在這裡，你的小心願可能變成一次溫暖的課程體驗；你的分享，可能成為他人生活的燈塔" required />
             </div>
           </form>

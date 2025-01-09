@@ -243,7 +243,7 @@ export default function Article_Bay() {
           <div className="article-Card-Column">
             <div className="article-Row">
               <div className='article-Card'>
-                <Link to="/Article">
+                <Link to="/Article" onClick={() => window.scrollTo(0, 0)}>
                   <div className="img-container">
                     <img src="./src/images/Article_Bay/meditation_1.png" alt="" />
                   </div>
@@ -255,7 +255,7 @@ export default function Article_Bay() {
                 </div>
               </div>
               <div className='article-Card'>
-                <Link to="/Article">
+                <Link to="/Article" onClick={() => window.scrollTo(0, 0)}>
                 <div className="img-container">
                   <img src="./src/images/Article_Bay/meditation_2.png" alt="" /></div>
                 </Link>
@@ -268,7 +268,7 @@ export default function Article_Bay() {
             </div>
             <div className="article-Row">
               <div className='article-Card'>
-                <Link to="/Article">
+                <Link to="/Article" onClick={() => window.scrollTo(0, 0)}>
                 <div className="img-container">
                   <img src="./src/images/Article_Bay/meditation_3.png" alt="" /></div>
                 </Link>
@@ -279,7 +279,7 @@ export default function Article_Bay() {
                 </div>
               </div>
               <div className='article-Card'>
-                <Link to="/Article">
+                <Link to="/Article" onClick={() => window.scrollTo(0, 0)}>
                 <div className="img-container">
                   <img src="./src/images/Article_Bay/meditation_4.png" alt="" /></div>
                 </Link>
@@ -299,7 +299,7 @@ export default function Article_Bay() {
           <div className="article-Card-Column">
             <div className="article-Row">
               <div className='article-Card'>
-                <Link to="/Article">
+                <Link to="/Article" onClick={() => window.scrollTo(0, 0)}>
                 <div className="img-container">
                   <img src="./src/images/Article_Bay/health_1.png" alt="" /></div>
                 </Link>
@@ -310,7 +310,7 @@ export default function Article_Bay() {
                 </div>
               </div>
               <div className='article-Card'>
-                <Link to="/Article">
+                <Link to="/Article" onClick={() => window.scrollTo(0, 0)}>
                 <div className="img-container">
                   <img src="./src/images/Article_Bay/health_2.png" alt="" /></div>
                 </Link>
@@ -323,7 +323,7 @@ export default function Article_Bay() {
             </div>
             <div className="article-Row">
               <div className='article-Card'>
-                <Link to="/Article">
+                <Link to="/Article" onClick={() => window.scrollTo(0, 0)}>
                 <div className="img-container">
                   <img src="./src/images/Article_Bay/health_3.png" alt="" /></div>
                 </Link>
@@ -334,7 +334,7 @@ export default function Article_Bay() {
                 </div>
               </div>
               <div className='article-Card'>
-                <Link to="/Article">
+                <Link to="/Article" onClick={() => window.scrollTo(0, 0)}>
                 <div className="img-container">
                   <img src="./src/images/Article_Bay/health_4.png" alt="" /></div>
                 </Link>
@@ -354,7 +354,7 @@ export default function Article_Bay() {
           <div className="article-Card-Column">
             <div className="article-Row">
               <div className='article-Card'>
-                <Link to="/Article">
+                <Link to="/Article" onClick={() => window.scrollTo(0, 0)}>
                 <div className="img-container">
                   <img src="./src/images/Article_Bay/selfcare_1.png" alt="" /></div>
                 </Link>
@@ -365,7 +365,7 @@ export default function Article_Bay() {
                 </div>
               </div>
               <div className='article-Card'>
-                <Link to="/Article">
+                <Link to="/Article" onClick={() => window.scrollTo(0, 0)}>
                 <div className="img-container">
                   <img src="./src/images/Article_Bay/selfcare_2.png" alt="" /></div>
                 </Link>
@@ -378,7 +378,7 @@ export default function Article_Bay() {
             </div>
             <div className="article-Row">
               <div className='article-Card'>
-                <Link to="/Article">
+                <Link to="/Article" onClick={() => window.scrollTo(0, 0)}>
                 <div className="img-container">
                   <img src="./src/images/Article_Bay/selfcare_3.png" alt="" /></div>
                 </Link>
@@ -389,7 +389,7 @@ export default function Article_Bay() {
                 </div>
               </div>
               <div className='article-Card'>
-                <Link to="/Article">
+                <Link to="/Article" onClick={() => window.scrollTo(0, 0)}>
                 <div className="img-container">
                   <img src="./src/images/Article_Bay/selfcare_4.png" alt="" /></div>
                 </Link>
@@ -402,7 +402,7 @@ export default function Article_Bay() {
             </div>
             <div className="article-Row">
               <div className='article-Card'>
-                <Link to="/Article">
+                <Link to="/Article" onClick={() => window.scrollTo(0, 0)}>
                 <div className="img-container">
                   <img src="./src/images/Article_Bay/selfcare_5.png" alt="" /></div>
                 </Link>
@@ -413,7 +413,7 @@ export default function Article_Bay() {
                 </div>
               </div>
               <div className='article-Card'>
-                <Link to="/Article">
+                <Link to="/Article" onClick={() => window.scrollTo(0, 0)}>
                 <div className="img-container">
                   <img src="./src/images/Article_Bay/selfcare_6.png" alt="" /></div>
                 </Link>

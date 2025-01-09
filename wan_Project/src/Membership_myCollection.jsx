@@ -34,72 +34,84 @@ export default function Membership_myCollection() {
         </div>
         <div id='row-event_Card_Collection'>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Event/event_Image.png" alt="" />
-            <small>2025.01.25（六）14:00～16:00</small>
-            <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p id="p1">NT$ 500 元/人</p>
-            <hr />
-            <div id='event-Tags'>
-              <p>#台北市</p>
-              <p>#藝術創作</p>
-            </div>
+          <Link to="/Event_Detail">
+              <div className="collect-img-container"><img src="./src/images/Event/event_Image8.jpg" alt="" /></div>
+                <small>2025.02.16（六）14:00～18:00</small>
+                <h2>&nbsp;&nbsp;情緒花園—插花療癒工作坊</h2>
+                <p>NT$ 2,200 元/人</p>
+                <hr />
+                <ul id='event-Tags'>
+                  <li>#台北市</li>
+                  <li className='natural_healing'>#自然療癒</li>
+                </ul>
+              </Link>
           </div>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Event/event_Image.png" alt="" />
-            <small>2025.01.25（六）14:00～16:00</small>
-            <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p id='p1'>NT$ 500 元/人</p>
-            <hr />
-            <div id='event-Tags'>
-              <p>#台北市</p>
-              <p>#藝術創作</p>
-            </div>
+          <Link to="/Event_Detail">
+              <div className="collect-img-container"><img src="./src/images/Event/event_Image10.jpg" alt="" /></div>
+                <small>2025.03.02（日）09:00～12:00</small>
+                <h2>&nbsp;&nbsp;心靈獨角室—探索智慧與心靈的閱讀之旅</h2>
+                <p>NT$ 500 元/人</p>
+                <hr />
+                <ul id='event-Tags'>
+                  <li>#台北市</li>
+                  <li className='spiritual_journey'>#心靈之旅</li>
+                </ul>
+              </Link>
           </div>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Event/event_Image.png" alt="" />
-            <small>2025.01.25（六）14:00～16:00</small>
-            <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p id='p1'>NT$ 500 元/人</p>
-            <hr />
-            <div id='event-Tags'>
-              <p>#台北市</p>
-              <p>#藝術創作</p>
-            </div>
+          <Link to="/Event_Detail">
+              <div className="collect-img-container"><img src="./src/images/Event/event_Image12.jpg" alt="" /></div>
+                <small>2025.02.27（四）15:00～17:30</small>
+                <h2>&nbsp;&nbsp;香氛製作—自創迷人香氣療癒心靈</h2>
+                <p>NT$ 1,000 元/人</p>
+                <hr />
+                <ul id='event-Tags'>
+                  <li>#台北市</li>
+                  <li className='spiritual_journey'>#心靈之旅</li>
+                </ul>
+              </Link>
           </div>
         </div>
         <div id='row-event_Card_Collection'>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Event/event_Image.png" alt="" />
-            <small>2025.01.25（六）14:00～16:00</small>
-            <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p id='p1'>NT$ 500 元/人</p>
-            <hr />
-            <div id='event-Tags'>
-              <p>#台北市</p>
-              <p>#藝術創作</p>
-            </div>
+          <Link to="/Event_Detail">
+              <div className="collect-img-container"><img src="./src/images/Event/event_Image15.png" alt="" /></div>
+                <small>2025.02.27（四）15:00～17:30</small>
+                <h2>【兒童節限定】童趣牆壁紓壓彩繪</h2>
+                <p>NT$ 1,000 元/人</p>
+                <hr />
+                <ul id='event-Tags'>
+                  <li>#台北市</li>
+                  <li className='art_creation'>#藝術創作</li>
+                </ul>
+              </Link>
           </div>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Event/event_Image.png" alt="" />
-            <small>2025.01.25（六）14:00～16:00</small>
-            <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p id='p1'>NT$ 500 元/人</p>
-            <hr />
-            <div id='event-Tags'>
-              <p>#台北市</p>
-              <p>#藝術創作</p>
-            </div>
+          <Link to="/Event_Detail">
+              <div className="collect-img-container"><img src="./src/images/Event/event_Image13.jpg" alt="" /></div>
+                <small>2025.01.26（日）09:00～12:00</small>
+                <h2>&nbsp;&nbsp;韻律瑜伽一動態與節奏的身心強化</h2>
+                <p>NT$ 1,800 元/人</p>
+                <hr />
+                <ul id='event-Tags'>
+                  <li>#台北市</li>
+                  <li className='spiritual_journey'>#心靈之旅</li>
+                </ul>
+              </Link>
           </div>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Event/event_Image.png" alt="" />
-            <small>2025.01.25（六）14:00～16:00</small>
-            <h2>【過年限定】紙韻心意剪紙活動</h2>
-            <p id='p1'>NT$ 500 元/人</p>
-            <hr />
-            <div id='event-Tags'>
-              <p>#台北市</p>
-              <p>#藝術創作</p>
-            </div>
+          <Link to="/Event_Detail">
+              <div className="collect-img-container"><img src="./src/images/Event/event_Image14.jpg" alt="" /></div>
+                <small>2025.01.25（六）13:00～16:00</small>
+                <h2>&nbsp;&nbsp;手沖咖啡體驗一冠軍咖啡的奧秘</h2>
+                <p>NT$ 1,200 元/人</p>
+                <hr />
+                <ul id='event-Tags'>
+                  <li>#台北市</li>
+                  <li className='spiritual_journey'>#心靈之旅</li>
+                </ul>
+              </Link>
           </div>
         </div>
         <div id='event_Card_Collection_More'>

@@ -135,7 +135,7 @@ function Apply_Page1() {
 								</div>
 								{/* 前往付款按鈕 */}
 								<div className="pay-btn">
-									<Link to={'/Apply_Page2'} className="pay-btn">
+									<Link to={'/Apply_Page2' } className="pay-btn" onClick={() => window.scrollTo(0, 0)}>
 										<li
 											onClick={() => {
 

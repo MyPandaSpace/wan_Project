@@ -144,6 +144,32 @@ video {
 	width: 100px;
 }
 
+body {
+    color: #666;
+}
+
+.info-form input, textarea,
+#info-form2 input, textarea,
+#info-form3 input, textarea {
+	background-color: #E2F1F9;
+	color: #666;
+	border: none;
+    border-radius: 25px;
+    padding: 10px 35px 8px 12px;
+    width: 300px;
+    position: relative;
+}
+
+.info-form input:focus,
+.info-form textarea:focus,
+#info-form2 input:focus,
+#info-form2 textarea:focus,
+#info-form3 input:focus,
+#info-form3 textarea:focus {
+    outline: none;
+    border: 2px solid #72B2DA;
+}
+
 /* 區塊 2：會員資訊 */
 .center-container {
 	display: flex;
@@ -196,9 +222,10 @@ video {
 	margin: 60px 0;
 }
 
+
 /* 第二表格 */
 .info-member h2 {
-	font-size: larger;
+	font-size: 28px;
 	color: #1684C8;
 	text-align: center;
 	margin: 40px 0;
@@ -225,6 +252,7 @@ video {
 }
 
 #info-form2 label {
+	font-size: 20px;
 	width: 120px;
 	text-align: right;
 }
@@ -236,7 +264,7 @@ video {
 
 /* 第二表格 */
 .info-quest h2 {
-	font-size: larger;
+	font-size: 28px;
 	color: #1684C8;
 	text-align: center;
 	margin: 30px 0;
@@ -270,6 +298,7 @@ video {
 }
 
 #info-form3 label {
+	font-size: 20px;
 	width: 120px;
 	text-align: right;
 }
