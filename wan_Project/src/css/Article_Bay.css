@@ -77,13 +77,28 @@
 
 .article-Card-Content {
     width: 100%;
-    padding-left: 20px;
-    padding-right: 30px;
+    padding: 10px 30px 0 20px;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.article-Card-Content small,
+.article-Card-Content p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #666;
+}
+
+.article-Card:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.article-Card:active {
+    transform: translateY(0px);
 }
 
 .img-container {

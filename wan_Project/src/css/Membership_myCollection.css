@@ -126,6 +126,13 @@ video {
 	height: 100%;
 }
 
+@media screen and (min-width: 1440px) {
+	.member-main {
+	  margin-top: 180px;
+	}
+  }
+  
+
 #title-img {
 	margin: 0;
 	width: 30%;

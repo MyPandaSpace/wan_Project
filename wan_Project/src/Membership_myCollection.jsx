@@ -14,7 +14,7 @@ export default function Membership_myCollection() {
 
       <div className="home-container">
         {/* 區塊 1：導覽列 */}
-        <main className="main">
+        <main className="member-main">
           <figure id="title">
             <img id="title-img" src='./src/images/Membership/membership_Title.png' alt="title-img" />
           </figure>

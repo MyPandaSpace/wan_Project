@@ -154,22 +154,25 @@ video {
     left: 60%;
 }
 
+
 .comment-Card-row1 {
+    position: relative;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
-    padding-right: 60px;
-    gap: 50px;
+    overflow: hidden;
+    padding: 40px 0;
 }
 
 .comment-Card-row2 {
+    position: relative;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    margin: 40px 0;
-    padding-left: 60px;
-    gap: 50px;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.comment-Card {
+    flex-shrink: 0; /* 防止卡片被壓縮 */
+    width: 240px;
+    height: 240px;
 }
 
 #comment-Card1 {
@@ -187,6 +190,7 @@ video {
 .comment-Card {
     width: 240px;
     height: 240px;
+    flex: 0 0 auto;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -219,10 +223,57 @@ video {
     text-align: center;
     display: -webkit-box;
     -webkit-box-orient: vertical;
-    -webkit-line-clamp: 2;
+    -webkit-line-clamp: 4;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/* 輪播效果相關樣式 */
+
+.comment-Card-row1 .slider-container,
+.comment-Card-row2 .slider-container {
+    gap: 50px;
+    display: flex;
+    width: fit-content;
+    /* animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+}
+
+.comment-Card-row1 .slider-container {
+    animation: scrollLeft 30s linear infinite;
+}
+
+.comment-Card-row2 .slider-container {
+    animation: scrollRight 30s linear infinite;
+}
+
+/* 向左滾動動畫 */
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* 向右滾動動畫 */
+@keyframes scrollRight {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* hover 暫停效果 */
+/* .comment-Card-row1:hover .slider-container,
+.comment-Card-row2:hover .slider-container {
+    animation-play-state: paused;
+} */
+
 
 .event {
     display: flex;
@@ -275,6 +326,14 @@ video {
     padding: 20px;
     position: relative;
     overflow: hidden; /* 確保超出範圍的內容不會顯示 */
+}
+
+.event #column-event_Card:hover {
+    transform: translateY(-5px);
+}
+
+.event #column-event_Card:active {
+    transform: translateY(0px);
 }
 
 .event #column-event_Card img {

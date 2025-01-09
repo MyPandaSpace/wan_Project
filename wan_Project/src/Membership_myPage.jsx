@@ -14,7 +14,7 @@ function Membership_myPage() {
 
       <div className="home-container">
         {/* 區塊 1分頁 */}
-        <main className="main">
+        <main className="member-main">
           <figure id="title">
             <img id="title-img" src='./src/images/Membership/membership_Title.png' alt="title-img" />
           </figure>

@@ -1,3 +1,7 @@
+#Apply_Page1 {
+    position: relative;
+}
+
 .step-list-container {
     position: sticky;
     top: 0;
@@ -276,8 +280,6 @@
     border-radius: 50px;
     cursor: pointer;
 }
-
-/* 沒用？？？？ */
 
 .form-check label {
     color: #666;
