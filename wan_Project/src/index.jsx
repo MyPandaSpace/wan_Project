@@ -65,16 +65,22 @@ function Index() {
           <div id='banner2'>
             <img id="bg_mountain" src={bg_mountain} alt="bg_mountain" />
             <div id="circle_ip" data-aos="fade-right" data-aos-duration="3000">
-              <Link to="/Event"><img src="./src/images/index/circle_ip.svg" alt="circle_ip" /></Link>
-              <div className="ip_hover-image" id="circle-hover-image">
-                <img src="./src/images/index/Go_Event.png" alt="Go_Event" />
+              <div className="ip_hover-image">
+                <div class="hover-image-container">
+                  <img id="Go_Event" src="./src/images/index/Go_Event.png" alt="Go_Event" />
+                  <Link to="/Event" onClick={() => window.scrollTo(0, 0)}><img id="Go_Event_hover" src="./src/images/index/Go_Event_hover.png" alt="" /></Link>
+                </div>
               </div>
+              <img src="./src/images/index/circle_ip.svg" alt="circle_ip" />
             </div>
             <div id='heart_ip' data-aos="fade-left" data-aos-duration="3000">
-              <Link to="/Article_Bay"><img src="./src/images/index/heart_ip.svg" alt="heart_ip" /></Link>
               <div className="ip_hover-image" id="heart-hover-image">
-                <img src="./src/images/index/Go_ArticleBay.png" alt="Go_ArticleBay" />
+                <div class="hover-image-container">
+                  <img id="Go_ArticleBay" src="./src/images/index/Go_ArticleBay.png" alt="Go_ArticleBay" />
+                  <Link to="/Article_Bay" onClick={() => window.scrollTo(0, 0)}><img id="Go_ArticleBay_hover" src="./src/images/index/Go_ArticleBay_hover.png" alt="" /></Link>
+                </div>
               </div>
+              <img src="./src/images/index/heart_ip.svg" alt="heart_ip" />
             </div>
           </div>
           {/* 將背景圖層提升到更靠近頂部 */}
@@ -87,12 +93,12 @@ function Index() {
         <div className="main-scroll">
           <section className="services-section" >
             <div className="service1">
-              <img src="./src/images/index/service1.svg" alt="" />
-              <img src="./src/images/index/service1_detail.svg" alt="Service 1" />
+              <img src="./src/images/index/title-Img_service1.gif" alt="" />
+              <img src="./src/images/index/service1_detail.svg" alt="Service1-title" />
             </div>
             <div className="service2">
-              <img src="./src/images/index/service2_detail.svg" alt="Service 2" />
-              <img src="./src/images/index/service2.svg" alt="" />
+              <img src="./src/images/index/service2_detail.svg" alt="Service2-title" />
+              <img src="./src/images/index/title-Img_service2.gif" alt="" />
             </div>
           </section>
           {/* 區塊 3：主打活動 */}
@@ -193,8 +199,8 @@ function Index() {
                 </div>
               </div>
             </div>
-          </section> 
-          </div>
+          </section>
+        </div>
       </div >
 
       {/* 底部 */}

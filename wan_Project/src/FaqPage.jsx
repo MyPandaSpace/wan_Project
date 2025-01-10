@@ -66,15 +66,15 @@ function FaqPage() {
 							onMouseEnter={() => {
 								document.querySelector('.member-btn-img').src = './src/images/btn/new-btn1-hover.png';  // 切換圖片
 								document.querySelector('.member-btn-text').style.transform = 'top 45%'
-							  }}
-							 onMouseLeave={() => {
+							}}
+							onMouseLeave={() => {
 								document.querySelector('.member-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 還原
 								document.querySelector('.member-btn-text').style.transform = 'top 45%'
-							  }}
+							}}
 							onMouseDown={() => {
 								document.querySelector('.member-btn-img').src = './src/images/btn/new-btn1-pressed.png';  // 按下
 								document.querySelector('.member-btn-text').style.transform = 'top 50%';
-							  }}
+							}}
 							onMouseUp={() => {
 								document.querySelector('.member-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 放開
 								document.querySelector('.member-btn-text').style.transform = 'top 45%'
@@ -95,15 +95,15 @@ function FaqPage() {
 							onMouseEnter={() => {
 								document.querySelector('.member-btn-img').src = './src/images/btn/new-btn1-hover.png';  // 切換圖片
 								document.querySelector('.member-btn-text').style.transform = 'top 45%'
-							  }}
-							 onMouseLeave={() => {
+							}}
+							onMouseLeave={() => {
 								document.querySelector('.member-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 還原
 								document.querySelector('.member-btn-text').style.transform = 'top 45%'
-							  }}
+							}}
 							onMouseDown={() => {
 								document.querySelector('.member-btn-img').src = './src/images/btn/new-btn1-pressed.png';  // 按下
 								document.querySelector('.member-btn-text').style.transform = 'top 50%';
-							  }}
+							}}
 							onMouseUp={() => {
 								document.querySelector('.member-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 放開
 								document.querySelector('.member-btn-text').style.transform = 'top 45%'
@@ -136,15 +136,15 @@ function FaqPage() {
 							onMouseEnter={() => {
 								document.querySelector('.event-btn-img').src = './src/images/btn/new-btn1-hover.png';  // 切換圖片
 								document.querySelector('.event-btn-text').style.transform = 'top 45%'
-							  }}
-							 onMouseLeave={() => {
+							}}
+							onMouseLeave={() => {
 								document.querySelector('.event-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 還原
 								document.querySelector('.event-btn-text').style.transform = 'top 45%'
-							  }}
+							}}
 							onMouseDown={() => {
 								document.querySelector('.event-btn-img').src = './src/images/btn/new-btn1-pressed.png';  // 按下
 								document.querySelector('.event-btn-text').style.transform = 'top 50%';
-							  }}
+							}}
 							onMouseUp={() => {
 								document.querySelector('.event-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 放開
 								document.querySelector('.event-btn-text').style.transform = 'top 45%'
@@ -165,20 +165,20 @@ function FaqPage() {
 							onMouseEnter={() => {
 								document.querySelector('.event-btn-img').src = './src/images/btn/new-btn1-hover.png';  // 切換圖片
 								document.querySelector('.event-btn-text').style.transform = 'top 45%'
-							  }}
-							 onMouseLeave={() => {
+							}}
+							onMouseLeave={() => {
 								document.querySelector('.event-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 還原
 								document.querySelector('.event-btn-text').style.transform = 'top 45%'
-							  }}
+							}}
 							onMouseDown={() => {
 								document.querySelector('.event-btn-img').src = './src/images/btn/new-btn1-pressed.png';  // 按下
 								document.querySelector('.event-btn-text').style.transform = 'top 50%';
-							  }}
+							}}
 							onMouseUp={() => {
 								document.querySelector('.event-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 放開
 								document.querySelector('.event-btn-text').style.transform = 'top 45%'
 							}}
-							
+
 						>
 							報名相關
 						</span>
@@ -207,15 +207,15 @@ function FaqPage() {
 							onMouseEnter={() => {
 								document.querySelector('.other-btn-img').src = './src/images/btn/new-btn1-hover.png';  // 切換圖片
 								document.querySelector('.other-btn-text').style.transform = 'top 45%'
-							  }}
-							 onMouseLeave={() => {
+							}}
+							onMouseLeave={() => {
 								document.querySelector('.other-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 還原
 								document.querySelector('.other-btn-text').style.transform = 'top 45%'
-							  }}
+							}}
 							onMouseDown={() => {
 								document.querySelector('.other-btn-img').src = './src/images/btn/new-btn1-pressed.png';  // 按下
 								document.querySelector('.other-btn-text').style.transform = 'top 50%';
-							  }}
+							}}
 							onMouseUp={() => {
 								document.querySelector('.other-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 放開
 								document.querySelector('.other-btn-text').style.transform = 'top 45%'
@@ -237,15 +237,15 @@ function FaqPage() {
 							onMouseEnter={() => {
 								document.querySelector('.other-btn-img').src = './src/images/btn/new-btn1-hover.png';  // 切換圖片
 								document.querySelector('.other-btn-text').style.transform = 'top 45%'
-							  }}
-							 onMouseLeave={() => {
+							}}
+							onMouseLeave={() => {
 								document.querySelector('.other-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 還原
 								document.querySelector('.other-btn-text').style.transform = 'top 45%'
-							  }}
+							}}
 							onMouseDown={() => {
 								document.querySelector('.other-btn-img').src = './src/images/btn/new-btn1-pressed.png';  // 按下
 								document.querySelector('.other-btn-text').style.transform = 'top 50%';
-							  }}
+							}}
 							onMouseUp={() => {
 								document.querySelector('.other-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 放開
 								document.querySelector('.other-btn-text').style.transform = 'top 45%'
