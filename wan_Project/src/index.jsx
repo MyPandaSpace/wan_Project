@@ -8,6 +8,7 @@ import { useEffect, useState } from 'react';
 import Aos from "aos";
 import Footer from "./component/Footer.jsx";
 import Btn_goTop from "./component/Btn_goTop.jsx";
+import BubbleExplode from "./component/bubble_ver2.jsx";
 import { Link } from "react-router-dom";
 
 function Index() {
@@ -96,9 +97,15 @@ function Index() {
               <img src="./src/images/index/title-Img_service1.gif" alt="" />
               <img src="./src/images/index/service1_detail.svg" alt="Service1-title" />
             </div>
+            <div id="services-section-bubble">
+              <BubbleExplode />
+            </div>
             <div className="service2">
               <img src="./src/images/index/service2_detail.svg" alt="Service2-title" />
               <img src="./src/images/index/title-Img_service2.gif" alt="" />
+            </div>
+            <div id="services2-section-bubble">
+              <BubbleExplode />
             </div>
           </section>
           {/* 區塊 3：主打活動 */}
