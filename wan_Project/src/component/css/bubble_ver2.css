@@ -1,0 +1,125 @@
+/* 泡泡容器樣式 */
+.bubble-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+/* 泡泡本體 */
+.bubble {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 90px;
+    height: 80px;
+    border-radius: 50%;
+    background: radial-gradient(circle,
+            rgba(65, 105, 225, 0.6) 40%,
+            rgba(30, 144, 255, 0.4) 70%,
+            rgba(0, 0, 139, 0.3) 100%);
+    box-shadow:
+        0 15px 30px rgba(73, 133, 207, 0.644),
+        inset 0 -10px 20px rgba(255, 255, 255, 0.5),
+        inset 0 0 15px rgba(30, 144, 255, 0.3);
+    filter: brightness(1.1);
+    animation: float 0.5s ease-in-out infinite, sway 2s ease-in-out infinite;
+}
+
+/* 高光 */
+.highlight {
+    position: absolute;
+    top: 15%;
+    left: 30%;
+    width: 30%;
+    height: 30%;
+    background: radial-gradient(circle,
+            rgba(255, 255, 255, 0.8) 0%,
+            rgba(255, 255, 255, 0.2) 50%,
+            rgba(255, 255, 255, 0) 100%);
+    border-radius: 50%;
+    opacity: 1;
+    pointer-events: none;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* 碎片樣式 */
+.fragment {
+    position: absolute;
+    width: var(--size, 10px);
+    height: var(--size, 10px);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(34, 158, 199, 0.7) 70%);
+    border-radius: 50%;
+    animation: explode 0.8s forwards ease-out;
+    pointer-events: none;
+}
+
+/* 碎片動畫效果 */
+@keyframes explode {
+    0% {
+        transform: translate(0, 0) scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(calc(200px * var(--dir-x)), calc(200px * var(--dir-y))) scale(0.5);
+        opacity: 0;
+    }
+}
+
+/* 漂浮動畫 */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-150px);
+        /* 向上浮動 10px */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* 恢復原位 */
+    }
+}
+
+/* 微小晃動效果 */
+@keyframes sway {
+    0% {
+        transform: rotate(-10deg);
+        /* 微旋轉 */
+    }
+
+    50% {
+        transform: rotate(10deg);
+        /* 微旋轉 */
+    }
+
+    100% {
+        transform: rotate(-10deg);
+        /* 微旋轉 */
+    }
+}
+
+/* 點擊後破裂動畫 */
+@keyframes breakBubble {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}
+
+/* 點擊後破裂 */
+.bubble.broken {
+    animation: breakBubble 0.5s forwards ease-out;
+}
