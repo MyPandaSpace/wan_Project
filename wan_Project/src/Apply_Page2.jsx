@@ -165,7 +165,7 @@ function Apply_Page2() {
 							</div>
 							{/* 確認送出按鈕 */}
 							<div className="confirm-btn">
-								<a href="/"><li
+								<a href="#/"><li
 									onClick={() => {
 
 									}}

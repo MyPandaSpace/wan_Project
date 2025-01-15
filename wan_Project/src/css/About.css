@@ -62,17 +62,21 @@
 
 #about-Bay1-Img {
     width: 100%;
-    height: 100px;
+    height: fit-content;
     position: absolute;
     top: 3000px;
 }
 
 #about-Bay2-Img {
     width: 100%;
-    height: 100px;
+    height: fit-content;
     position: absolute;
     top: 3800px;
-    left: 250px;
+    text-align: right;
+}
+
+#about-Bay2-Img img {
+    width: fit-content;
 }
 
 #about-Content-2 {
@@ -82,7 +86,7 @@
     position: absolute;
     gap: 400px;
     top: 4800px;
-    width: 100%;
+    width: 90%;
     height: 100px;
 }
 

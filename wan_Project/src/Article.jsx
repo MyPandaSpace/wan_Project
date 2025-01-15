@@ -9,7 +9,7 @@ export default function Article() {
 	return (
 		<>
 			<Navbar />
-			<img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
+			<img id="navbar-Bg" src="./src/images/index/navbar_Bg.png" alt="" />
 			<main id="main-article-container">
 				<nav>
 					<ul className="breadcrumb">
@@ -24,7 +24,7 @@ export default function Article() {
 						<h1>正念冥想：活在當下，找到內心的平靜</h1>
 						<small className="author">撰文 / 林郁虹醫生</small>
 						<div>
-							<img src="./src/images/article/meditation_01.png" alt="冥想活動照片" className="article-image" />
+							<img src="./src/images/Article/meditation_01.png" alt="冥想活動照片" className="article-image" />
 							<small>
 								<figcaption className="article_photo-caption">圖 / 第7期自我成長 / 活動學員照</figcaption>
 							</small>

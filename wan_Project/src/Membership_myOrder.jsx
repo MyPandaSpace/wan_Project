@@ -11,7 +11,7 @@ export default function Membership_myOrder() {
     <>
       <Navbar />
       <Btn_goTop />
-      <img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
+      <img id="navbar-Bg" src="./src/images/index/navbar_Bg.png" alt="" />
       
       <div className="home-container">
         {/* 區塊 1：導覽列 */}
@@ -20,11 +20,11 @@ export default function Membership_myOrder() {
             <img id="title-img" src='./src/images/Membership/membership_Title.png' alt="title-img" />
           </figure>
           <div id="tabs">
-            <img src="../src/images/Membership/btn-items.png" alt="" />
-            <Link to="/Membership_myPage"><img src="../src/images/Membership_myOrder/btn1-tabs.png" alt="" /></Link>
-            <Link to="/Membership_myCollection"><img src="../src/images/Membership_myOrder/btn2-tabs.png" alt="" /></Link>
-            <Link to="/Membership_myOrder"><img src="../src/images/Membership_myOrder/btn3-tabs.png" alt="" /></Link>
-            <img src="../src/images/Membership/btn-2items.png" alt="" />
+            <img src="./src/images/Membership/btn-items.png" alt="" />
+            <Link to="/Membership_myPage"><img src="./src/images/Membership_myOrder/btn1-tabs.png" alt="" /></Link>
+            <Link to="/Membership_myCollection"><img src="./src/images/Membership_myOrder/btn2-tabs.png" alt="" /></Link>
+            <Link to="/Membership_myOrder"><img src="./src/images/Membership_myOrder/btn3-tabs.png" alt="" /></Link>
+            <img src="./src/images/Membership/btn-2items.png" alt="" />
           </div>
         </main>
 
@@ -35,12 +35,12 @@ export default function Membership_myOrder() {
         <section id="section-uncomplete">
           <div id="uncomplete_Order">
             <figure id="title-house">
-              <img src="../src/images/Membership_myOrder/house.png" alt="" />
+              <img src="./src/images/Membership_myOrder/house.png" alt="" />
               <h3>未完成的訂單</h3>
             </figure>
             <div id='row-event_Order'>
               <div id='column-event_Order'>
-                <img src="../src/images/Event/event_Image.png" alt="" />
+                <img src="./src/images/Event/event_Image.jpg" alt="" />
                 <small>2025.01.25（六）14:00～16:00</small>
                 <h2>【過年限定】紙韻心意剪紙活動</h2>
                 <p id='p1'>NT$ 500 元/人</p>
@@ -66,7 +66,7 @@ export default function Membership_myOrder() {
             </div>
             <div id='row-event_Order'>
               <div id='column-event_Order'>
-                <img src="../src/images/Event/event_Image.png" alt="" />
+                <img src="./src/images/Event/event_Image.jpg" alt="" />
                 <small>2025.01.25（六）14:00～16:00</small>
                 <h2>【過年限定】紙韻心意剪紙活動</h2>
                 <p id='p1'>NT$ 500 元/人</p>
@@ -95,12 +95,12 @@ export default function Membership_myOrder() {
         <section id="section-uncomplete">
           <div id="uncomplete_Order">
             <figure id="title-house">
-              <img src="../src/images/Membership_myOrder/house.png" alt="" />
+              <img src="./src/images/Membership_myOrder/house.png" alt="" />
               <h3>已完成的訂單</h3>
             </figure>
             <div id='row-event_Order'>
               <div id='column-event_Order'>
-                <img src="../src/images/Event/event_Image.png" alt="" />
+                <img src="./src/images/Event/event_Image.jpg" alt="" />
                 <small>2025.01.25（六）14:00～16:00</small>
                 <h2>【過年限定】紙韻心意剪紙活動</h2>
                 <p id='p1'>NT$ 500 元/人</p>
@@ -124,7 +124,7 @@ export default function Membership_myOrder() {
             </div>
             <div id='row-event_Order'>
               <div id='column-event_Order'>
-                <img src="../src/images/Event/event_Image.png" alt="" />
+                <img src="./src/images/Event/event_Image.jpg" alt="" />
                 <small>2025.01.25（六）14:00～16:00</small>
                 <h2>【過年限定】紙韻心意剪紙活動</h2>
                 <p id='p1'>NT$ 500 元/人</p>
@@ -167,7 +167,7 @@ export default function Membership_myOrder() {
             </ul>
           </div>
           <figure>
-            <img src="../src/images/Membership_myOrder/boat.png" alt="" />
+            <img src="./src/images/Membership_myOrder/boat.png" alt="" />
           </figure>
         </section>
         <hr />
@@ -179,20 +179,20 @@ export default function Membership_myOrder() {
           </div>
           <div id="section-row-recommend">
             <figure id="img-recommend">
-              <img src="../src/images/Membership_myOrder/event_recommend.png" alt="" />
+              <img src="./src/images/Membership_myOrder/event_recommend.png" alt="" />
               <p>插花療癒心靈重生</p>
             </figure>
             <figure id="img-recommend">
-              <img src="../src/images/Membership_myOrder/event_recommend.png" alt="" />
+              <img src="./src/images/Membership_myOrder/event_recommend.png" alt="" />
               <p>電影夜心靈放鬆</p>
             </figure>
             <figure id="img-recommend">
-              <img src="../src/images/Membership_myOrder/event_recommend.png" alt="" />
+              <img src="./src/images/Membership_myOrder/event_recommend.png" alt="" />
               <p>料理時光心靈釋放</p>
             </figure>
           </div>
           <figure id="btn-More">
-            <img src="../src/images/Membership_myOrder/btn_More.png" alt="" />
+            <img src="./src/images/Membership_myOrder/btn_More.png" alt="" />
           </figure>
         </section>
       </div>

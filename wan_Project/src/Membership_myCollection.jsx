@@ -172,7 +172,7 @@ export default function Membership_myCollection() {
         </div>
         <div id='row-event_Card_Collection'>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Event/event_Image.png" alt="" />
+            <img src="./src/images/Event/event_Image.jpg" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
             <p id='p1'>NT$ 500 元/人</p>
@@ -183,7 +183,7 @@ export default function Membership_myCollection() {
             </div>
           </div>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Event/event_Image.png" alt="" />
+            <img src="./src/images/Event/event_Image.jpg" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
             <p id='p1'>NT$ 500 元/人</p>
@@ -194,7 +194,7 @@ export default function Membership_myCollection() {
             </div>
           </div>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Event/event_Image.png" alt="" />
+            <img src="./src/images/Event/event_Image.jpg" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
             <p id='p1'>NT$ 500 元/人</p>
@@ -214,7 +214,7 @@ export default function Membership_myCollection() {
         </div>
         <div id='row-event_Card_Collection'>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Event/event_Image.png" alt="" />
+            <img src="./src/images/Event/event_Image.jpg" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
             <p id='p1'>NT$ 500 元/人</p>
@@ -225,7 +225,7 @@ export default function Membership_myCollection() {
             </div>
           </div>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Event/event_Image.png" alt="" />
+            <img src="./src/images/Event/event_Image.jpg" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
             <p id='p1'>NT$ 500 元/人</p>
@@ -236,7 +236,7 @@ export default function Membership_myCollection() {
             </div>
           </div>
           <div id='column-event_Card_Collection'>
-            <img src="./src/images/Event/event_Image.png" alt="" />
+            <img src="./src/images/Event/event_Image.jpg" alt="" />
             <small>2025.01.25（六）14:00～16:00</small>
             <h2>【過年限定】紙韻心意剪紙活動</h2>
             <p id='p1'>NT$ 500 元/人</p>
