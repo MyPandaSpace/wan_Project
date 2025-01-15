@@ -36,7 +36,7 @@ function Apply_Page1() {
 	return (
 		<div className="apply-wrapper">
 			<Navbar />
-			<img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
+			<img id="navbar-Bg" src="./src/images/index/navbar_Bg.png" alt="" />
 			<StepList currentStep={1} />
 			<main id="Apply_Page1">
 				<div className="apply-container">
@@ -100,7 +100,7 @@ function Apply_Page1() {
 					{/* 右側 */}
 					<div className="apply_right">
 						<div className="applyCta">
-							<img src="../src/images/others/svg/image-border.svg" alt="訂單明細" />
+							<img src="./src/images/others/svg/image-border.svg" alt="訂單明細" />
 							<div className="order-summary">
 								<h2>訂單明細</h2>
 								<div className="coupon-section">

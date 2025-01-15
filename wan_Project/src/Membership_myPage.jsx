@@ -10,7 +10,7 @@ function Membership_myPage() {
     <>
       <Navbar />
       <Btn_goTop />
-      <img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
+      <img id="navbar-Bg" src="./src/images/index/navbar_Bg.png" alt="" />
 
       <div className="home-container">
         {/* 區塊 1分頁 */}
@@ -19,11 +19,11 @@ function Membership_myPage() {
             <img id="title-img" src='./src/images/Membership/membership_Title.png' alt="title-img" />
           </figure>
           <div id="tabs">
-            <img src="../src/images/Membership/btn-items.png" alt="" />
-            <Link to="/Membership_myPage"><img src="../src/images/Membership/btn1-tabs.png" alt="" /></Link>
-            <Link to="/Membership_myCollection"><img src="../src/images/Membership/btn2-tabs.png" alt="" /></Link>
-            <Link to="/Membership_myOrder"><img src="../src/images/Membership/btn3-tabs.png" alt="" /></Link>
-            <img src="../src/images/Membership/btn-2items.png" alt="" />
+            <img src="./src/images/Membership/btn-items.png" alt="" />
+            <Link to="/Membership_myPage"><img src="./src/images/Membership/btn1-tabs.png" alt="" /></Link>
+            <Link to="/Membership_myCollection"><img src="./src/images/Membership/btn2-tabs.png" alt="" /></Link>
+            <Link to="/Membership_myOrder"><img src="./src/images/Membership/btn3-tabs.png" alt="" /></Link>
+            <img src="./src/images/Membership/btn-2items.png" alt="" />
           </div>
         </main>
 
@@ -31,11 +31,11 @@ function Membership_myPage() {
         <div className="center-container">
           <section className="info-section">
             <div id="info">
-              <img src="../src/images/Membership/info-avatar.png" alt="" />
+              <img src="./src/images/Membership/info-avatar.png" alt="" />
               <div id="info-icon">
-                <img src="../src/images/Membership/info-sliver-medal.png" alt="" />
-                <img src="../src/images/Membership/info-bar.png" alt="" />
-                <img src="../src/images/Membership/info-gold-medal.png" alt="" />
+                <img src="./src/images/Membership/info-sliver-medal.png" alt="" />
+                <img src="./src/images/Membership/info-bar.png" alt="" />
+                <img src="./src/images/Membership/info-gold-medal.png" alt="" />
               </div>
               <p>青銅旅行者- 已完成5個課程</p>
             </div>
@@ -100,7 +100,7 @@ function Membership_myPage() {
         </div>
 
         <div id="info-form3-btn">
-          <img src="../src/images/Membership/btn-submit.png" alt="" />
+          <img src="./src/images/Membership/btn-submit.png" alt="" />
         </div>
 
       </div>

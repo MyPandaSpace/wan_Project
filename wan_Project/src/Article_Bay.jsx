@@ -11,7 +11,7 @@ export default function Article_Bay() {
     <>
       <Navbar />
       <Btn_goTop />
-      <img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
+      <img id="navbar-Bg" src="./src/images/index/navbar_Bg.png" alt="" />
       <div className="title-Row">
         <div className="title_Article_Bay">
           <div id="title_Article_Bay_Img">

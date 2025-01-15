@@ -50,7 +50,7 @@ function Event_Detail() {
 	return (
 		<div>
 			<Navbar />
-			<img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
+			<img id="navbar-Bg" src="./src/images/index/navbar_Bg.png" alt="" />
 
 			<main id="eventDetail">
 
@@ -200,7 +200,7 @@ function Event_Detail() {
 					{/* 右側 */}
 					<div className="right">
 						<div className="detailCta">
-							<img src="../src/images/others/svg/image-border.svg" alt="立即報名" />
+							<img src="./src/images/others/svg/image-border.svg" alt="立即報名" />
 							<div className="detailCtaContent">
 								<h3>【過年限定】彩繪心意燈籠活動</h3>
 								<div className="CtaContent">
@@ -297,10 +297,10 @@ function Event_Detail() {
 										</Link>
 									</div>
 									<div className="detailCollect">
-										<img src="../src/images/btn/collect-normal.png" alt="" />
+										<img src="./src/images/btn/collect-normal.png" alt="" />
 									</div>
 									<div className="detailShare">
-										<img src="../src/images/btn/share-normal.png" alt="" />
+										<img src="./src/images/btn/share-normal.png" alt="" />
 									</div>
 								</div>
 							</div>

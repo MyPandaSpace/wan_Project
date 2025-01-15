@@ -27,23 +27,10 @@ export default function About() {
           <img src="./src/images/About/dec5.png" alt="" />
         </div>
         <div id="about-Bay1-Img">
-          <img src="./src/images/About/Bay_1.png" alt="" />
-        </div>
-        <div id="about-Bay1-Text">
-          <p>灣是一片寧靜的海域，也是無數個小故事的交匯地。<br />
-            每一次的學習、創作或探索，都是一段通往心靈深處的旅程。<br />透過我們探索體驗村的活動及心途之灣的文章，您將能發現更多生命中的小確幸，<br />並將這份療癒傳遞出去~</p>
+          <img src="./src/images/About/content_Section_2.png" alt="" />
         </div>
         <div id="about-Bay2-Img">
-          <img src="./src/images/About/Bay_2.png" alt="" />
-        </div>
-        <div id="about-Bay2-Text">
-          <img src="./src/images/About/about-Bay2_Text.png" alt="" />
-        </div>
-        <div id="about-circle_ip-Img">
-          <img src="./src/images/About/circle_ip.png" alt="" />
-        </div>
-        <div id="about-heart_ip-Img">
-          <img src="./src/images/About/heart_ip.png" alt="" />
+          <img src="./src/images/About/content_Section_3.png" alt="" />
         </div>
         <div id="about-Content-2">
           <img src="./src/images/About/about-Content-Title_2.png" alt="" />

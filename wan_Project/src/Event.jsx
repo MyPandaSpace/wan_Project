@@ -1,4 +1,4 @@
-import './css/Event.css';
+import './Event.css';
 import { Link } from 'react-router-dom';
 import Navbar from './component/Navbar';
 import Footer from './component/Footer';
@@ -156,7 +156,7 @@ function Event() {
               <img src="./src/images/Event/comment_stars(5).png" alt="" />
               <p className='comment-content'>在深呼吸中，我找回了與身體的連結。每一次伸展，都像是在清理內心的壓力。專注於當下，讓我從忙碌中找到片刻寧靜。這次瑜珈體驗，不只是運動，更是一次心靈的療癒旅程。</p>
             </div>
-            
+
           </div>
         </div>
         <div className="comment-Card-row2">
@@ -239,7 +239,7 @@ function Event() {
         <div className="event">
           <div id='event-Type'>
             <img src="./src/images/Event/circle_Talk.png" alt="" />
-            <Link to="/Event"><img src="./src/images/Event/event-Type1_hover.png" alt="" /></Link>
+            <Link to="/Event"><img id='event-Type1' src="./src/images/Event/event-Type1_hover.png" alt="" /></Link>
             <Link to="/Event_Type2"><img id="event-Type2" src="./src/images/Event/event-Type2.png" alt="" /></Link>
             <Link to="/Event_Type3"><img id='event-Type3' src="./src/images/Event/event-Type3.png" alt="" /></Link>
             <button className="filter-Button" onClick={() => setIsFilterOpen(true)}>

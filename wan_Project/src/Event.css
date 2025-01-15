@@ -1,0 +1,437 @@
+@charset "UTF-8";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+#navbar #logo {
+    margin: 10px 40px;
+}
+
+#navbar #icon {
+    display: flex;
+    margin: 20px 40px;
+    gap: 20px;
+}
+
+.main_Event {
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-image: url(../src/images/Event/Banner_EventBg.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.eventBanner-Img {
+    display: flex;
+}
+
+.season-event-carousel img {
+    position: absolute;
+    object-fit: cover;
+    top: 30%;
+    left: 46%;
+    width: 26%;
+    height: 50%;
+    border-radius: 300px;
+}
+
+.detail-carousel-indicators {
+    position: absolute;
+    bottom: -200px;
+    display: flex;
+    gap: 10px;
+}
+
+#season_Event {
+    position: absolute;
+    top: 40%;
+    left: 6%;
+    scale: 1.1;
+}
+
+.season-event-carousel-indicators {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    top: 90%;
+    left: 60%;
+}
+
+
+.comment-Card-row1 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.comment-Card-row2 {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.comment-Card {
+    flex-shrink: 0; /* 防止卡片被壓縮 */
+    width: 240px;
+    height: 240px;
+}
+
+#comment-Card1 {
+    background-image: url(../src/images/Event/comment_Card1.png);
+}
+
+#comment-Card2 {
+    background-image: url(../src/images/Event/comment_Card2.png);
+}
+
+#comment-Card3 {
+    background-image: url(../src/images/Event/comment_Card3.png);
+}
+
+.comment-Card {
+    width: 240px;
+    height: 240px;
+    flex: 0 0 auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.user-medal {
+    position: absolute;
+    top: -32%;
+    left: 48%;
+    scale: 0.5;
+}
+
+.comment-Card img {
+    width: 100%;
+    margin-top: 5px;
+    padding: 0 40px;
+}
+
+.comment-title {
+    margin-top: 30px;
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+    color: #666;
+}
+
+.comment-content {
+    padding: 0 20px;
+    color: #666;
+    text-align: center;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 輪播效果相關樣式 */
+
+.comment-Card-row1 .slider-container,
+.comment-Card-row2 .slider-container {
+    gap: 50px;
+    display: flex;
+    width: fit-content;
+    /* animation-duration: 40s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; */
+}
+
+.comment-Card-row1 .slider-container {
+    animation: scrollLeft 30s linear infinite;
+}
+
+.comment-Card-row2 .slider-container {
+    animation: scrollRight 30s linear infinite;
+}
+
+/* 向左滾動動畫 */
+@keyframes scrollLeft {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* 向右滾動動畫 */
+@keyframes scrollRight {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* hover 暫停效果 */
+/* .comment-Card-row1:hover .slider-container,
+.comment-Card-row2:hover .slider-container {
+    animation-play-state: paused;
+} */
+
+
+.event {
+    display: flex;
+    flex-direction: column;
+    margin: 120px;
+}
+
+.event #event-Type {
+    width: 100%;
+    display: flex;
+    align-items: end;
+    gap: 40px;
+    background: none;
+}
+
+#event-Type .filter-Button {
+    margin-left: 40px;
+    background: none;
+    border: none;
+}
+
+#event-Type1:hover {
+    background-image: url(../src/images/Event/event-Type1_hover.png);
+}
+
+#event-Type2:hover {
+    background-image: url(../src/images/Event/event-Type2_hover.png);
+}
+
+#event-Type3:hover {
+    background-image: url(../src/images/Event/event-Type3_hover.png);
+}
+
+.event #row-event_Card {
+    padding: 40px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+}
+
+.event #row-event_Card hr {
+    width: 100%;
+    background-color: #DADADA;
+}
+
+.event #column-event_Card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    position: relative;
+    overflow: hidden; /* 確保超出範圍的內容不會顯示 */
+}
+
+.event #column-event_Card:hover {
+    transform: translateY(-5px);
+}
+
+.event #column-event_Card:active {
+    transform: translateY(0px);
+}
+
+.event #column-event_Card img {
+    width: 100%;
+    margin-bottom: 10px;
+    display: block;
+    position: relative;
+}
+
+.event #column-event_Card small {
+    padding-left: 13px;
+}
+
+.event #column-event_Card h2 {
+    font-size: 20px;
+    color: #1684C8;
+    margin-bottom: 10px;
+}
+
+.event #column-event_Card p {
+    color: #666;
+    padding-left: 13px;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+    border-radius: 30px;
+}
+
+.img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.img-container::before {
+    border-radius: 30px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0); /* 初始為透明 */
+    transition: background-color 0.1s ease-in-out;
+}
+
+.img-container:hover::before {
+    z-index: 88;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.25); 
+}
+
+.img-container:active::before {
+    z-index: 88;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.img-container::after {
+    content: '';
+    position: absolute;
+    bottom: 10px; 
+    right: 10px;  
+    width: 150px;  
+    height: 30px; 
+    background-image: url(../src/images/Event/more.svg); 
+    background-size: contain; /* 保持圖片比例 */
+    background-repeat: no-repeat;
+    opacity: 0; /* 初始狀態不可見 */
+    transition: opacity 0.1s ease-in-out;
+    z-index: 99;
+}
+
+.img-container:hover::after {
+    opacity: 1; /* hover 時顯示圖片 */
+}
+
+
+.event #event-Tags {
+    display: flex;
+    gap: 10px;
+    padding-left: 10px;
+    color: #72B6E0;
+}
+
+#event-Tags .art_creation{
+    color: #72B6E0;
+}
+
+#event-Tags .spiritual_journey {
+    color: #EFC5C5;
+}
+
+#event-Tags .natural_healing {
+    color: #ECA163;
+}

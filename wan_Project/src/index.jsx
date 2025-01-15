@@ -1,5 +1,5 @@
 import "./css/aos.css";
-import './css/index.css';
+import './index.css';
 import bg_mountain from "./images/index/bg_mountain.png";
 import bg_sea from './images/index/bg_sea.png';
 import bg_2_Filter from './images/index/bg_2_filter.png';
@@ -93,12 +93,12 @@ function Index() {
         <div className="main-scroll">
           <section className="services-section" >
             <div className="service1">
-              <img src="./src/images/index/title-Img_service1.gif" alt="" />
+              <img src="./src/images/index/service1_title.svg" alt="" />
               <img src="./src/images/index/service1_detail.svg" alt="Service1-title" />
             </div>
             <div className="service2">
               <img src="./src/images/index/service2_detail.svg" alt="Service2-title" />
-              <img src="./src/images/index/title-Img_service2.gif" alt="" />
+              <img src="./src/images/index/service2_title.svg" alt="" />
             </div>
           </section>
           {/* 區塊 3：主打活動 */}

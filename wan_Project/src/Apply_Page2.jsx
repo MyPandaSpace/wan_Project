@@ -36,7 +36,7 @@ function Apply_Page2() {
 	return (
 		<div className="apply-wrapper">
 			<Navbar />
-			<img id="navbar-Bg" src="../src/images/index/navbar_Bg.png" alt="" />
+			<img id="navbar-Bg" src="./src/images/index/navbar_Bg.png" alt="" />
 			<StepList currentStep={2} />
 			<main id="Apply_Page2">
 				<div className="apply-container">
@@ -50,7 +50,7 @@ function Apply_Page2() {
 										<input type="radio" id="credit-card" name="payment" value="credit-card" defaultChecked />
 										<label htmlFor="credit-card">信用金融卡/簽帳卡</label>
 										<div className="card-logos">
-											<img src="../src/images/Apply_Page/payment.png" alt="Visa Mastercard JCB AE" />
+											<img src="./src/images/Apply_Page/payment.png" alt="Visa Mastercard JCB AE" />
 										</div>
 									</div>
 									<div className="form-group form-group-s">
@@ -133,7 +133,7 @@ function Apply_Page2() {
 
 					{/* 右側 */}
 					<div className="apply_right2">
-						<img src="../src/images/others/svg/image-border.svg" alt="訂單明細" />
+						<img src="./src/images/others/svg/image-border.svg" alt="訂單明細" />
 						<div className="order-summary-2">
 							<h2>訂單明細</h2>
 							<div className="price-summary">
