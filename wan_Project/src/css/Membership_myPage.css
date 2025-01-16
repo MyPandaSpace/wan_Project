@@ -141,13 +141,14 @@ video {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
+	/* width: 100%; */
 	margin-top: 30px;
 	gap: 20px;
 }
 
-#tabs img {
-	width: 100px;
+#tabs img,
+#tabs a img {
+    width: 145px;
 }
 
 body {
@@ -319,4 +320,8 @@ body {
 	display: flex;
 	justify-content: center;
 	margin: 50px 0;
+}
+
+#info-form3-btn img {
+	width: 160px;
 }

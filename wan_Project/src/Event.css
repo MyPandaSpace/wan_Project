@@ -343,7 +343,7 @@ video {
 
 .event #column-event_Card img {
     width: 100%;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
     display: block;
     position: relative;
 }
@@ -423,6 +423,64 @@ video {
     /* hover 時顯示圖片 */
 }
 
+.event-card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.signup-btn {
+    background-color: #E2F1F9;
+    color: #1684C8;
+    font-size: 14px;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 99px;
+    cursor: pointer;
+    width: 80px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+}
+
+.signup-btn:hover {
+    transform: translateY(-1px);
+    background-color: #BEDFF4;
+}
+
+.signup-btn:active {
+    /* 點擊時按鈕下沉，陰影變小 */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transform: translateY(1px);
+}
+
+.like-btn {
+    background-color: #E2F1F9;
+    color: #1684C8;
+    font-size: large;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 99px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    font-size: 16px;
+}
+
+.like-btn:hover {
+    transform: translateY(-1px);
+    background-color: #BEDFF4;
+}
+
+.like-btn:focus {
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transform: translateY(1px);
+    color: #1684C8;
+}
 
 .event #event-Tags {
     display: flex;
