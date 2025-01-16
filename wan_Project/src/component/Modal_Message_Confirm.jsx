@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import './Modal_Confirm.css'; // 引入樣式檔案
 
-const Modal_Confirm = () => {
+const Modal_Message_Confirm = () => {
   const [isVisible, setIsVisible] = useState(true); // 控制彈出視窗顯示與否
 
-  // 3秒後隱藏彈出視窗
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsVisible(false); // 設定為隱藏
@@ -27,4 +26,4 @@ const Modal_Confirm = () => {
   );
 };
 
-export default Modal_Confirm;
+export default Modal_Message_Confirm;

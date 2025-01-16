@@ -1,10 +1,14 @@
+import { useState } from "react";
 import Btn_goTop from "./component/Btn_goTop";
 import Footer from "./component/Footer";
+import Modal_Message_Confirm from "./component/Modal_Message_Confirm";
 import Navbar from "./component/Navbar";
 import "./css/Membership_myPage.css";
 import { Link } from "react-router-dom";
 
 function Membership_myPage() {
+  // State 用來控制彈出視窗是否顯示
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
 
   return (
     <>
@@ -20,7 +24,7 @@ function Membership_myPage() {
           </figure>
           <div id="tabs">
             <img src="./src/images/Membership/btn-items.png" alt="" />
-            <Link to="/Membership_myPage"><img src="./src/images/Membership/btn1-tabs.png" alt=""/></Link>
+            <Link to="/Membership_myPage"><img src="./src/images/Membership/btn1-tabs.png" alt="" /></Link>
             <Link to="/Membership_myCollection"><img src="./src/images/Membership/btn2-tabs.png" alt="" /></Link>
             <Link to="/Membership_myOrder"><img src="./src/images/Membership/btn3-tabs.png" alt="" /></Link>
             <img src="./src/images/Membership/btn-2items.png" alt="" />
@@ -102,9 +106,7 @@ function Membership_myPage() {
         <div id="info-form3-btn">
           {/* <img src="./src/images/Membership/btn-submit.png" alt="" /> */}
           <li
-            onClick={() => {
-
-            }}
+            onClick={() => { (e) => { e.preventDefault(); showPopup(); } }}
             style={{
               position: 'relative',
               display: 'inline-block',
@@ -171,8 +173,8 @@ function Membership_myPage() {
             >
               送出
             </span>
+            {isPopupVisible && <Modal_Message_Confirm />}
           </li>
-          {/* </Link> */}
         </div>
 
       </div>

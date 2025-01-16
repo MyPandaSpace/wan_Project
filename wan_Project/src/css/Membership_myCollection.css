@@ -128,10 +128,10 @@ video {
 
 @media screen and (min-width: 1440px) {
 	.member-main {
-	  margin-top: 180px;
+		margin-top: 180px;
 	}
-  }
-  
+}
+
 
 #title-img {
 	margin: 0;
@@ -162,8 +162,7 @@ video {
 
 #row-event_Card_Collection {
 	padding: 20px 0;
-	margin-left: 180px;
-	width: 80%;
+	margin: 0 180px;
 	gap: 60px;
 	display: flex;
 	justify-content: space-around;
@@ -173,11 +172,14 @@ video {
 #column-event_Card_Collection {
 	display: flex;
 	flex-direction: column;
-	width: 40%;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
 }
 
 #column-event_Card_Collection img {
-	width: 82%;
+	width: 100%;
+	align-self: left;
 }
 
 #column-event_Card_Collection small {
@@ -185,20 +187,18 @@ video {
 }
 
 #column-event_Card_Collection h2 {
-	font-size: 18px;
+	font-size: 20px;
 	color: #1684C8;
-	margin: 10px 0 10px 10px;
+	margin: 10px 0 10px 0;
 }
 
-#column-event_Card_Collection #p1 {
-	color: #666;
-	padding-left: 16px;
+#column-event_Card_Collection #p-event-Price {
+	padding-left: 20px;
 }
 
 #column-event_Card_Collection .p-article {
 	color: #666;
-	width: 80%;
-	margin: 10px;
+	width: 90%;
 	display: -webkit-box;
 	/* 彈性盒子顯示方式 */
 	-webkit-box-orient: vertical;
@@ -245,57 +245,61 @@ hr {
 }
 
 .collect-img-container {
-    position: relative;
-    width: 100%;
-    border-radius: 30px;
+	position: relative;
+	width: 100%;
+	border-radius: 30px;
 }
 
 .collect-img-container img {
-    display: block;
-    width: 100%;
-    height: auto;
-    border-radius: 30px;
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 30px;
 }
 
 .collect-img-container::before {
-    border-radius: 30px;
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0); /* 初始為透明 */
-    transition: background-color 0.1s ease-in-out;
+	border-radius: 30px;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	/* 初始為透明 */
+	transition: background-color 0.1s ease-in-out;
 }
 
 .collect-img-container:hover::before {
-    z-index: 88;
-    border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.25); 
+	z-index: 88;
+	border-radius: 30px;
+	background-color: rgba(0, 0, 0, 0.25);
 }
 
 .collect-img-container:active::before {
-    z-index: 88;
-    border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.5); 
+	z-index: 88;
+	border-radius: 30px;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .collect-img-container::after {
-    content: '';
-    position: absolute;
-    bottom: 10px; 
-    right: 10px;  
-    width: 150px;  
-    height: 30px; 
-    background-image: url('./src/images/Event/more.svg'); 
-    background-size: contain; /* 保持圖片比例 */
-    background-repeat: no-repeat;
-    opacity: 0; /* 初始狀態不可見 */
-    transition: opacity 0.1s ease-in-out;
-    z-index: 99;
+	content: '';
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 150px;
+	height: 30px;
+	background-image: url('./src/images/Event/more.svg');
+	background-size: contain;
+	/* 保持圖片比例 */
+	background-repeat: no-repeat;
+	opacity: 0;
+	/* 初始狀態不可見 */
+	transition: opacity 0.1s ease-in-out;
+	z-index: 99;
 }
 
 .collect-img-container:hover::after {
-    opacity: 1; /* hover 時顯示圖片 */
+	opacity: 1;
+	/* hover 時顯示圖片 */
 }
