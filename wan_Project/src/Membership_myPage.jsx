@@ -20,7 +20,7 @@ function Membership_myPage() {
           </figure>
           <div id="tabs">
             <img src="./src/images/Membership/btn-items.png" alt="" />
-            <Link to="/Membership_myPage"><img src="./src/images/Membership/btn1-tabs.png" alt="" /></Link>
+            <Link to="/Membership_myPage"><img src="./src/images/Membership/btn1-tabs.png" alt=""/></Link>
             <Link to="/Membership_myCollection"><img src="./src/images/Membership/btn2-tabs.png" alt="" /></Link>
             <Link to="/Membership_myOrder"><img src="./src/images/Membership/btn3-tabs.png" alt="" /></Link>
             <img src="./src/images/Membership/btn-2items.png" alt="" />
@@ -100,7 +100,79 @@ function Membership_myPage() {
         </div>
 
         <div id="info-form3-btn">
-          <img src="./src/images/Membership/btn-submit.png" alt="" />
+          {/* <img src="./src/images/Membership/btn-submit.png" alt="" /> */}
+          <li
+            onClick={() => {
+
+            }}
+            style={{
+              position: 'relative',
+              display: 'inline-block',
+              width: '160px',
+            }}
+          >
+            <img
+              src="./src/images/btn/new-btn1-normal.png"
+              alt="submit"
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'contain',
+                transition: '0.3s ease',
+                cursor: 'pointer'
+              }}
+              className="apply-btn-img"
+              onMouseEnter={() => {
+                document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn1-hover.png';  // 切換圖片
+                document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+              }}
+              onMouseLeave={() => {
+                document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 還原
+                document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+              }}
+              onMouseDown={() => {
+                document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn1-pressed.png';  // 按下
+                document.querySelector('.apply-btn-text').style.transform = 'top 50%';
+              }}
+              onMouseUp={() => {
+                document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 放開
+                document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+              }}
+            />
+            <span
+              style={{
+                position: 'absolute',
+                top: '45%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                color: '#1684C8',
+                fontSize: '20px',
+                textAlign: 'center',
+                whiteSpace: 'nowrap',
+                cursor: 'pointer'
+              }}
+              className="apply-btn-text"
+              onMouseEnter={() => {
+                document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn1-hover.png';  // 切換圖片
+                document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+              }}
+              onMouseLeave={() => {
+                document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 還原
+                document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+              }}
+              onMouseDown={() => {
+                document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn1-pressed.png';  // 按下
+                document.querySelector('.apply-btn-text').style.transform = 'top 50%';
+              }}
+              onMouseUp={() => {
+                document.querySelector('.apply-btn-img').src = './src/images/btn/new-btn1-normal.png';  // 放開
+                document.querySelector('.apply-btn-text').style.transform = 'top 45%'
+              }}
+            >
+              送出
+            </span>
+          </li>
+          {/* </Link> */}
         </div>
 
       </div>

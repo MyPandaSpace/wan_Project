@@ -13,6 +13,7 @@ function Event_Detail() {
 	];
 
 	const [timer, setTimer] = useState(null); // 用來保存定時器的 ID
+	
 
 	// 自動切換輪播
 	useEffect(() => {

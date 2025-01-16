@@ -15,6 +15,7 @@ function Event() {
   ];
   const [timer, setTimer] = useState(null); // 用來保存定時器的 ID
   const [isFilterOpen, setIsFilterOpen] = useState(false);
+  const [isLiked, setIsLiked] = useState(false);
 
   // 自動切換輪播
   useEffect(() => {
@@ -258,16 +259,35 @@ function Event() {
           <div id='row-event_Card'>
             <div id='column-event_Card'>
               <Link to="/Event_Detail" onClick={() => window.scrollTo(0, 0)}><div className="img-container"><img src="./src/images/Event/event_Image.jpg" alt="" />
+                <div className="event-buttons">
+                </div>
               </div>
                 <small>2025.01.25（六）14:00～16:00</small>
                 <h2>【過年限定】彩繪心意燈籠活動</h2>
                 <p>NT$ 600 元/人</p>
                 <hr />
+              </Link>
+              <div className="event-card-footer">
                 <ul id='event-Tags'>
                   <li>#台北市</li>
                   <li className='art_creation'>#藝術創作</li>
                 </ul>
-              </Link>
+                <div className="event-buttons">
+                  <button
+                    className="like-btn"
+                    onClick={(e) => {
+                      e.preventDefault(); // 防止觸發 Link 的跳轉
+                      setIsLiked(!isLiked);
+                    }}
+                  >
+                    {isLiked ? '♥' : '♡'}
+                  </button>
+                  <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="signup-btn">立即體驗</button>
+                  </Link>
+                </div>
+              </div>
+
             </div>
             <div id='column-event_Card'>
               <Link to="/Event_Detail" onClick={() => window.scrollTo(0, 0)}>
@@ -276,11 +296,27 @@ function Event() {
                 <h2>&nbsp;&nbsp;彩繪童心—創意繪畫班</h2>
                 <p>NT$ 500 元/人</p>
                 <hr />
+              </Link>
+              <div className="event-card-footer">
                 <ul id='event-Tags'>
                   <li>#台北市</li>
                   <li className='art_creation'>#藝術創作</li>
                 </ul>
-              </Link>
+                <div className="event-buttons">
+                  <button
+                    className="like-btn"
+                    onClick={(e) => {
+                      e.preventDefault(); // 防止觸發 Link 的跳轉
+                      setIsLiked(!isLiked);
+                    }}
+                  >
+                    {isLiked ? '♥' : '♡'}
+                  </button>
+                  <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="signup-btn">立即體驗</button>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div id='column-event_Card'>
               <Link to="/Event_Detail" onClick={() => window.scrollTo(0, 0)}><div className="img-container"><img src="./src/images/Event/event_Image3.jpg" alt="" /></div>
