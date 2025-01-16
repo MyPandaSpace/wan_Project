@@ -97,9 +97,6 @@ function Index() {
               <img src="./src/images/index/service1_title.svg" alt="" />
               <img src="./src/images/index/service1_detail.svg" alt="Service1-title" />
             </div>
-            <div id="services-section-bubble">
-              <BubbleExplode />
-            </div>
             <div className="service2">
               <img src="./src/images/index/service2_detail.svg" alt="Service2-title" />
               <img src="./src/images/index/service2_title.svg" alt="" />
@@ -205,6 +202,9 @@ function Index() {
                   </div>
                 </div>
               </div>
+            </div>
+            <div id="services-section-bubble">
+              <BubbleExplode />
             </div>
           </section>
         </div>

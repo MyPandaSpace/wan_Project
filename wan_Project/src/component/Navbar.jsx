@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Modal_Login from "./Modal_Login";
 import Modal_SignUp from "./Modal_Signup";
-import "../css/Navbar.css";
+import "./Navbar.css";
 import HamburgerMenu from './HamburgerMenu';
 import { Link } from "react-router-dom";
 

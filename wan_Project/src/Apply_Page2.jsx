@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import "./css/Apply_Page.css";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
 import { Link } from "react-router-dom";
+import Modal_Confirm from "./component/Modal_Apply_Confirm";
 
 const StepList = ({ currentStep = 2 }) => {
 	const steps = [
@@ -33,6 +34,20 @@ const StepList = ({ currentStep = 2 }) => {
 };
 
 function Apply_Page2() {
+	// State 用來控制彈出視窗是否顯示
+	const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+	// 顯示彈出視窗
+	const showPopup = () => {
+		// 顯示彈出視窗
+		setIsPopupVisible(true);
+
+		// 設定延遲 3 秒後跳轉
+		setTimeout(() => {
+			window.location.href = '#/';
+		}, 3000);
+	};
+
 	return (
 		<div className="apply-wrapper">
 			<Navbar />
@@ -166,9 +181,7 @@ function Apply_Page2() {
 							{/* 確認送出按鈕 */}
 							<div className="confirm-btn">
 								<a href="#/"><li
-									onClick={() => {
-
-									}}
+									onClick={(e) => { e.preventDefault(); showPopup(); }}
 									style={{
 										position: 'relative',
 										display: 'inline-block',
@@ -236,6 +249,7 @@ function Apply_Page2() {
 										確認送出
 									</span>
 								</li></a>
+								{isPopupVisible && <Modal_Confirm />}
 							</div>
 						</div>
 					</div>

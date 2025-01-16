@@ -1,20 +1,32 @@
 import React, { useState } from "react";
 import "./css/Modal_Login.css"; // 將您的 CSS 匯入
-import { useNavigate } from "react-router-dom";
 import { auth, provide } from "../config/firebase";
 import { signInWithPopup } from "firebase/auth";
 import { Link } from "react-router-dom"
+import Modal_Login_Confirm from "./Modal_Login_Confirm";
 
 const Modal_Login = ({ show, onClose, onSwitchToSignUp }) => {
   const [closeButtonImage, setCloseButtonImage] = useState("./src/images/modal_Login/close.png");
   if (!show) return null; // 如果彈窗不顯示，返回 null
 
-  const navigate = useNavigate()
   const login = async () => {
     const result = await signInWithPopup(auth, provide)
     console.log(result)
-    navigate("/Membership_myPage")
   }
+
+  // State 用來控制彈出視窗是否顯示
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  // 顯示彈出視窗
+  const showPopup = () => {
+    // 顯示彈出視窗
+    setIsPopupVisible(true);
+
+    // 設定延遲 3 秒後跳轉
+    setTimeout(() => {
+      window.location.href = '#/Membership_myPage';
+    }, 1500);
+  };
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -41,11 +53,9 @@ const Modal_Login = ({ show, onClose, onSwitchToSignUp }) => {
             <input type="text" id="name" name="name" placeholder="請輸入Email帳號" required />
             <input type="text" id="name" name="name" placeholder="請輸入密碼" required />
             <Link to="" style={{ textAlign: "right", fontSize: "12px", color: "grey" }}>忘記密碼?</Link>
-            <Link to={'/Membership_myPage'} className="pay-btn">
+            <Link to="/Membership_myPage" className="pay-btn">
               <li
-                onClick={() => {
-
-                }}
+                onClick={(e) => { e.preventDefault(); showPopup(); }}
                 style={{
                   position: 'relative',
                   display: 'inline-block',
@@ -114,12 +124,13 @@ const Modal_Login = ({ show, onClose, onSwitchToSignUp }) => {
                 </span>
               </li>
             </Link>
+            {isPopupVisible && <Modal_Login_Confirm />}
           </form>
         </div>
         <div id="modal-Footer">
           <p>還沒有加入我們嗎？</p><button onClick={onSwitchToSignUp} style={{ background: "none", border: "none", color: "#1684C8", cursor: "pointer" }}>點我註冊</button>
         </div>
-        <div style={{ display: "flex", justifyContent: "center", marginTop: "40px" }}>
+        <div style={{ display: "flex", justifyContent: "center", marginTop: "20px" }}>
           <button onClick={login} style={{ background: "none", border: "none", cursor: "pointer" }}><img style={{ width: "80px" }} src="./src/images/modal_Login/Google_Icon.png" alt="" /></button>
         </div>
       </div>

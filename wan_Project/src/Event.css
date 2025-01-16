@@ -171,7 +171,8 @@ video {
 }
 
 .comment-Card {
-    flex-shrink: 0; /* 防止卡片被壓縮 */
+    flex-shrink: 0;
+    /* 防止卡片被壓縮 */
     width: 240px;
     height: 240px;
 }
@@ -242,11 +243,11 @@ video {
 }
 
 .comment-Card-row1 .slider-container {
-    animation: scrollLeft 30s linear infinite;
+    animation: scrollLeft 40s linear infinite;
 }
 
 .comment-Card-row2 .slider-container {
-    animation: scrollRight 30s linear infinite;
+    animation: scrollRight 40s linear infinite;
 }
 
 /* 向左滾動動畫 */
@@ -254,6 +255,7 @@ video {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -264,16 +266,17 @@ video {
     0% {
         transform: translateX(-50%);
     }
+
     100% {
         transform: translateX(0);
     }
 }
 
 /* hover 暫停效果 */
-/* .comment-Card-row1:hover .slider-container,
+.comment-Card-row1:hover .slider-container,
 .comment-Card-row2:hover .slider-container {
     animation-play-state: paused;
-} */
+}
 
 
 .event {
@@ -282,12 +285,11 @@ video {
     margin: 120px;
 }
 
-.event #event-Type {
+#event-Type {
     width: 100%;
     display: flex;
     align-items: end;
-    gap: 40px;
-    background: none;
+    gap: 80px;
 }
 
 #event-Type .filter-Button {
@@ -327,7 +329,8 @@ video {
     width: 100%;
     padding: 20px;
     position: relative;
-    overflow: hidden; /* 確保超出範圍的內容不會顯示 */
+    overflow: hidden;
+    /* 確保超出範圍的內容不會顯示 */
 }
 
 .event #column-event_Card:hover {
@@ -381,39 +384,43 @@ video {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0); /* 初始為透明 */
+    background-color: rgba(0, 0, 0, 0);
+    /* 初始為透明 */
     transition: background-color 0.1s ease-in-out;
 }
 
 .img-container:hover::before {
     z-index: 88;
     border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.25); 
+    background-color: rgba(0, 0, 0, 0.25);
 }
 
 .img-container:active::before {
     z-index: 88;
     border-radius: 30px;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .img-container::after {
     content: '';
     position: absolute;
-    bottom: 10px; 
-    right: 10px;  
-    width: 150px;  
-    height: 30px; 
-    background-image: url(../src/images/Event/more.svg); 
-    background-size: contain; /* 保持圖片比例 */
+    bottom: 10px;
+    right: 10px;
+    width: 150px;
+    height: 30px;
+    background-image: url(../src/images/Event/more.svg);
+    background-size: contain;
+    /* 保持圖片比例 */
     background-repeat: no-repeat;
-    opacity: 0; /* 初始狀態不可見 */
+    opacity: 0;
+    /* 初始狀態不可見 */
     transition: opacity 0.1s ease-in-out;
     z-index: 99;
 }
 
 .img-container:hover::after {
-    opacity: 1; /* hover 時顯示圖片 */
+    opacity: 1;
+    /* hover 時顯示圖片 */
 }
 
 
@@ -424,7 +431,7 @@ video {
     color: #72B6E0;
 }
 
-#event-Tags .art_creation{
+#event-Tags .art_creation {
     color: #72B6E0;
 }
 

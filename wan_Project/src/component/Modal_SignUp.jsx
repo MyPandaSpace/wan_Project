@@ -1,10 +1,25 @@
 import React, { useState } from "react";
 import "./css/Modal_Login.css"; // 將您的 CSS 匯入
 import { Link } from "react-router-dom";
+import Modal_SignUp_Confirm from "./Modal_SignUp_Confirm";
 
 const Modal_SignUp = ({ show, onClose, onSwitchToLogin }) => {
   const [closeButtonImage, setCloseButtonImage] = useState("./src/images/modal_Login/close.png");
   if (!show) return null; // 如果彈窗不顯示，返回 null
+
+  // State 用來控制彈出視窗是否顯示
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+
+  // 顯示彈出視窗
+  const showPopup = () => {
+    // 顯示彈出視窗
+    setIsPopupVisible(true);
+
+    // 設定延遲 3 秒後跳轉
+    setTimeout(() => {
+      window.location.href = '#/Membership_myPage';
+    }, 1500);
+  };
 
   return (
     <div className="modal-overlay" onClick={onClose}>
@@ -35,9 +50,7 @@ const Modal_SignUp = ({ show, onClose, onSwitchToLogin }) => {
 
             <Link to={'/Membership_myPage'} className="pay-btn">
               <li
-                onClick={() => {
-
-                }}
+                onClick={(e) => { e.preventDefault(); showPopup();}}
                 style={{
                   position: 'relative',
                   display: 'inline-block',
@@ -106,6 +119,7 @@ const Modal_SignUp = ({ show, onClose, onSwitchToLogin }) => {
                 </span>
               </li>
             </Link>
+            {isPopupVisible && <Modal_SignUp_Confirm />}
           </form>
         </div>
         <div id="modal-Footer">

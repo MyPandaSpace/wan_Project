@@ -242,11 +242,10 @@ video {
 }
 
 #content-Order button {
+	border: 1px solid #1684C8;
 	border-radius: 99px;
 	width: 80px;
 	height: 30px;
-	/* 按鈕靠右 */
-	margin-left: 60%;
 	margin-top: 20px;
 	font-size: 14px;
 }

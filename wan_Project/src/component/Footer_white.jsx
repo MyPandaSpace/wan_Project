@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../css/Footer.css";
+import "./Footer.css";
 
 export default function Footer_white() {
     return (

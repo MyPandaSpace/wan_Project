@@ -36,7 +36,9 @@ export default function About() {
           <img src="./src/images/About/about-Content-Title_2.png" alt="" />
           <img src="./src/images/About/about-Content_2.png" alt="" />
         </div>
-        <Footer_white />
+        <div id="about-Footer">
+          <Footer_white />
+        </div>
       </div>
     </>
   )

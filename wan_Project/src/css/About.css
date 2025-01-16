@@ -93,3 +93,8 @@
 #about-Content-2 img {
     width: 50%;
 }
+
+#about-Footer {
+    width: 100%;
+    align-self: end;
+}

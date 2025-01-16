@@ -1,18 +1,41 @@
+import { useState } from "react";
 import Btn_goTop from "./component/Btn_goTop";
 import Footer from "./component/Footer";
+import Modal_Cancel_Confirm from "./component/Modal_Cancel_Confirm";
 import Navbar from "./component/Navbar";
 import "./css/Membership_myOrder.css";
 import { Link } from "react-router-dom";
+import Modal_Order_Cancel_Confirm from "./component/Modal_Order_Cancel_Confirm";
 
 export default function Membership_myOrder() {
+  // State 用來控制彈出視窗是否顯示
+  const [isPopupVisible, setIsPopupVisible] = useState(false);
+  const [isSuccessPopupVisible, setIsSuccessPopupVisible] = useState(false); // 控制已取消訂單的彈窗顯示
 
+  // 顯示彈出視窗
+  const showPopup = () => {
+    setIsPopupVisible(true);
+  };
+
+  // 關閉彈出視窗
+  const closePopup = () => {
+    setIsPopupVisible(false);
+  };
+
+  // 顯示已取消訂單的彈窗
+  const showSuccessModal = () => {
+    setIsSuccessPopupVisible(false); // 隱藏彈窗，並且等待2秒後再顯示
+    setTimeout(() => {
+      setIsSuccessPopupVisible(true); // 兩秒後顯示已取消訂單的彈窗
+    }, 200); // 這裡加一點延遲是為了清楚顯示彈窗
+  };
 
   return (
     <>
       <Navbar />
       <Btn_goTop />
       <img id="navbar-Bg" src="./src/images/index/navbar_Bg.png" alt="" />
-      
+
       <div className="home-container">
         {/* 區塊 1：導覽列 */}
         <main className="member-main">
@@ -61,7 +84,7 @@ export default function Membership_myOrder() {
                 <p>付款方式：Visa (66666)</p>
                 <p>付款狀態：---</p>
                 <br />
-                <button id="button">取消訂單</button>
+                <button id="button" onClick={(e) => { e.preventDefault(); showPopup(); }}>取消訂單</button>
               </div>
             </div>
             <div id='row-event_Order'>
@@ -87,9 +110,19 @@ export default function Membership_myOrder() {
                 <p>付款方式：Visa (66666)</p>
                 <p>付款狀態：---</p>
                 <br />
-                <button id="button">取消訂單</button>
+                <button id="button" onClick={(e) => { e.preventDefault(); showPopup(); }}>取消訂單</button>
               </div>
             </div>
+            {/* 彈出視窗顯示的邏輯 */}
+            {isPopupVisible && (
+              <Modal_Cancel_Confirm
+                closeModal={closePopup}
+                showSuccessModal={showSuccessModal} // 點擊"是"後顯示成功的彈窗
+              />
+            )}
+            {isSuccessPopupVisible && (
+              <Modal_Order_Cancel_Confirm /> // 顯示已取消訂單的彈窗
+            )}
           </div>
         </section>
         <section id="section-uncomplete">
@@ -196,8 +229,8 @@ export default function Membership_myOrder() {
           </figure>
         </section>
       </div>
-  {/* 底部 */ }
-  <Footer />
+      {/* 底部 */}
+      <Footer />
     </>
   );
 }

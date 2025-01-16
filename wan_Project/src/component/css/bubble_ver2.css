@@ -50,8 +50,8 @@
 /* 碎片樣式 */
 .fragment {
     position: absolute;
-    width: var(--size, 10px);
-    height: var(--size, 10px);
+    width: var(--size, 20px);
+    height: var(--size, 20px);
     background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(34, 158, 199, 0.7) 70%);
     border-radius: 50%;
     animation: explode 0.8s forwards ease-out;
@@ -66,7 +66,7 @@
     }
 
     100% {
-        transform: translate(calc(200px * var(--dir-x)), calc(200px * var(--dir-y))) scale(0.5);
+        transform: translate(calc(150px * var(--dir-x)), calc(150px * var(--dir-y))) scale(0.5);
         opacity: 0;
     }
 }
@@ -91,7 +91,7 @@
 /* 微小晃動效果 */
 @keyframes sway {
     0% {
-        transform: rotate(-10deg);
+        transform: rotate(-5deg);
         /* 微旋轉 */
     }
 
@@ -101,7 +101,7 @@
     }
 
     100% {
-        transform: rotate(-10deg);
+        transform: rotate(-5deg);
         /* 微旋轉 */
     }
 }
@@ -121,5 +121,11 @@
 
 /* 點擊後破裂 */
 .bubble.broken {
+    position: absolute;
+    /* 固定位置 */
+    top: 0;
+    /* 確保位置在容器內 */
+    left: 0;
+    /* 確保位置在容器內 */
     animation: breakBubble 0.5s forwards ease-out;
 }
