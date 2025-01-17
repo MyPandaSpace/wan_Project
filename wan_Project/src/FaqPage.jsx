@@ -34,7 +34,7 @@ function FaqPage() {
 					<div className="h1-div">
 						<figure className="h1-title">
 							<img className="h1-flower1" src="./src/images/others/svg/dec15.svg" alt="Flower 1" />
-							<img className="h1_titleImg" src="./src/images/title/常見問題.png" alt="FAQ Title" />
+							<img className="h1_titleImg" src="./src/images/title/faqTitle.png" alt="FAQ Title" />
 							<img className="h1-flower2" src="./src/images/others/svg/dec14.svg" alt="Flower 2" />
 						</figure>
 					</div>
