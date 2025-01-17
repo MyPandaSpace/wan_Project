@@ -19,7 +19,7 @@ const Modal_Confirm = () => {
       {isVisible && (
         <div className="overlay">
           <div className="Modal_Confirm_popup">
-            <img src="./src/images/Modal_Login/SignUp_Confirm.png" alt="Popup Image" />
+            <img src="./src/images/modal_Login/SignUp_Confirm.png" alt="Popup Image" />
           </div>
         </div>
       )}
