@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./css/Apply_Page.css";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
-import { Link } from "react-router-dom";
 import Modal_Confirm from "./component/Modal_Apply_Confirm";
 
 const StepList = ({ currentStep = 2 }) => {
@@ -44,7 +43,8 @@ function Apply_Page2() {
 
 		// 設定延遲 3 秒後跳轉
 		setTimeout(() => {
-			window.location.href = '#/';
+			window.scrollTo(0, 0);
+			window.location.href = '#/Event';
 		}, 3000);
 	};
 

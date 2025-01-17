@@ -29,7 +29,7 @@ const HamburgerMenu = ({ show, onClose }) => {
 				<div className="HamburgerMenu-content">
 					<ul>
 					<li>
-              <Link to="/About">
+              <Link to="/About" onClick={() => window.scrollTo(0, 0)}>
                 <img
                   src={aboutImage}
                   alt="About"
@@ -41,7 +41,7 @@ const HamburgerMenu = ({ show, onClose }) => {
               </Link>
             </li>
             <li>
-              <Link to="/Event">
+              <Link to="/Event" onClick={() => window.scrollTo(0, 0)}>
                 <img
                   src={eventImage}
                   alt="Event"
@@ -53,7 +53,7 @@ const HamburgerMenu = ({ show, onClose }) => {
               </Link>
             </li>
             <li>
-              <Link to="/Article_Bay">
+              <Link to="/Article_Bay" onClick={() => window.scrollTo(0, 0)}>
                 <img
                   src={articleImage}
                   alt="Article Bay"
@@ -65,7 +65,7 @@ const HamburgerMenu = ({ show, onClose }) => {
               </Link>
             </li>
             <li>
-              <Link to="/FaqPage">
+              <Link to="/FaqPage" onClick={() => window.scrollTo(0, 0)}>
                 <img
                   src={faqImage}
                   alt="FAQ Page"

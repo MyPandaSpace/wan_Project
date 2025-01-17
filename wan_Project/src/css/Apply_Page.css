@@ -169,17 +169,46 @@
     margin-top: 10px;
 }
 
-.quantity-control button {
+.quantity-control {
+    display: flex;
     font-size: 30px;
-    text-align: center;
     align-items: center;
+    color: #1684C8;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.quantity-control button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
     width: 32px;
     height: 32px;
     border-radius: 99px;
-    border: 1px solid #BEDFF4;
+    border: none;
     background: #BEDFF4;
     color: #fff;
     cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.quantity-control button:hover:not(.disabled) {
+    background: #72B2DA;
+}
+
+.quantity-control button:active:not(.disabled) {
+    background: #1684C8;
+}
+
+.quantity-control button.disabled {
+    background: #DADADA;
+    cursor: not-allowed;
+}
+
+.quantity-control span {
+    min-width: 30px;
+    text-align: center;
 }
 
 .apply-content-top {

@@ -15,7 +15,7 @@ export default function Footer() {
                         <Link to="/About" onClick={() => window.scrollTo(0, 0)}>關於我們</Link>
                         <Link to="/FaqPage" onClick={() => window.scrollTo(0, 0)}>常見問題</Link>
                     </div>
-                    <small id='copyright'>© 2024 灣 Wan. All rights reserved.</small>
+                    <small id='copyright'>© 2025 灣 Wan. All rights reserved.</small>
                 </div>
             </footer>
         </>

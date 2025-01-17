@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react"; 
 import "./css/Apply_Page.css";
 import Navbar from "./component/Navbar";
 import Footer from "./component/Footer";
@@ -33,6 +33,8 @@ const StepList = ({ currentStep = 1 }) => {
 };
 
 function Apply_Page1() {
+	const [quantity, setQuantity] = useState(1);
+
 	return (
 		<div className="apply-wrapper">
 			<Navbar />
@@ -54,13 +56,25 @@ function Apply_Page1() {
 									<p>用簡單的創作迎接新一年的吉祥氛圍，讓這份手作點亮你的春節裝飾！</p>
 								</div>
 								<div className="apply-content-bottom">
-									<span className="apply-price">NT$ 600</span>
-									<div className="quantity-control">
-										<button>-</button>
-										<span>1</span>
-										<button>+</button>
-									</div>
-								</div>
+                <span className="apply-price">NT$ 600</span>
+                <div className="quantity-control">
+                    <button 
+                        onClick={() => setQuantity(prev => prev > 0 ? prev - 1 : 0)}
+                        disabled={quantity === 0}
+                        className={quantity === 0 ? 'disabled' : ''}
+                    >
+                        -
+                    </button>
+                    <span>{quantity}</span>
+                    <button 
+                        onClick={() => setQuantity(prev => prev < 4 ? prev + 1 : 4)}
+                        disabled={quantity === 4}
+                        className={quantity === 4 ? 'disabled' : ''}
+                    >
+                        +
+                    </button>
+                </div>
+            </div>
 							</div>
 						</div>
 

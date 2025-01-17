@@ -72,7 +72,7 @@ function Index() {
                   <Link to="/Event" onClick={() => window.scrollTo(0, 0)}><img id="Go_Event_hover" src="./src/images/index/Go_Event_hover.png" alt="" /></Link>
                 </div>
               </div>
-              <img src="./src/images/index/circle_ip.svg" alt="circle_ip" />
+              <img src="./src/images/index/circle_ip.gif" alt="circle_ip" className="circle_ip" />
             </div>
             <div id='heart_ip' data-aos="fade-left" data-aos-duration="3000">
               <div className="ip_hover-image" id="heart-hover-image">
@@ -81,7 +81,7 @@ function Index() {
                   <Link to="/Article_Bay" onClick={() => window.scrollTo(0, 0)}><img id="Go_ArticleBay_hover" src="./src/images/index/Go_ArticleBay_hover.png" alt="" /></Link>
                 </div>
               </div>
-              <img src="./src/images/index/heart_ip.svg" alt="heart_ip" />
+              <img src="./src/images/index/heart_ip.gif" alt="heart_ip" className="heart_ip" />
             </div>
           </div>
           {/* 將背景圖層提升到更靠近頂部 */}
