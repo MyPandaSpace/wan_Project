@@ -10,6 +10,18 @@ function Membership_myPage() {
   // State 用來控制彈出視窗是否顯示
   const [isPopupVisible, setIsPopupVisible] = useState(false);
 
+
+  // 顯示彈出視窗
+  const showPopup = () => {
+    // 顯示彈出視窗
+    setIsPopupVisible(true);
+
+    // 設定延遲 3 秒後跳轉
+    setTimeout(() => {
+      window.location.href = '#/Membership_myPage';
+    }, 1500);
+  };
+
   return (
     <>
       <Navbar />
@@ -106,7 +118,7 @@ function Membership_myPage() {
         <div id="info-form3-btn">
           {/* <img src="./src/images/Membership/btn-submit.png" alt="" /> */}
           <li
-            onClick={() => { (e) => { e.preventDefault(); showPopup(); } }}
+            onClick={(e) => { e.preventDefault(); showPopup(); }}
             style={{
               position: 'relative',
               display: 'inline-block',

@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import "./Footer.css";
 
-export default function Footer_white() {
+export default function Footer() {
     return (
         <>
             <footer id='footer'>
-                <div>
-                    <img src="./src/images/index/footer_wan_white.png" alt="Footer" />
+                <img src="./src/images/index/footer_wan_white.png" alt="Footer" />
+                <div className="footer-text">
                     <div id='footer-a'>
                         <Link to="/" onClick={() => window.scrollTo(0, 0)}>首頁</Link>
                         <Link to="/Event" onClick={() => window.scrollTo(0, 0)}>探索體驗村</Link>

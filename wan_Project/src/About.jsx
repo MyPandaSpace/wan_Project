@@ -1,4 +1,5 @@
 import Btn_goTop from "./component/Btn_goTop";
+import Footer from "./component/Footer";
 import Footer_white from "./component/Footer_white";
 import Navbar from "./component/Navbar";
 import './css/About.css';

@@ -8,26 +8,40 @@ import { Link } from "react-router-dom";
 import Modal_Order_Cancel_Confirm from "./component/Modal_Order_Cancel_Confirm";
 
 export default function Membership_myOrder() {
-  // State 用來控制彈出視窗是否顯示
-  const [isPopupVisible, setIsPopupVisible] = useState(false);
-  const [isSuccessPopupVisible, setIsSuccessPopupVisible] = useState(false); // 控制已取消訂單的彈窗顯示
+  // 狀態管理訂單取消的邏輯
+  const [hiddenButtons, setHiddenButtons] = useState({}); // 用來追蹤每筆訂單的取消按鈕狀態
+  const [popupVisible, setPopupVisible] = useState(false); // 控制彈出視窗顯示
+  const [currentOrderId, setCurrentOrderId] = useState(null); // 當前操作的訂單ID
 
-  // 顯示彈出視窗
-  const showPopup = () => {
-    setIsPopupVisible(true);
+  // 訂單資料 (模擬數據，可以從後端獲取)
+  const orders = [
+    { orderId: 22345, title: "【過年限定】紙韻心意剪紙活動", date: "2025.01.25（六）14:00～16:00", price: "NT$ 500 元/人" },
+    { orderId: 22346, title: "【藝術創作】插花療癒活動", date: "2025.02.05（六）10:00～12:00", price: "NT$ 600 元/人" },
+  ];
+
+  // 顯示取消訂單的彈窗
+  const showPopup = (orderId) => {
+    setCurrentOrderId(orderId);
+    setPopupVisible(true);
   };
 
   // 關閉彈出視窗
   const closePopup = () => {
-    setIsPopupVisible(false);
+    setPopupVisible(false);
   };
 
-  // 顯示已取消訂單的彈窗
-  const showSuccessModal = () => {
-    setIsSuccessPopupVisible(false); // 隱藏彈窗，並且等待2秒後再顯示
+  // 訂單取消成功
+  const handleCancelOrder = () => {
+    setHiddenButtons((prev) => ({ ...prev, [currentOrderId]: true })); // 隱藏取消按鈕
+    setPopupVisible(false); // 關閉彈窗
+
     setTimeout(() => {
-      setIsSuccessPopupVisible(true); // 兩秒後顯示已取消訂單的彈窗
-    }, 200); // 這裡加一點延遲是為了清楚顯示彈窗
+      setShowSuccessModal(true); // 顯示取消成功的彈窗
+    }, 1500);
+
+    setTimeout(() => {
+      setCurrentOrderId(null); // 清除當前訂單ID
+    }, 1500);
   };
 
   return (
@@ -61,126 +75,51 @@ export default function Membership_myOrder() {
               <img src="./src/images/Membership_myOrder/house.png" alt="" />
               <h3>未完成的訂單</h3>
             </figure>
-            <div id='row-event_Order'>
-              <div id='column-event_Order'>
-                <img src="./src/images/Event/event_Image.jpg" alt="" />
-                <small>2025.01.25（六）14:00～16:00</small>
-                <h2>【過年限定】紙韻心意剪紙活動</h2>
-                <p id='p1'>NT$ 500 元/人</p>
-                <hr />
-                <div id='event-Tags'>
-                  <p>#台北市</p>
-                  <p>#藝術創作</p>
+            {orders.map((order) => (
+              <div key={order.orderId} id='row-event_Order'>
+                <div id='column-event_Order'>
+                  <img src="./src/images/Event/event_Image.jpg" alt="" />
+                  <small>{order.date}</small>
+                  <h2>{order.title}</h2>
+                  <p id='p1'>{order.price}</p>
+                  <hr />
+                  <div id='event-Tags'>
+                    <p>#台北市</p>
+                    <p>#藝術創作</p>
+                  </div>
+                </div>
+                <div id="content-Order">
+                  <h2>訂單詳情</h2>
+                  <br />
+                  <p>訂單編號：#{order.orderId}</p>
+                  <p>訂單日期：2024/11/28</p>
+                  <br /><br />
+                  <h2>付款詳情</h2>
+                  <br />
+                  <p>付款方式：Visa (66666)</p>
+                  <p>付款狀態：---</p>
+                  <br />
+                  {!hiddenButtons[order.orderId] && (
+                    <button id="button" onClick={() => showPopup(order.orderId)}>取消訂單</button>
+                  )}
                 </div>
               </div>
-              <div id="content-Order">
-                <h2>訂單詳情</h2>
-                <br />
-                <p>訂單編號：#22345</p>
-                <p>訂單日期：2024/11/28</p>
-                <br /><br />
-                <h2>付款詳情</h2>
-                <br />
-                <p>付款方式：Visa (66666)</p>
-                <p>付款狀態：---</p>
-                <br />
-                <button id="button" onClick={(e) => { e.preventDefault(); showPopup(); }}>取消訂單</button>
-              </div>
-            </div>
-            <div id='row-event_Order'>
-              <div id='column-event_Order'>
-                <img src="./src/images/Event/event_Image.jpg" alt="" />
-                <small>2025.01.25（六）14:00～16:00</small>
-                <h2>【過年限定】紙韻心意剪紙活動</h2>
-                <p id='p1'>NT$ 500 元/人</p>
-                <hr />
-                <div id='event-Tags'>
-                  <p>#台北市</p>
-                  <p>#藝術創作</p>
-                </div>
-              </div>
-              <div id="content-Order">
-                <h2>訂單詳情</h2>
-                <br />
-                <p>訂單編號：#22345</p>
-                <p>訂單日期：2024/11/28</p>
-                <br /><br />
-                <h2>付款詳情</h2>
-                <br />
-                <p>付款方式：Visa (66666)</p>
-                <p>付款狀態：---</p>
-                <br />
-                <button id="button" onClick={(e) => { e.preventDefault(); showPopup(); }}>取消訂單</button>
-              </div>
-            </div>
+            ))}
+
             {/* 彈出視窗顯示的邏輯 */}
-            {isPopupVisible && (
+            {popupVisible && currentOrderId && (
               <Modal_Cancel_Confirm
                 closeModal={closePopup}
-                showSuccessModal={showSuccessModal} // 點擊"是"後顯示成功的彈窗
+                showSuccessModal={handleCancelOrder} // 點擊"是"後觸發取消訂單
               />
             )}
-            {isSuccessPopupVisible && (
-              <Modal_Order_Cancel_Confirm /> // 顯示已取消訂單的彈窗
-            )}
+
+            {/* 顯示已取消訂單的彈窗 */}
+            {hiddenButtons[currentOrderId] && <Modal_Order_Cancel_Confirm />}
           </div>
         </section>
-        <section id="section-uncomplete">
-          <div id="uncomplete_Order">
-            <figure id="title-house">
-              <img src="./src/images/Membership_myOrder/house.png" alt="" />
-              <h3>已完成的訂單</h3>
-            </figure>
-            <div id='row-event_Order'>
-              <div id='column-event_Order'>
-                <img src="./src/images/Event/event_Image.jpg" alt="" />
-                <small>2025.01.25（六）14:00～16:00</small>
-                <h2>【過年限定】紙韻心意剪紙活動</h2>
-                <p id='p1'>NT$ 500 元/人</p>
-                <hr />
-                <div id='event-Tags'>
-                  <p>#台北市</p>
-                  <p>#藝術創作</p>
-                </div>
-              </div>
-              <div id="content-Order">
-                <h2>訂單詳情</h2>
-                <br />
-                <p>訂單編號：#22345</p>
-                <p>訂單日期：2024/11/28</p>
-                <br /><br />
-                <h2>付款詳情</h2>
-                <br />
-                <p>付款方式：Visa (66666)</p>
-                <p>付款狀態：已付款</p>
-              </div>
-            </div>
-            <div id='row-event_Order'>
-              <div id='column-event_Order'>
-                <img src="./src/images/Event/event_Image.jpg" alt="" />
-                <small>2025.01.25（六）14:00～16:00</small>
-                <h2>【過年限定】紙韻心意剪紙活動</h2>
-                <p id='p1'>NT$ 500 元/人</p>
-                <hr />
-                <div id='event-Tags'>
-                  <p>#台北市</p>
-                  <p>#藝術創作</p>
-                </div>
-              </div>
-              <div id="content-Order">
-                <h2>訂單詳情</h2>
-                <br />
-                <p>訂單編號：#22345</p>
-                <p>訂單日期：2024/11/28</p>
-                <br /><br />
-                <h2>付款詳情</h2>
-                <br />
-                <p>付款方式：Visa (66666)</p>
-                <p>付款狀態：已付款</p>
-              </div>
-            </div>
-          </div>
-        </section>
+
+        {/* 其他區塊 */}
         <section id="section-policy">
           <div>
             <h2>參與注意事項</h2>
@@ -203,6 +142,7 @@ export default function Membership_myOrder() {
             <img src="./src/images/Membership_myOrder/boat.png" alt="" />
           </figure>
         </section>
+
         <hr />
         <section id="section-recommend">
           <div id="title-recommend">
@@ -229,6 +169,7 @@ export default function Membership_myOrder() {
           </figure>
         </section>
       </div>
+
       {/* 底部 */}
       <Footer />
     </>
