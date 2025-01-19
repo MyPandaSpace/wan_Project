@@ -416,7 +416,7 @@
 @media (min-width: 768px) and (max-width: 1440px) {
     .season-event-carousel img {
         top: 24%;
-        left: 52%;
+        left: 50%;
         width: 30%;
         height: 48%;
     }
@@ -426,6 +426,6 @@
         gap: 20px;
         position: absolute;
         top: 76%;
-        left: 66%;
+        left: 64%;
     }
 }

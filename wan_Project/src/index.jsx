@@ -2,19 +2,19 @@ import "./css/aos.css";
 import './index.css';
 import bg_mountain from "./images/index/bg_mountain.png";
 import bg_sea from './images/index/bg_sea.png';
-import bg_2_Filter from './images/index/bg_2_filter.png';
 import Navbar from "./component/Navbar.jsx";
 import { useEffect, useState } from 'react';
 import Aos from "aos";
 import Footer from "./component/Footer.jsx";
 import Btn_goTop from "./component/Btn_goTop.jsx";
 import BubbleExplode from "./component/bubble_ver2.jsx";
+import Modal_DailyWords from "./component/Modal_DailyWords.jsx";
 import { Link } from "react-router-dom";
 
 function Index() {
   useEffect(() => {
     Aos.init({
-      delay: 2500,
+      delay: 500,
       once: true
     });
   }, []);
@@ -51,6 +51,17 @@ function Index() {
     return () => clearTimeout(timer); // 清理定時器
   }, [location]);
 
+  // 每日療癒語
+  const [isModalVisible, setModalVisible] = useState(false);
+
+  const handleBubbleClick = () => {
+    setModalVisible(true); // 點擊時顯示 Modal
+  };
+
+  const handleCloseModal = () => {
+    setModalVisible(false); // 關閉 Modal
+  };
+
   return (
     <>
       {/* 首頁容器 */}
@@ -66,27 +77,19 @@ function Index() {
           <div id='banner2'>
             <img id="bg_mountain" src={bg_mountain} alt="bg_mountain" />
             <div id="circle_ip" data-aos="fade-right" data-aos-duration="3000">
-              <div className="ip_hover-image">
-                <div class="hover-image-container">
-                  <img id="Go_Event" src="./src/images/index/Go_Event.png" alt="Go_Event" />
-                  <Link to="/Event" onClick={() => window.scrollTo(0, 0)}><img id="Go_Event_hover" src="./src/images/index/Go_Event_hover.png" alt="" /></Link>
-                </div>
+              <div class="hover-image-container">
+                <img id="Go_Event" src="./src/images/index/Go_Event.png" alt="Go_Event" />
+                <Link to="/Event" onClick={() => window.scrollTo(0, 0)}><img id="Go_Event_hover" src="./src/images/index/Go_Event_hover.png" alt="" /></Link>
               </div>
               <img src="./src/images/index/circle_ip.gif" alt="circle_ip" className="circle_ip" />
             </div>
             <div id='heart_ip' data-aos="fade-left" data-aos-duration="3000">
-              <div className="ip_hover-image" id="heart-hover-image">
-                <div class="hover-image-container">
-                  <img id="Go_ArticleBay" src="./src/images/index/Go_ArticleBay.png" alt="Go_ArticleBay" />
-                  <Link to="/Article_Bay" onClick={() => window.scrollTo(0, 0)}><img id="Go_ArticleBay_hover" src="./src/images/index/Go_ArticleBay_hover.png" alt="" /></Link>
-                </div>
+              <div class="hover-image-container">
+                <img id="Go_ArticleBay" src="./src/images/index/Go_ArticleBay.png" alt="Go_ArticleBay" />
+                <Link to="/Article_Bay" onClick={() => window.scrollTo(0, 0)}><img id="Go_ArticleBay_hover" src="./src/images/index/Go_ArticleBay_hover.png" alt="" /></Link>
               </div>
               <img src="./src/images/index/heart_ip.gif" alt="heart_ip" className="heart_ip" />
             </div>
-          </div>
-          {/* 將背景圖層提升到更靠近頂部 */}
-          <div className='background-overlay2' onAnimationEnd={handleAnimationEnd}>
-            <img src={bg_2_Filter} alt="" />
           </div>
         </main>
 
@@ -203,9 +206,10 @@ function Index() {
                 </div>
               </div>
             </div>
-            <div id="services-section-bubble">
+            <div id="services-section-bubble" onClick={handleBubbleClick}>
               <BubbleExplode />
             </div>
+            <Modal_DailyWords isVisible={isModalVisible} onClose={handleCloseModal} />
           </section>
         </div>
       </div >
