@@ -58,7 +58,8 @@ function Event() {
         <div className="main_Event">
           <Navbar />
           <img id='season_Event' src="./src/images/Event/season_event.png" alt="" />
-          {/* 輪播圖片 */}
+        </div>
+                  {/* 輪播圖片 */}
           <div className="season-event-carousel">
             {images.map((src, index) => (
               <img
@@ -81,7 +82,6 @@ function Event() {
               ))}
             </div>
           </div>
-        </div>
         {/* 評論卡片 */}
         <div className="comment-Card-row1">
           <div className="slider-container">
