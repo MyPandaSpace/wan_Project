@@ -4,7 +4,8 @@
 	left: 0;
 	width: 100vw;
 	height: 100vh;
-	background-color: rgba(0, 0, 0, 0.8);
+	background: rgba(255, 255, 255, 0.3); /* 用白色半透明背景，讓模糊效果顯示 */
+  backdrop-filter: blur(16px); /* 設置背景模糊效果 */
 	display: flex;
 	justify-content: center;
 	align-items: center;

@@ -1,92 +1,5 @@
 @charset "UTF-8";
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-}
-
 #navbar {
     display: flex;
     justify-content: space-between;
@@ -116,7 +29,6 @@ video {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    position: relative;
 }
 
 .eventBanner-Img {
@@ -126,10 +38,10 @@ video {
 .season-event-carousel img {
     position: absolute;
     object-fit: cover;
-    top: 30%;
+    top: 26%;
     left: 46%;
-    width: 26%;
-    height: 50%;
+    width: 28%;
+    height: 52%;
     border-radius: 300px;
 }
 
@@ -293,16 +205,16 @@ video {
 }
 
 #event-Type .filter-Button {
-    margin-left: 155px;
+    margin-left: 150px;
     background: none;
     border: none;
 }
+
 
 @media screen and (max-width: 100px) {
     #event-Type .filter-Button {
         margin-left: 0px;
     }
-    
 }
 
 #event-Type1:hover {
@@ -508,11 +420,7 @@ video {
     color: #ECA163;
 }
 
-@media screen and (max-width: 1024px) {
-    .main_Event {
-        background-size: contain;
-    }
-
+@media (min-width: 768px) and (max-width: 1440px) {
     .event #column-event_Card small {
         font-size: 10px;
         padding-left: 8px;
@@ -527,6 +435,22 @@ video {
         padding: 5px 2px;
     }
 
+    .season-event-carousel img {
+        top: 24%;
+        left: 50%;
+        width: 30%;
+        height: 48%;
+    }
+
+    .season-event-carousel-indicators {
+        font-size: 9px;
+        display: flex;
+        gap: 20px;
+        position: absolute;
+        top: 76%;
+        left: 64%;
+    }
+
     .event #event-Tags {
         font-size: 9px;
         display: flex;
@@ -539,7 +463,6 @@ video {
         padding: 1px 8px;
         border: none;
         cursor: pointer;
-
         font-size: 16px;
     }
 }
