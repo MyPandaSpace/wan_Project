@@ -48,7 +48,7 @@ function Apply_Page1() {
 						{/* <h2>報名活動</h2> */}
 						<div className="apply-event-card">
 							<div className="event-info">
-								<img src="/src/images/Event/events/newyear_1.jpg" alt="活動圖片" />
+								<img src="./src/images/Event/events/newyear_1.jpg" alt="活動圖片" />
 							</div>
 							<div className="event-info">
 								<div className="apply-content-top">

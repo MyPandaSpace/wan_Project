@@ -38,18 +38,11 @@
 .season-event-carousel img {
     position: absolute;
     object-fit: cover;
-    top: 26%;
+    top: 28%;
     left: 46%;
     width: 28%;
     height: 52%;
     border-radius: 300px;
-}
-
-.detail-carousel-indicators {
-    position: absolute;
-    bottom: -200px;
-    display: flex;
-    gap: 10px;
 }
 
 #season_Event {
@@ -63,7 +56,7 @@
     display: flex;
     gap: 20px;
     position: absolute;
-    top: 80%;
+    top: 82%;
     left: 60%;
 }
 

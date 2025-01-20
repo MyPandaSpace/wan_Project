@@ -11,7 +11,6 @@
   justify-content: center;
   align-items: center;
   z-index: 9999;
-  /* 確保在最上層 */
 }
 
 /* 彈出視窗 */
@@ -24,7 +23,6 @@
 .Modal_Confirm_popup img {
   width: 100%;
   max-width: 400px;
-  /* 設定圖片最大寬度 */
   height: auto;
 }
 
@@ -43,7 +41,7 @@
   width: 50px;
   height: 40px;
   font-size: 16px;
-  border: 2px solid #1684C8;
+  border: 1.5px solid #1684C8;
   border-radius: 99px;
 }
 
@@ -51,6 +49,6 @@
   width: 50px;
   height: 40px;
   font-size: 16px;
-  border: 2px solid #1684C8;
+  border: 1.5px solid #1684C8;
   border-radius: 99px;
 }

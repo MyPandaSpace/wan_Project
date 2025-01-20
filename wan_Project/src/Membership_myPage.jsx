@@ -102,11 +102,11 @@ function Membership_myPage() {
           <form id="info-form3">
             <div>
               <label htmlFor="name">姓名</label>
-              <input type="text" id="name" name="name" placeholder="" required />
+              <input type="text" id="name" name="name" placeholder="" value="灣灣" required />
             </div>
             <div>
               <label htmlFor="personality">信箱</label>
-              <input type="text" id="personality" name="personality" placeholder="" required />
+              <input type="text" id="personality" name="personality" placeholder="" value="wanwan@gmail.com" required />
             </div>
             <div>
               <label htmlFor="name">留言</label>
