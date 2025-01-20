@@ -15,7 +15,18 @@ function Event() {
   ];
   const [timer, setTimer] = useState(null); // 用來保存定時器的 ID
   const [isFilterOpen, setIsFilterOpen] = useState(false);
-  const [isLiked, setIsLiked] = useState(false);
+  // 使用陣列儲存每個活動的按讚狀態
+  const [likedStates, setLikedStates] = useState(Array(15).fill(false));  // 假設有15個活動
+
+  // 處理按讚
+  const handleLike = (index, e) => {
+    e.preventDefault();
+    setLikedStates(prev => {
+      const newStates = [...prev];
+      newStates[index] = !newStates[index];
+      return newStates;
+    });
+  };
 
   // 自動切換輪播
   useEffect(() => {
@@ -59,29 +70,29 @@ function Event() {
           <Navbar />
           <img id='season_Event' src="./src/images/Event/season_event.png" alt="" />
         </div>
-                  {/* 輪播圖片 */}
-          <div className="season-event-carousel">
-            {images.map((src, index) => (
-              <img
+        {/* 輪播圖片 */}
+        <div className="season-event-carousel">
+          {images.map((src, index) => (
+            <img
+              key={index}
+              src={src}
+              alt={`Slide ${index}`}
+              className={`detail-carousel-img ${index === currentSlide ? "active" : ""
+                }`}
+            />
+          ))}
+          {/* 輪播指示器 */}
+          <div className="season-event-carousel-indicators">
+            {images.map((_, index) => (
+              <button
                 key={index}
-                src={src}
-                alt={`Slide ${index}`}
-                className={`detail-carousel-img ${index === currentSlide ? "active" : ""
+                className={`detail-indicator ${index === currentSlide ? "active" : ""
                   }`}
+                onClick={() => handleIndicatorClick(index)} // 點擊切換
               />
             ))}
-            {/* 輪播指示器 */}
-            <div className="season-event-carousel-indicators">
-              {images.map((_, index) => (
-                <button
-                  key={index}
-                  className={`detail-indicator ${index === currentSlide ? "active" : ""
-                    }`}
-                  onClick={() => handleIndicatorClick(index)} // 點擊切換
-                />
-              ))}
-            </div>
           </div>
+        </div>
         {/* 評論卡片 */}
         <div className="comment-Card-row1">
           <div className="slider-container">
@@ -275,12 +286,9 @@ function Event() {
                 <div className="event-buttons">
                   <button
                     className="like-btn"
-                    onClick={(e) => {
-                      e.preventDefault(); // 防止觸發 Link 的跳轉
-                      setIsLiked(!isLiked);
-                    }}
+                    onClick={(e) => handleLike(0, e)}
                   >
-                    {isLiked ? '♥' : '♡'}
+                    {likedStates[0] ? '♥' : '♡'}
                   </button>
                   <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
                     <button className="signup-btn">立即體驗</button>
@@ -305,12 +313,9 @@ function Event() {
                 <div className="event-buttons">
                   <button
                     className="like-btn"
-                    onClick={(e) => {
-                      e.preventDefault(); // 防止觸發 Link 的跳轉
-                      setIsLiked(!isLiked);
-                    }}
+                    onClick={(e) => handleLike(1, e)}
                   >
-                    {isLiked ? '♥' : '♡'}
+                    {likedStates[1] ? '♥' : '♡'}
                   </button>
                   <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
                     <button className="signup-btn">立即體驗</button>
@@ -324,11 +329,24 @@ function Event() {
                 <h2>&nbsp;&nbsp;小小藝術炸彈—水氣球繽紛創作工作坊</h2>
                 <p>NT$ 800 元/人</p>
                 <hr />
+              </Link>
+              <div className="event-card-footer">
                 <ul id='event-Tags'>
                   <li>#台北市</li>
                   <li className='art_creation'>#藝術創作</li>
                 </ul>
-              </Link>
+                <div className="event-buttons">
+                  <button
+                    className="like-btn"
+                    onClick={(e) => handleLike(2, e)}
+                  >
+                    {likedStates[2] ? '♥' : '♡'}
+                  </button>
+                  <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="signup-btn">立即體驗</button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
           <div id='row-event_Card'>
@@ -339,11 +357,24 @@ function Event() {
                 <h2>&nbsp;&nbsp;光影心旅—走進光影交織的療癒之境</h2>
                 <p>NT$ 1,200 元/人</p>
                 <hr />
+              </Link>
+              <div className="event-card-footer">
                 <ul id='event-Tags'>
                   <li>#台北市</li>
                   <li className='art_creation'>#藝術創作</li>
                 </ul>
-              </Link>
+                <div className="event-buttons">
+                  <button
+                    className="like-btn"
+                    onClick={(e) => handleLike(3, e)}
+                  >
+                    {likedStates[3] ? '♥' : '♡'}
+                  </button>
+                  <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="signup-btn">立即體驗</button>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div id='column-event_Card'>
               <Link to="/Event_Detail" onClick={() => window.scrollTo(0, 0)}>
@@ -352,11 +383,24 @@ function Event() {
                 <h2>&nbsp;&nbsp;音樂創作—玩轉音符的奇妙世界</h2>
                 <p>NT$ 1,500 元/人</p>
                 <hr />
+              </Link>
+              <div className="event-card-footer">
                 <ul id='event-Tags'>
                   <li>#台北市</li>
                   <li className='art_creation'>#藝術創作</li>
                 </ul>
-              </Link>
+                <div className="event-buttons">
+                  <button
+                    className="like-btn"
+                    onClick={(e) => handleLike(4, e)}
+                  >
+                    {likedStates[4] ? '♥' : '♡'}
+                  </button>
+                  <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="signup-btn">立即體驗</button>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div id='column-event_Card'>
               <Link to="/Event_Detail" onClick={() => window.scrollTo(0, 0)}>
@@ -365,11 +409,24 @@ function Event() {
                 <h2>&nbsp;&nbsp;日出攀登—冥想與挑戰的自然之旅</h2>
                 <p>NT$ 100 元/人</p>
                 <hr />
+              </Link>
+              <div className="event-card-footer">
                 <ul id='event-Tags'>
                   <li>#台北市</li>
                   <li className='natural_healing'>#自然療癒</li>
                 </ul>
-              </Link>
+                <div className="event-buttons">
+                  <button
+                    className="like-btn"
+                    onClick={(e) => handleLike(5, e)}
+                  >
+                    {likedStates[5] ? '♥' : '♡'}
+                  </button>
+                  <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="signup-btn">立即體驗</button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
           <div id='row-event_Card'>
@@ -380,11 +437,24 @@ function Event() {
                 <h2>&nbsp;&nbsp;星空下的營火狂想曲—學野外技巧享美食</h2>
                 <p>NT$ 600 元/人</p>
                 <hr />
+              </Link>
+              <div className="event-card-footer">
                 <ul id='event-Tags'>
                   <li>#台北市</li>
                   <li className='natural_healing'>#自然療癒</li>
                 </ul>
-              </Link>
+                <div className="event-buttons">
+                  <button
+                    className="like-btn"
+                    onClick={(e) => handleLike(6, e)}
+                  >
+                    {likedStates[6] ? '♥' : '♡'}
+                  </button>
+                  <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="signup-btn">立即體驗</button>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div id='column-event_Card'>
               <Link to="/Event_Detail" onClick={() => window.scrollTo(0, 0)}>
@@ -393,11 +463,24 @@ function Event() {
                 <h2>&nbsp;&nbsp;情緒花園—插花療癒工作坊</h2>
                 <p>NT$ 2,200 元/人</p>
                 <hr />
+              </Link>
+              <div className="event-card-footer">
                 <ul id='event-Tags'>
                   <li>#台北市</li>
                   <li className='natural_healing'>#自然療癒</li>
                 </ul>
-              </Link>
+                <div className="event-buttons">
+                  <button
+                    className="like-btn"
+                    onClick={(e) => handleLike(7, e)}
+                  >
+                    {likedStates[7] ? '♥' : '♡'}
+                  </button>
+                  <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="signup-btn">立即體驗</button>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div id='column-event_Card'>
               <Link to="/Event_Detail" onClick={() => window.scrollTo(0, 0)}>
@@ -406,11 +489,24 @@ function Event() {
                 <h2>&nbsp;&nbsp;北極圈雪橇冒險—體驗冬日純粹與奇蹟</h2>
                 <p>NT$ 7,000 元/人</p>
                 <hr />
+              </Link>
+              <div className="event-card-footer">
                 <ul id='event-Tags'>
                   <li>#台北市</li>
                   <li className='natural_healing'>#自然療癒</li>
                 </ul>
-              </Link>
+                <div className="event-buttons">
+                  <button
+                    className="like-btn"
+                    onClick={(e) => handleLike(8, e)}
+                  >
+                    {likedStates[8] ? '♥' : '♡'}
+                  </button>
+                  <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="signup-btn">立即體驗</button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
           <div id='row-event_Card'>
@@ -421,11 +517,24 @@ function Event() {
                 <h2>&nbsp;&nbsp;心靈獨角室—探索智慧與心靈的閱讀之旅</h2>
                 <p>NT$ 500 元/人</p>
                 <hr />
+              </Link>
+              <div className="event-card-footer">
                 <ul id='event-Tags'>
                   <li>#台北市</li>
                   <li className='spiritual_journey'>#心靈之旅</li>
                 </ul>
-              </Link>
+                <div className="event-buttons">
+                  <button
+                    className="like-btn"
+                    onClick={(e) => handleLike(9, e)}
+                  >
+                    {likedStates[9] ? '♥' : '♡'}
+                  </button>
+                  <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="signup-btn">立即體驗</button>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div id='column-event_Card'>
               <Link to="/Event_Detail" onClick={() => window.scrollTo(0, 0)}>
@@ -434,11 +543,24 @@ function Event() {
                 <h2>&nbsp;&nbsp;茶香與心靈的碰撞—創意茶香冥想</h2>
                 <p>NT$ 1,200 元/人</p>
                 <hr />
+              </Link>
+              <div className="event-card-footer">
                 <ul id='event-Tags'>
                   <li>#台北市</li>
                   <li className='spiritual_journey'>#心靈之旅</li>
                 </ul>
-              </Link>
+                <div className="event-buttons">
+                  <button
+                    className="like-btn"
+                    onClick={(e) => handleLike(10, e)}
+                  >
+                    {likedStates[10] ? '♥' : '♡'}
+                  </button>
+                  <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="signup-btn">立即體驗</button>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div id='column-event_Card'>
               <Link to="/Event_Detail" onClick={() => window.scrollTo(0, 0)}>
@@ -447,11 +569,24 @@ function Event() {
                 <h2>&nbsp;&nbsp;香氛製作—自創迷人香氣療癒心靈</h2>
                 <p>NT$ 1,000 元/人</p>
                 <hr />
+              </Link>
+              <div className="event-card-footer">
                 <ul id='event-Tags'>
                   <li>#台北市</li>
                   <li className='spiritual_journey'>#心靈之旅</li>
                 </ul>
-              </Link>
+                <div className="event-buttons">
+                  <button
+                    className="like-btn"
+                    onClick={(e) => handleLike(11, e)}
+                  >
+                    {likedStates[11] ? '♥' : '♡'}
+                  </button>
+                  <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="signup-btn">立即體驗</button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
           <div id='row-event_Card'>
@@ -462,11 +597,24 @@ function Event() {
                 <h2>&nbsp;&nbsp;韻律瑜伽一動態與節奏的身心強化</h2>
                 <p>NT$ 1,800 元/人</p>
                 <hr />
+              </Link>
+              <div className="event-card-footer">
                 <ul id='event-Tags'>
                   <li>#台北市</li>
                   <li className='spiritual_journey'>#心靈之旅</li>
                 </ul>
-              </Link>
+                <div className="event-buttons">
+                  <button
+                    className="like-btn"
+                    onClick={(e) => handleLike(12, e)}
+                  >
+                    {likedStates[12] ? '♥' : '♡'}
+                  </button>
+                  <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="signup-btn">立即體驗</button>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div id='column-event_Card'>
               <Link to="/Event_Detail" onClick={() => window.scrollTo(0, 0)}>
@@ -475,11 +623,24 @@ function Event() {
                 <h2>&nbsp;&nbsp;手沖咖啡體驗一冠軍咖啡的奧秘</h2>
                 <p>NT$ 1,200 元/人</p>
                 <hr />
+              </Link>
+              <div className="event-card-footer">
                 <ul id='event-Tags'>
                   <li>#台北市</li>
                   <li className='spiritual_journey'>#心靈之旅</li>
                 </ul>
-              </Link>
+                <div className="event-buttons">
+                  <button
+                    className="like-btn"
+                    onClick={(e) => handleLike(13, e)}
+                  >
+                    {likedStates[13] ? '♥' : '♡'}
+                  </button>
+                  <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="signup-btn">立即體驗</button>
+                  </Link>
+                </div>
+              </div>
             </div>
             <div id='column-event_Card'>
               <Link to="/Event_Detail" onClick={() => window.scrollTo(0, 0)}>
@@ -488,11 +649,24 @@ function Event() {
                 <h2>【兒童節限定】童趣牆壁紓壓彩繪</h2>
                 <p>NT$ 1,000 元/人</p>
                 <hr />
+                </Link>
+                <div className="event-card-footer">
                 <ul id='event-Tags'>
                   <li>#台北市</li>
                   <li className='art_creation'>#藝術創作</li>
                 </ul>
-              </Link>
+                <div className="event-buttons">
+                  <button
+                    className="like-btn"
+                    onClick={(e) => handleLike(14, e)}
+                  >
+                    {likedStates[14] ? '♥' : '♡'}
+                  </button>
+                  <Link to="/Apply_Page1" onClick={() => window.scrollTo(0, 0)}>
+                    <button className="signup-btn">立即體驗</button>
+                  </Link>
+                </div>
+              </div>
             </div>
           </div>
         </div>
