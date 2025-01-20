@@ -175,25 +175,38 @@ video {
 	justify-content: center;
 	align-items: center;
 	width: 100%;
+	padding: 0 25px;
 }
 
 #column-event_Card_Collection img {
-	width: 100%;
+	/* width: 100%; */
 	align-self: left;
 }
 
 #column-event_Card_Collection small {
 	padding-left: 10px;
+    align-self: flex-start;
+    width: 100%;  /* 可以加上这个确保宽度占满 */
+}
+
+#column-event_Card_Collection .small-article {
+	padding-left: 22px;
+    align-self: flex-start;
+    width: 100%;  /* 可以加上这个确保宽度占满 */
 }
 
 #column-event_Card_Collection h2 {
 	font-size: 20px;
 	color: #1684C8;
-	margin: 10px 0 10px 0;
+	margin: 10px 0 0 0px;
+}
+
+#column-event_Card_Collection .h2-article {
+	margin-left: 45px;
 }
 
 #column-event_Card_Collection #p-event-Price {
-	padding-left: 20px;
+	padding-left: 12px;
 }
 
 #column-event_Card_Collection .p-article {
@@ -226,7 +239,7 @@ hr {
 }
 
 #column-event_Card_Collection hr {
-	width: 80%;
+	width: 100%;
 	margin: 10px 0;
 	margin-right: auto;
 }
@@ -300,6 +313,66 @@ hr {
 }
 
 .collect-img-container:hover::after {
+	opacity: 1;
+	/* hover 時顯示圖片 */
+}
+
+.collect-img-container-article {
+	position: relative;
+	/* width: 100%; */
+	border-radius: 30px;
+}
+
+.collect-img-container-article img {
+	display: block;
+	width: 100%;
+	height: auto;
+	border-radius: 30px;
+}
+
+.collect-img-container-article::before {
+	border-radius: 30px;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0);
+	/* 初始為透明 */
+	transition: background-color 0.1s ease-in-out;
+}
+
+.collect-img-container-article:hover::before {
+	z-index: 88;
+	border-radius: 30px;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+
+.collect-img-container-article:active::before {
+	z-index: 88;
+	border-radius: 30px;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.collect-img-container-article::after {
+	content: '';
+	position: absolute;
+	bottom: 10px;
+	right: 10px;
+	width: 150px;
+	height: 30px;
+	background-image: url('./src/images/Event/more.svg');
+	background-size: contain;
+	/* 保持圖片比例 */
+	background-repeat: no-repeat;
+	opacity: 0;
+	/* 初始狀態不可見 */
+	transition: opacity 0.1s ease-in-out;
+	z-index: 99;
+}
+
+.collect-img-container-article:hover::after {
 	opacity: 1;
 	/* hover 時顯示圖片 */
 }

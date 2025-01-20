@@ -27,6 +27,8 @@ function Index() {
     "./src/images/index/mainEvent_Image_3.png"
   ];
 
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
   // 動畫結束時將overlay移除
   const handleAnimationEnd = () => {
     setShowOverlay(false);
@@ -95,19 +97,50 @@ function Index() {
 
         {/* 區塊 2：服務 */}
         <div className="main-scroll">
-          <section className="services-section" >
-            <div className="service1">
-              <img src="./src/images/index/service1_title.svg" alt="" />
-              <img src="./src/images/index/service1_detail.svg" alt="Service1-title" />
-            </div>
-            <div className="service2">
-              <img src="./src/images/index/service2_detail.svg" alt="Service2-title" />
-              <img src="./src/images/index/service2_title.svg" alt="" />
-            </div>
-            <div id="services2-section-bubble">
-              <BubbleExplode />
-            </div>
-          </section>
+        <section 
+  className="services-section"
+  onMouseMove={(e) => {
+    const x = e.clientX;
+    const y = e.clientY;
+    setMousePosition({ x, y });
+  }}
+>
+  <div className="service1">
+    <img 
+      src="./src/images/index/service1_title.svg" 
+      alt="" 
+      style={{
+        transform: `translate(${mousePosition.x * 0.01}px, ${mousePosition.y * 0.01}px)`
+      }}
+    />
+    <img 
+      src="./src/images/index/service1_detail.svg" 
+      alt="Service1-title"
+      style={{
+        transform: `translate(${mousePosition.x * -0.005}px, ${mousePosition.y * -0.005}px)`
+      }}
+    />
+  </div>
+  <div className="service2">
+    <img 
+      src="./src/images/index/service2_detail.svg" 
+      alt="Service2-title"
+      style={{
+        transform: `translate(${mousePosition.x * 0.015}px, ${mousePosition.y * 0.015}px)`
+      }}
+    />
+    <img 
+      src="./src/images/index/service2_title.svg" 
+      alt=""
+      style={{
+        transform: `translate(${mousePosition.x * 0.008}px, ${mousePosition.y * 0.008}px)`
+      }}
+    />
+  </div>
+  <div id="services2-section-bubble">
+    <BubbleExplode />
+  </div>
+</section>
           {/* 區塊 3：主打活動 */}
           <section className="section-mainEvent">
             <figure id="section_mainEvent_Top">
