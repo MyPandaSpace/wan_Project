@@ -6,7 +6,7 @@ const MobileWarning = () => {
   useEffect(() => {
     // 檢查視窗寬度的函數
     const checkWidth = () => {
-      setShowWarning(window.innerWidth < 768); // 768px 是平板的斷點，可以依需求調整
+      setShowWarning(window.innerWidth < 1025); // 依需求調整
     };
 
     // 初始檢查

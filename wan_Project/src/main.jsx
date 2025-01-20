@@ -21,6 +21,7 @@ import MobileWarning from './component/MobileWarning';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
+    <MobileWarning />
     <HashRouter>
       <Routes>
         <Route path="/" element={<Index />} />
@@ -39,7 +40,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/Article" element={<Article />} />
         <Route path="/Apply_Page2" element={<Apply_Page2 />} />
         <Route path="/Filter_Modal" element={<Filter_Modal />} />
-        <Route path="/MobileWarning" element={<MobileWarning />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>
