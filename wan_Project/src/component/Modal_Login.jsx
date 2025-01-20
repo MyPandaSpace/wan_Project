@@ -51,7 +51,7 @@ const Modal_Login = ({ show, onClose, onSwitchToSignUp }) => {
           </p>
           <form id="modal-Form">
             <input type="text" id="name" name="name" placeholder="請輸入Email帳號" required />
-            <input type="text" id="name" name="name" placeholder="請輸入密碼" required />
+            <input type="password" id="password" name="password" placeholder="請輸入密碼" required />
             <Link to="" style={{ textAlign: "right", fontSize: "12px", color: "grey" }}>忘記密碼?</Link>
             <Link to="/Membership_myPage" className="pay-btn">
               <li
